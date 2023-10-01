@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <servlet>
+        <servlet-name>abcd</servlet-name>
+        <servlet-class>ValidateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abcd</servlet-name>
+        <url-pattern>validate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>efgh</servlet-name>
+        <servlet-class>WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>efgh</servlet-name>
+        <url-pattern>walidate</url-pattern>
+    </servlet-mapping>
+</root>

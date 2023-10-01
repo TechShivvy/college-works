@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+    <script src="script.js"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+      h1 {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .top {
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+      }
+      .main {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <h1>To-do List</h1>
+      <input
+        type="text"
+        name="taskInput"
+        id="taskInput"
+        placeholder="Enter task"
+      />
+      <button onclick="addTask()">Add Task</button>
+      <button onclick="clearAll()">Clear All</button>
+    </div>
+    <div class="main">
+      <table name="taskList" id="taskList">
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
