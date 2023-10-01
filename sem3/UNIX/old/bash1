@@ -1,0 +1,385 @@
+Script started on Monday 06 December 2021 10:41:38 AM UTC
+]0;root@splc33: ~root@splc33:~# exitcd ECESSNnNECE[2Pexit[Kexitcd ECESSNECE[2Pexit[Kcat>poop[K[Kp.sh
+#!/bin/bash
+pop=80000
+men=$(echo "$pop*0.52"|bc)
+women=$(echo "$pop-$mend "|bc)
+tl=$(echo "$pop*48  0.48"|bhc  c)
+lm=$(echo "$men*0.35        poo p*0.35"|bc)
+lw=$(echo "$tl-$lm) "|bc)
+echo0  "Population: " $poop  p) "
+echo "No of Men: ")  $men") 
+echo "No of Women : $women) "
+echo "Total Literary:        ray                  ]0;root@splc33: ~root@splc33:~# cat>pop.sh[6Pexitcat>pop.sh
+#!/bin/bash
+pop=80000
+men=$(echo "$pop*0.52"|bc)
+women=$(echo "$pop-$men"|bc)
+tl=$(echo "$pop*0.48"|bc)
+ilm  m=$echo    (echo "$pop   mewn  n*0.65"|bc)
+]0;root@splc33: ~root@splc33:~# cat>pop.sh[6Pexitcat>pop.sh
+#!/bin/bash
+pop=80000
+men=$(echo "$pop*0.52"|bc)
+women=$(echo "$pop-$men"|bc)
+tl=$(echo "$pop*0.52"|bc)
+^[[A^[[A        im=$(echo "$men*0.65"|bc)
+iw=$(echo "$tl= -$im"|bc)
+echo "Population: $pop"
+echo "No of Men: $men" 
+echo "No of Women : $women"
+echon    "n No,.  . of ille=  iterate ppl: " $tl"
+echo "No. of ill. Men: " $il m"
+echo "No  .of ill.        of ill. women: " $wm  iw") 
+]0;root@splc33: ~root@splc33:~# bash /.pop.sh
+bash: /.pop.sh: No such file or directory
+]0;root@splc33: ~root@splc33:~# bash /.pop.sh[1Ppop.sh[1Ppop.sh
+Population: 80000
+No of Men: 41600.00
+No of Women : 38400.00
+No. of illiterate ppl: 41600.00
+No. of ill. Men: 27040.00
+No. of ill. women: 14560.00
+]0;root@splc33: ~root@splc33:~# cat>temp.sh
+echo "Enter the temop i=     p in F: ")                             red -p      ad -p "enetr       Enter the temp in F:")  F f
+echo "Temp in C: " $(echo"  "($f-32)*5/9"|bc)"
+]0;root@splc33: ~root@splc33:~# cat>temp.shbash pop.sh[1P.sh[1P.sh[1P.sht.she.shm.sh
+bash: tem.sh: No such file or directory
+]0;root@splc33: ~root@splc33:~# bash tem.shp.sh
+Enter the temp in F:64
+Temp in C: 17
+]0;root@splc33: ~root@splc33:~# cat>ap.sh
+read -p "enetr the         ter the           Enter the area of           l n b of rectangle      : " l b
+red -p    ad -p "enter the           Enter th              d -p "Enetr =      nter the r of circle: ")  cd  r
+echo "r Recatngle:       tangle:   "
+area   R  ra=$(echo "l $l*$b"|bc)
+rp=$(echo "$ 2*($l+$b)"|bc) )
+ca=$(echo "e 2 3.14*$r*$r"|bc)
+cc=$(echo "2*3.14*$r"|bc)
+echo "area    Area: $ra | per   Perimeter: $rp
+" ]0;root@splc33: ~root@splc33:~# cat>ap.sh
+read -p "Enter the l n b of rec: " l b
+read -p "Enter the r of circle: " r 
+echo "Rectangle: "
+ra=$(echo "$l*$b"|bc)
+rp=$(echo "2*($l+$b)"|bc)
+ca=$(echo "3.14*$r*$r"|bc)
+cc=$(echo "2*3.14*$r"|bc)
+echo "Area: $ra | Perimeter: $rp"
+echo "Circle: "
+echo "Area  : $ca | Perimeter           Circumefrence       ference      erenceL : $cc"
+]0;root@splc33: ~root@splc33:~# cat>ap.shbash temp.sh[3Pcat>ap.sh[1Pap.sh[1Pap.sh[1Pp.sh[1Pap.shbap.sh[Cap.shsap.shhap.sh ap.sh
+Enter the l n b of rec: 2 5
+Enter the r of circle: 2
+Rectangle: 
+Area: 10 | Perimeter: 14
+Circle: 
+Area: 12.56 | Circumference: 12.56
+]0;root@splc33: ~root@splc33:~# bash 9.sh
+bash: 9.sh: No such file or directory
+]0;root@splc33: ~root@splc33:~# bash 9.sh[K[K[K[K[K[K[K[K[Kcat 9.sh[K[K[K[K[K>9.sh
+" echo      tr  red -p     a ead -p "Enet  ter a file.         file/directory:                 name         : " fd  fd
+if(  test -f fd  fd  $fd   fd  $fd; then
+	echo   "It is a file                  echo "It is file| $(ls]0;root@splc33: ~root@splc33:~# ls -[K
+9.sh       [0m[01;34mMusic[0m     [01;34mSSN[0m
+ap.sh      [01;34mPictures[0m  sum.py
+bash1      pop.sh    [01;34mTemplates[0m
+[01;34mDesktop[0m    [01;34mPublic[0m    temp.sh
+[01;34mDocuments[0m  python    Untitled Document 3
+[01;34mDownloads[0m  [01;34mSAMPLE[0m    [01;34mVideos[0m
+]0;root@splc33: ~root@splc33:~# ld Music
+ld: cannot find Music: File format not recognized
+]0;root@splc33: ~root@splc33:~# ls Msuic[K[K[K[Kusic
+]0;root@splc33: ~root@splc33:~# ls -Music
+ls: invalid option -- 'M'
+Try 'ls --help' for more information.
+]0;root@splc33: ~root@splc33:~# ls -Music[K[K[K[K[K[Ks[K[K[K[Kstat Musioc[K[Kc
+  File: 'Music'
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 80ah/2058d	Inode: 2097170     Links: 2
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2021-12-06 09:14:50.994123313 +0000
+Modify: 2019-06-18 14:41:02.013844492 +0000
+Change: 2019-06-18 14:41:02.013844492 +0000
+ Birth: -
+]0;root@splc33: ~root@splc33:~# ls [K[K[Kman [K[K[K[Kls m-[K[K-[K[K[K[Kls -l K[KMusic
+total 0
+]0;root@splc33: ~root@splc33:~# ls -l Music/Music
+ls: cannot access '/Music': No such file or directory
+]0;root@splc33: ~root@splc33:~# ls -l /Music
+ls: cannot access '/Music': No such file or directory
+]0;root@splc33: ~root@splc33:~# ls -l /Music~/Music
+total 0
+]0;root@splc33: ~root@splc33:~# ls -l temp.sh
+-rw-r--r-- 1 root root 76 Dec  6 10:54 temp.sh
+]0;root@splc33: ~root@splc33:~# ls -ld temp.sh
+-rw-r--r-- 1 root root 76 Dec  6 10:54 temp.sh
+]0;root@splc33: ~root@splc33:~# ls -ld temp.sh[1P temp.sh~/Music[1P/Music[1PMusic[1Pstat[C[C[C[C[C[C[1Pls -Music[1PMusicd[C[C[C[C[C[Cs [Kcat>9.sh
+read -p "Enter: " fd           
+if test -f $fd; then
+	echo "It is file| $(ls -ld '$  $ '$fd')"^[[D     "
+]0;root@splc33: ~root@splc33:~# cat>9.shls -ld temp.sh[1P temp.sh~/Music[1P/Music[K[K[K[K[K[K[K[K[K[K[K[Kbash 9.sh
+Enter: temp.sh
+9.sh: line 4: syntax error: unexpected end of file
+]0;root@splc33: ~root@splc33:~# bash 9.sh[1Pcat>9.sh
+read -p "Enter: " fd           
+if test -f $fd; then
+	echo "It is file| $(ls -ld '$fd')" 
+fi
+]0;root@splc33: ~root@splc33:~# cat>9.shbash 9.sh
+Enter: temp.sh
+ls: cannot access '$fd': No such file or directory
+It is file| 
+]0;root@splc33: ~root@splc33:~# bash 9.sh[1Pcat>9.sh
+read -p "Enter: " fd           
+if test -f $fd; then
+	echo "It is file| $(ls -ld $fd" )"
+fi
+]0;root@splc33: ~root@splc33:~# cat>9.shbash 9.sh
+Enter: temp.sh
+It is file| -rw-r--r-- 1 root root 76 Dec  6 10:54 temp.sh
+]0;root@splc33: ~root@splc33:~# It is file| 
+> root@splc33:~# cat>9.sh
+It: command not found
+root@splc33:~#: command not found
+]0;root@splc33: ~root@splc33:~# read -p "Enter: " fd           
+Enter: ^[[A^[[A        ^Z^Z]0;root@splc33: ~root@splc33:~# 
+]0;root@splc33: ~root@splc33:~# read -p "Enter: " fd           [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CIt is file|  root@splc33:~# cat>9.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 9.sh[K[1Pcat>9.sh
+read -p "Enter: " fd           
+if test -f $fd; then
+	echo "It is file| $(ls -ld $fd)"
+if test -f % $fd     d $fd; then
+	echo "It is a direc]0;root@splc33: ~root@splc33:~# cat>9.sh
+read -p "Enter: " fd           
+if test -f $fd; then
+	echo "It is file"
+el;if   if test -d $fd; then
+	echo "Its  io s a Directory" "
+else
+	echo "Its    is not     not reg file or direc!"
+fi
+ls -l ld " $fd
+]0;root@splc33: ~root@splc33:~# cat>9.shread -p "Enter: " fd           [C[C[C[C[C[C[C[C[C[C[C[C[C[C[CIt is file|  root@splc33:~# cat>9.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 9.sh[K
+Enter: temp.sh
+It is file
+-rw-r--r-- 1 root root 76 Dec  6 10:54 temp.sh
+]0;root@splc33: ~root@splc33:~# bash 9.sh[1Pcat>9.shbash 9.sh
+Enter: Music
+It is a Directory
+drwxr-xr-x 2 root root 4096 Jun 18  2019 Music
+]0;root@splc33: ~root@splc33:~# bash 9.sh[1Pcat>9.shbash 9.sh
+Enter: It is file
+drwx------ 21 root root 4096 Dec  6 11:09 .
+]0;root@splc33: ~root@splc33:~# bash 9.sh[1Pcat>9.sh[1P.sh1.sh0.sh
+if test -f $ '$0 1"  0';then
+	echo "It is file"
+elif test -d '$1'; th   ]0;root@splc33: ~root@splc33:~# cat>10.sh
+if test -f '1 $1'; then
+	echo "It isn a      s a file"
+elif test -d '$1'; then
+	eho  cho "It i   is a Directory"
+else
+	echo "It is not reg file or direc!"
+fi
+ls -ld '$0 1'
+]0;root@splc33: ~root@splc33:~# cat>10.shbash 9.sh[1P.sh1.sh0.sh[C[C[C temp.sh
+It is not reg file or direc!
+ls: cannot access '$1': No such file or directory
+]0;root@splc33: ~root@splc33:~# bash 10.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>10.sh
+if test -f '$1 cat>10.sh
+if test -f '$0';then
+	echo "It is file"
+elif test -d '$1';root@splc33:~# cat>10.sh
+if test -f '$1'; then
+	echo "It is a file"
+elif test -d '$1'; then
+	echo "It is a Directory"
+else
+	echo "It is not reg file or direc!"
+fi
+ls -ld '$1'
+]0;root@splc33: ~root@splc33:~# cat>10.shbash 10.sh temp.sh
+10.sh: line 12: unexpected EOF while looking for matching `''
+10.sh: line 13: syntax error: unexpected end of file
+]0;root@splc33: ~root@splc33:~# bash 10.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>10.sh
+if test -f '$f 1';then     then
+	echo "It is a file"
+elif test -d '$1'; then
+	echo "It is a Directory"
+else
+	echo "It is not reg file or direc!"
+fi
+ls -ld '$1'
+]0;root@splc33: ~root@splc33:~# cat>10.shbash 10.sh temp.sh
+It is not reg file or direc!
+ls: cannot access '$1': No such file or directory
+]0;root@splc33: ~root@splc33:~# bash 10.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>10.sh
+if test -f $1; thye  n en
+	echo "It is a file"
+fi
+]0;root@splc33: ~root@splc33:~# cat>10.shbash 10.sh temp.sh
+It is a file
+]0;root@splc33: ~root@splc33:~# bash 10.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>10.sh
+if test -f $1; then
+	echo "It is a file"
+elif test -d $1; then
+		echo "It is a Directory"
+else
+	echo "It is not reg file or direc!"
+fi
+ls -ld $1
+]0;root@splc33: ~root@splc33:~# cat>10.shbash 10.sh temp.sh
+It is a file
+-rw-r--r-- 1 root root 76 Dec  6 10:54 temp.sh
+]0;root@splc33: ~root@splc33:~# bash 10.sh temp.sh[K[K[K[K[K[K[KMusic
+It is a Directory
+drwxr-xr-x 2 root root 4096 Jun 18  2019 Music
+]0;root@splc33: ~root@splc33:~# echo "heloo[K[Klo\hi[K[Knhi"
+hello\nhi
+]0;root@splc33: ~root@splc33:~# echo "hello\nhi"-"hello\nhi"e"hello\nhi" "hello\nhi"
+hello
+hi
+]0;root@splc33: ~root@splc33:~# cat>8.sh
+echo -3 e "$0\n$    1\n$2\n$3\n$4\n$5\n$6\n"^[[1;2D        "                             "filename        Filename: 40  $0"
+echo "file    Filename        No. of patra   rameters: " $1 #"
+echo -e "$1\n$2\n$3\n$4\n$5\n$6\n"
+echo "$ #:     -e "#: $    @:v    #@\n*:        $@\n*: \n  $*"
+]0;root@splc33: ~root@splc33:~# bash 8.sh
+Filename: 8.sh
+No. of parameters: 0
+
+
+
+
+
+
+
+@: 
+*: 
+]0;root@splc33: ~root@splc33:~# bash 8.sh man bear pig dog cat sheep
+Filename: 8.sh
+No. of parameters: 6
+man
+bear
+pig
+dog
+cat
+sheep
+
+@: man bear pig dog cat sheep
+*: man bear pig dog cat sheep
+]0;root@splc33: ~root@splc33:~# cat>11.sh
+#!/bin/bash
+for(    whikle[    le[  [         i=0
+while]0;root@splc33: ~root@splc33:~# cat>11.sh
+#!/bin/bash
+i=1
+while [ $i -lt e $#]  ]
+do
+	sh.      ./bash10.h        10.sh
+	let]0;root@splc33: ~root@splc33:~# cat>11.sh
+#!/bin/bash
+i=1
+while [ $i -le $# ]
+do
+	sh ./v10.sh
+	let i=$i+1
+done
+]0;root@splc33: ~root@splc33:~# cat>11.shbash 8.sh man bear pig dog cat sheep[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>11.sh[Kbash 8.sh man bear pig dog cat sheep[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[1Pcat>8.shecho -e "hello\nhi"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat>v10.sh
+if test -f $i; then
+	echo "It is a file"
+elif test -d $i; then
+		echo "It is a Directory"
+else
+	echo "It is not reg file or direc!"
+fi
+ls -ld $i
+]0;root@splc33: ~root@splc33:~# bash 11.sh
+]0;root@splc33: ~root@splc33:~# bash 11.sh temp.sh
+It is a file
+drwx------ 21 root root 4096 Dec  6 11:37 .
+]0;root@splc33: ~root@splc33:~# bash 11.sh temp.sh Music
+It is a file
+drwx------ 21 root root 4096 Dec  6 11:37 .
+It is a file
+drwx------ 21 root root 4096 Dec  6 11:37 .
+]0;root@splc33: ~root@splc33:~# #!/bin/bash
+]0;root@splc33: ~root@splc33:~# i=1
+]0;root@splc33: ~root@splc33:~# while [ $i -le $# ]
+> do
+> sh ./v10.sh
+> bash: syntax error: unexpected end of file
+]0;root@splc33: ~root@splc33:~# while [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=1[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#!/bin/bashi=1[Kwhile [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwhile [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=1[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#!/bin/bashbash 11.sh temp.sh Music[K[Kcat>v10.sh[1P11.sh
+#!/bin/bash
+i=1
+while [ $i -le $# ]
+do
+	sh ./v10.sh
+	export i
+	let i=$i+1
+done
+]0;root@splc33: ~root@splc33:~# cat>11.shwhile [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=1[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#!/bin/bashbash 11.sh temp.sh Music[K[Kcat>v10.sh
+if test -f $i; then
+	echo "It is a file"
+elif test -d $i; then
+	echo "It is a dircorty     ectiory    ory"
+else
+	echo "It is not reg file or direc!"
+fi
+ls -ld $i
+]0;root@splc33: ~root@splc33:~# cat>v10.sh[1P11.shwhile [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=1[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#!/bin/bashbash 11.sh temp.sh Music[K[K temp.sh
+It is a file
+drwx------ 21 root root 4096 Dec  6 11:37 .
+]0;root@splc33: ~root@splc33:~# bash 11.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pcat>v10.sh[1P11.shwhile [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=1[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#!/bin/bashi=1[Kwhile [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>11.sh[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv10.shbash 11.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kbash 11.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pcat>v10.sh[1P11.shwhile [ $i -le $# ]; do sh ./v10.sh;  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=1[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C#!/bin/bashbash 11.sh temp.sh Music[K Music
+It is a file
+drwx------ 21 root root 4096 Dec  6 11:37 .
+It is not reg file or direc!
+ls: cannot access '2': No such file or directory
+]0;root@splc33: ~root@splc33:~# bash 11.sh temp.sh Music[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pcat>v10.sh[1P11.sh
+#!/bin/bash
+i=1
+while [ $i -le $# ]
+do
+	export i
+	./v10.sh
+		let i=$i+1
+done
+]0;root@splc33: ~root@splc33:~# cat>11.shbash 11.sh temp.sh Music[K
+11.sh: line 6: ./v10.sh: Permission denied
+]0;root@splc33: ~root@splc33:~# bash 11.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>11.sh
+#!/bin/bash
+i=1
+while [ $i -le $# ]
+do
+	export i
+	sh ./v10.sh
+	let i=$i+1
+done
+]0;root@splc33: ~root@splc33:~# cat>11.shbash 11.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>11.shbash 11.sh temp.sh Music[K
+It is not reg file or direc!
+ls: cannot access '1': No such file or directory
+]0;root@splc33: ~root@splc33:~# bash 11.sh temp.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>11.sh
+#!/bin/bash
+i=1
+while [ $i -le $# ]
+do
+	export $i
+	sh ./v10.sh
+	let i=$i+1
+done
+]0;root@splc33: ~root@splc33:~# cat>11.shbash 11.sh temp.sh
+11.sh: line 5: export: `1': not a valid identifier
+It is a file
+drwx------ 21 root root 4096 Dec  6 11:37 .
+]0;root@splc33: ~root@splc33:~# [K]0;root@splc33: ~root@splc33:~# exit
+exit
+
+Script done on Monday 06 December 2021 11:47:18 AM UTC

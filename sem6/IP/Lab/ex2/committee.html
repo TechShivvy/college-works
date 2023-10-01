@@ -1,0 +1,68 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/icon" href="logo.png">
+	<title>Committee - MyCon</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1>MyConference SSN</h1>
+		<h2>Internet Programming - Assignment 2 </h2>
+	</header>
+
+	<nav class="navbar">
+		<a class="left" href="conference.html"><img class="logo" src="logo.png"> </a>
+		<a href="gallery.html">GALLERY</a>
+		<a href="committee.html">COMMITTEE</a>
+		<a href="dates.html">IMPORTANT DATES</a>
+		<a href="workshop.html">WORKSHOPS</a>
+		<a href="register.html">REGISTRATION</a>
+		<div class="dropdown">
+			<button class="dropbtn">CALL FOR PAPERS
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="call.html">LIST OF TOPICS</a>
+				<a target="_blank" href="Conference.pdf">BIG DATA</a>
+			</div>
+		</div>
+		<a href="contact.html">CONTACT</a>
+	</nav>
+	<section>
+		<h1>Committee Members</h1>
+		<table id="committee">
+			<tr>
+				<th>Member</th>
+				<th>Role</th>
+				<th>Image</th>
+			</tr>
+			<tr>
+				<td>Padma Bushan Dr. Shiv Nadar</td>
+				<td>Chief Patron</td>
+				<td><img width="125" height="150"
+						src="data:image/jpeg;base64,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">
+				</td>
+			</tr>
+			<tr>
+				<td>Dr. Kala Vijayakumar</td>
+				<td>Patron</td>
+				<td><img width="125" height="150"
+						src="https://www.sace.ssn.edu.in/wp-content/uploads/2020/08/SSN-President-2-450x550.jpg"></td>
+			</tr>
+			<tr>
+				<td>Dr. V. E. Annamalai</td>
+				<td>General Chair</td>
+				<td><img width="125" height="150"
+						src="https://www.shivnadarfoundation.org/sites/default/files/dr-v-e-annamalai.png"></td>
+			</tr>
+		</table>
+	</section>
+	<footer class="footer">
+		<h2>Designed by Abhinav Ram</h2>
+	</footer>
+</body>
+
+</html>

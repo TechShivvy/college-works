@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset = "utf-8">
+  <title>split and substring</title>
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+  <script>
+    function splitButtonPressed()
+    {
+      var inputString = document.getElementById( "inputField" ).value;
+      var tokens = inputString.split( " " );
+      var results = document.getElementById( "results" );
+      results.innerHTML = "<p>The sentence split into words is: </p>" +
+      "<p class = 'indent'>" +
+      tokens.join( "</p><p class = 'indent'>" ) + "</p>" +
+      "<p>The first 10 characters of the input string are: </p>" +
+      "<p class = 'indent'>'" + inputString.substring( 0, 10 ) + "'</p>";
+    } // end function splitButtonPressed
+    // register click event handler for searchButton
+    function start()
+    {
+      var splitButton = document.getElementById( "splitButton" );
+      splitButton.addEventListener( "click", splitButtonPressed, false );
+    } // end function start
+    window.addEventListener( "load", start, false )
+  </script>
+  <style> 
+    div { margin-top: 15px; }
+    #inputField { width: 400px; }
+    p.indent { margin: 0 0 0 40px; }
+  </style>
+</head>
+<body>
+  <form action = "#">
+    <p>Enter a sentence to split into words:</p>
+    <p><input id = "inputField" type = "text">
+    <input id = "splitButton" type = "button" value = "Split"></p>
+    <div id = "results"></p>
+  </form>
+</body>
+</html>

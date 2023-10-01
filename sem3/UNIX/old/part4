@@ -1,0 +1,16 @@
+_apt	105	irc	39	speech-dispatcher	114
+avahi	115	kernoops	116	sssd	126
+avahi-autoipd	109	list	38	sync	4
+backup	34	lp	7	sys	3
+bin	2	mail	8	syslog	104
+colord	121	man	6	systemd-coredump	999
+cse1100	1000	messagebus	103	systemd-network	100
+cups-pk-helper	113	news	9	systemd-resolve	101
+daemon	1	nm-openvpn	118	systemd-timesync	102
+dnsmasq	112	nobody	65534	tcpdump	108
+games	5	proxy	13	tss	106
+gdm	125	pulse	123	usbmux	110
+geoclue	122	root	0	uucp	10
+gnats	41	rtkit	111	uuidd	107
+gnome-initial-setup	124	saned	117	whoopsie	120
+hplip	119	speech-dispatcher	114	www-data	33

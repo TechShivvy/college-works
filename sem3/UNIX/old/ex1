@@ -1,0 +1,1069 @@
+Script started on 2021-12-12 16:37:10+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="23"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ wwrite a [K[K[K[K[K[K[K[K[Kcat>ex1-13[K[K[K[K[K[K13.sh
+#!/bin/nash    bash
+month  =`date|cut -d"" -f3      '' f3`
+echon  $mon>dat.txt    e.txt
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash cat[K[K[K14[K3.sh
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 13.sh[1Pcat>13.sh
+#!/bin/bash
+mon=`date|cut -d'' -f3	`
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>13.sh
+#!/bin/bash
+mon=`date|cut -d'' -f3`
+echo $mon>dta  ate.txt
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>13.shbash 13.sh
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 13.sh[1Pcat>13.sh
+#!/bin/bash
+mon=`date|cut -d '' -f3`
+echo $ko  mon>date.txt
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>13.shbash 13.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat date.txt
+Sunday 12 December 2021 04:42:23 PM IST
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ date
+Sunday 12 December 2021 04:42:37 PM IST
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ datecat date.txt[2Pbash 13.sh[1Pcat>13.sh
+cut -d \  -f -2 studata.txt > tmp1                                  #!/bin/bash
+mon=`date|  | cut -d \  -f3`
+echo $mon>date.txt
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>13.sh[5Pdatecat date.txt[2Pbash 13.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat date.txt
+December
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ alias getDay='[K[K
+bash: alias: getDay: not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ alias getDaycat date.txt[2Pbash 13.sh[1Pcat>13.sh
+#!/bin/bash                       
+mon=`date | cut -d \  -f3`
+echo $mon>date.txt
+alias getDay=`date | cut -d' ' -f1| cat > day.txt`
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>13.shalias getDaycat date.txt[2Pbash 13.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat date.txt
+December
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ eg[K[KgetDay
+getDay: command not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ $getF[Kd[KDay
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ $getDay[1PgetDay[K[K[K[K[K[Kcat date.txt[2Pbash 13.sh[1Pcat>13.sh
+#!/bin/bash                       
+mon=`date | cut -d \  -f3`
+echo $mon>date.txt
+alias getDay=`date | cut -d' ' -f1| cat > day.txt`
+$getDay
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>13.sh[2P$getDay[Kcat date.txt[2Pbash 13.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat date.txt
+December
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat day.txt
+Sunday
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ trace[K[K[K[K[Kcat 14.sh[K[K[K[K[K[K>14,[K.sh
+^Z
+[1]+  Stopped                 cat > 14.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ trace [K[K[K[K[K[Ktoucb [K[Kh {s[Ki{[1P{f{i{l{e{[C1..5}
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo file?
+file1 file2 file3 file4 file5
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo file?[K[K[K[K[K[K[K[K[K[Kcat>14.sh
+#!/bin/bash
+touch Fu iel  le{1..8}
+for   i in {1..8}
+	^Z
+[2]+  Stopped                 cat > 14.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ for i in {1..8}; [K do
+> echo $i
+> bash: syntax error: unexpected end of file
+exit
+There are stopped jobs.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ for i in {1..8}; do echo $i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat>14.shfor i in {1..8}; do echo $i
+> for i in {1..8}; do echo $i[C[C[18Pcat>14.sh[C[Cfor i in {1..8}; do echo $i[C[C[Kecho $i
+> done
+1
+1
+2
+2
+3
+3
+4
+4
+5
+5
+6
+6
+7
+7
+8
+8
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ for i in {1..8}; do echo $i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat>14.shfor i in {1..8}; do echo $i; done
+1
+2
+3
+4
+5
+6
+7
+8
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ for i in {1..8}; do echo $i; done[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+for i in {1..8}^[[A    ; do
+	ch  ^Z
+[3]+  Stopped                 cat > 14.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [Acat>14.sh[A[Kcat>14.sh
+^[[A    #!/bin/bash
+touch File{1..8}
+A perm=[701,400,300,676,045,177,234,507]
+for i in {1- ..8}; do
+	chmod File$1      perm[0]  i+1] File    file    File"$1   "^[[D^[[D             "File"$1 i
+dome  ne
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shfor i in {1..8}; do echo $i; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>14.sh[K[Cfor i in {1..8}; do echo $i; done[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat>14.shecho file?touch file{1..5}[7Pcat>14.sh day.txtte.txt[2Pbash 13.sh[1Pcat>13.shbash 13.sh[1P.sh4.sh
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=^[[A    (#!/bin/bash
+touch File{1..8}
+perm=#!/bin/bash
+touch File{1..8}
+perm=^Z
+[4]+  Stopped                 cat > 14.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=#!/bin/bash
+touch File{1..8}
+perm=701,400,300,676,045,177,234,507^Z
+[5]+  Stopped                 cat > 14.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=701,400,300,676,045,177,234,507)
+for i in {1..8}; do
+	chmod perm[i+1] "File"$i     
+done
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+14.sh: line 3: syntax error near unexpected token `)'
+14.sh: line 3: `perm=701,400,300,676,045,177,234,507)'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ B#!/bin/bash
+bash: !/bin/bash: event not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ touch File{1..8}
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ perm=7touch File{1..8}[6Pbash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=7 (701,400,300,676,045,177,234,507)
+for i in {1..8}; do
+	chmod perm[i+1] "File"$i     
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shtouch File{1..8}[6Pbash 14.sh
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘perm[i+1]’
+Try 'chmod --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701,400,300,676,045,177,234,507)
+for i in {1..8}; do
+	chmod $perm[i+1]   -1] "File"$i
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701,400,300,676,045,177,234,507[i-1]’
+Try 'chmod --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	chmod $perm[i-1] "File"$i
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[i-1]’
+Try 'chmod --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	chmod $perm[$1 i-1] "File"$1 i
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+chmod: invalid mode: ‘701[1-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[2-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[3-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[4-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[5-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[6-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[7-1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[8-1]’
+Try 'chmod --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.shbash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	chmod $perm[$((i-1))] "File"$i
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+chmod: invalid mode: ‘701[0]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[1]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[2]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[3]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[4]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[5]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[6]’
+Try 'chmod --help' for more information.
+chmod: invalid mode: ‘701[7]’
+Try 'chmod --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	chmod ${perm[$((i-1))]} "File"$i
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ls -l File?
+-rwx-----x 1 cse1100 cse1100 0 Dec 12 17:01 [0m[01;32mFile1[0m
+-r-------- 1 cse1100 cse1100 0 Dec 12 17:01 File2
+--wx------ 1 cse1100 cse1100 0 Dec 12 17:01 [01;32mFile3[0m
+-rw-rwxrw- 1 cse1100 cse1100 0 Dec 12 17:01 [01;32mFile4[0m
+----r--r-x 1 cse1100 cse1100 0 Dec 12 17:01 [01;32mFile5[0m
+---xrwxrwx 1 cse1100 cse1100 0 Dec 12 17:01 [01;32mFile6[0m
+--w--wxr-- 1 cse1100 cse1100 0 Dec 12 17:01 [01;32mFile7[0m
+-r-x---rwx 1 cse1100 cse1100 0 Dec 12 17:01 [01;32mFile8[0m
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ls -l File?[1Pbash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	chmod ${perm[$((i-1))]} "File"$i
+	if test -r $ "^Z
+[6]+  Stopped                 cat > 14.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	File=     file="File"$i
+	chmod $perm          chmod ${perm[$((i-1))]}                          chmod ${perm[$((i-1))]} " $file
+	if test -f r $file; then
+		echo "      let "r+=1"
+	fi
+	if    if test -r w $file; then
+		let "w+=1"
+	fi
+	if test -x $file; then
+		let "x+=1"
+	fi
+done
+echo -e"  "No of     . of Reabal        f:\nreab    Readable   e Files: $r\nWritable Files: \ $w\nExecutable Files: \ $x"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shls -l File?[1Pbash 14.sh
+No. of:
+Readable Files: 4
+Writable Files: 4
+Executable Files: 4
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	file="File"$i
+	chmod ${perm[$((i-1))]} $file
+	ls -l $file
+	if test -r $file; then
+		let "r+=1"
+	fi
+	if test -w $file; then
+		let "w+=1"
+	fi
+	if test -x $file; then
+		let "x+=1"
+	fi
+done
+echo -e "No. of:\nReadable Files: $r\nWritable Files: $w\nExecutable Files: $x"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+-rwx-----x 1 cse1100 cse1100 0 Dec 12 17:08 File1
+-r-------- 1 cse1100 cse1100 0 Dec 12 17:08 File2
+--wx------ 1 cse1100 cse1100 0 Dec 12 17:08 File3
+-rw-rwxrw- 1 cse1100 cse1100 0 Dec 12 17:08 File4
+----r--r-x 1 cse1100 cse1100 0 Dec 12 17:08 File5
+---xrwxrwx 1 cse1100 cse1100 0 Dec 12 17:08 File6
+--w--wxr-- 1 cse1100 cse1100 0 Dec 12 17:08 File7
+-r-x---rwx 1 cse1100 cse1100 0 Dec 12 17:08 File8
+No. of:
+Readable Files: 4
+Writable Files: 4
+Executable Files: 4
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.sh
+#!/bin/bash
+touch File{1..8}
+perm=(701 400 300 676 045 177 234 507)
+for i in {1..8}; do
+	file="File"$i
+	chmod ${perm[$((i-1))]} $file
+	ls -l $file
+	if test -r $file; then
+		let "r+=1"
+	fi
+	if test -w $file; then
+		let "w+=1"
+	fi
+	if test -x $file; then
+		let "x+=1"
+	fi
+done
+echo -e "\nNo. of:\nReadable Files: $r\nWritable Files: $w\nExecutable Files: $x"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>14.shbash 14.sh
+-rwx-----x 1 cse1100 cse1100 0 Dec 12 17:08 File1
+-r-------- 1 cse1100 cse1100 0 Dec 12 17:08 File2
+--wx------ 1 cse1100 cse1100 0 Dec 12 17:08 File3
+-rw-rwxrw- 1 cse1100 cse1100 0 Dec 12 17:08 File4
+----r--r-x 1 cse1100 cse1100 0 Dec 12 17:08 File5
+---xrwxrwx 1 cse1100 cse1100 0 Dec 12 17:08 File6
+--w--wxr-- 1 cse1100 cse1100 0 Dec 12 17:08 File7
+-r-x---rwx 1 cse1100 cse1100 0 Dec 12 17:08 File8
+
+No. of:
+Readable Files: 4
+Writable Files: 4
+Executable Files: 4
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 14.sh[1Pcat>14.shbash 14.sh[Kcat15.sh[K[K[K[K[K>15.sh
+#!/b bin/bash
+^^?  v0=1234abczip1234abc^[[A]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC')
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 14.sh[1P.sh5.sh
+sed: -e expression #1, char 9: unterminated `s' command
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1*4"
+v=$(echo $v | sed 's/$pat//2')
+echo $v
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1*4"
+v=$(echo $v | sed 's/1*4//2')
+echo $v
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip123ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+^[[A^[[A^[[A^Z
+[7]+  Stopped                 cat > 15.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.*4"
+v=$(echo $v | sed 's/pat//2')
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.*4"
+v=$(echo $v | sed 's/*$pat//2')
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.*4"
+v=$(echo $v | sed 's/$pat//2')
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echop [K[K "12345671234" | gre p[K[Kp "1.$[K*4"71.*4"[C[C[C
+123456[01;31m[K71234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "71.*4"[1P1.*4"
+[01;31m[K12345671234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.*4"[C[1P4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.4"[1P4"*4"
+123[01;31m[K4[m[K567123[01;31m[K4[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1*4"[1P4".4"*4"\4"
+grep: Invalid back reference
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.*\4"[1P4"
+[01;31m[K12345671234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.*4"*1.*4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "*1.*4".*1.*4"
+[01;31m[K12345671234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep ".*1.*4"[1P1.*4"[1P1.*4"
+[01;31m[K12345671234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ?[Kecho "12345671234" | grep "1.*4"[1P "1.*4"[1P "1.*4"[1P "1.*4"[1P "1.*4"s "1.*4"e "1.*4"d "1.*4"[C[C[C[C[C[1P1.*4""1.*4"[1P1.*4"'1.*4"s1.*4"/1.*4"[C[C[C[C[C[K/[K[K[K[K[K[K/"1*[0-9[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgre p[K[Kp "1*[0-9]4"
+12[01;31m[K34[m[K56712[01;31m[K34[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1*[0-9]4"[C[C.*[0-9]4"[C4"[K[0-9]4"
+[01;31m[K12345671234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.*[0-9]4"[1P*[0-9]4"
+12[01;31m[K34[m[K56712[01;31m[K34[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1*[0-9]4"[1P[0-9]4".[0-9]4"
+[01;31m[K1234[m[K567[01;31m[K1234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.[0-9]4"[1P[0-9]4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1[0-9]4".[0-9]4"
+[01;31m[K1234[m[K567[01;31m[K1234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.[0-9]4"[CA0-9]4"-0-9]4"[1P0-9]4"[1P0-9]4"[C[C[CA]4"-]4"Z]4"a]4"-]4"z]4"
+[01;31m[K1234[m[K567[01;31m[K1234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "1234abczip1234abc" | grep "1.[0-9A-Za-z]4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"
+[01;31m[K1234[m[Kabczip[01;31m[K1234[m[Kabc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "1234abczip1234abc" | grep "1.[0-9A-Za-z]4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P5671234
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P]4"[1P[0-9]4".[0-9]4"*[0-9]4".*[0-9]4"[1P*[0-9]4"[4P.*4".*1.*4"[1P*1.*4"[1P1.*4"\4"[2P*4".4"*4"71.*4"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 15.sh[K[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.[0-9A-Za-z]4"
+v=$(echo $v | sed 's/$pat//2')
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shecho "1234abczip1234abc" | grep "1.[0-9A-Za-z]4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>15.sh[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "1234abczip1234abc" | grep "1.[0-9A-Za-z]4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P5671234
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P]4"[1P[0-9]4".[0-9]4"*[0-9]4".*[0-9]4"[1P*[0-9]4"[4P.*4".*1.*4"[1P*1.*4"[1P1.*4"\4"[2P*4".4"*4"71.*4"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 15.sh[K[1Pcat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.[0-9A-Za-z]4"
+v=$(echo $v | sed 's/$pat//')
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.shecho "1234abczip1234abc" | grep "1.[0-9A-Za-z]4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P5671234
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"14"*4"
+123[01;31m[K4[m[K567123[01;31m[K4[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1*4".*4"
+[01;31m[K12345671234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "12345671234" | grep "1.*4"[1P*4"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 15.sh[Kecho "12345671234" | grep "1*4".*4"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kecho "12345671234" | grep "1.*4"[1P*4"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 15.sh[K[1Pcat>15.shbash 15.sh[1Pcat>15.shecho "1234abczip1234abc" | grep "1.[0-9A-Za-z]4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P5671234
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cabczip1234abc" | grep "1.[0-9A-Za-z]4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P4"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"[1P4"*4"
+[01;31m[K1234abczip1234[m[Kabc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo "1234abczip1234abc" | grep "1.*4"[6P5671234[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P*4"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 15.sh[K[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.[0-9A-Za-z]4"
+v=$(v#"$pat")
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shecho "1234abczip1234abc" | grep "1.*4"[6P5671234[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P*4"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash 15.sh[K[1Pcat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+15.sh: line 8: v#1.[0-9A-Za-z]4: command not found
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[Kbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.[0-9A-Za-z]4"
+v=$(v#"$pat"}
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat=${"1.[0-9A-Za-z]4"}
+v=$(v#"$pat"}
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+15.sh: line 7: ${"1.[0-9A-Za-z]4"}: bad substitution
+15.sh: line 8: unexpected EOF while looking for matching `)'
+15.sh: line 10: syntax error: unexpected end of file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.*4"
+v=${v#"$pat"}
+echo $v^[[A^[[A        
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.[0-9A-Za-z]4"
+v=${v#"$pat"}
+echo $v
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1.[0-9A-Za-z]4"
+v=${v#"$pat"}
+echo "${v}"
+^F  ]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+v=$(echo $v | sed 's/abc/ABC/')
+echo $v
+v=$(echo $v | sed 's/abc/ABC/g')
+echo $v
+pat="1*4"
+v=${v#"$pat"}
+echo "${v}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234ABCzip1234ABC
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ech[K[K[Kcat>presuf.sh
+string   -  r="shivcharan"
+syffic     uf   pref ="shiv"
+echo      syr${sr tr$ #"$pre"}
+^Z
+[8]+  Stopped                 cat > presuf.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>presuf.sh
+str="shivcharan"
+pre="shiv"
+str=${str#"$pre"}
+echo str   $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>presuf.sh[3Pbash 15.sh[1P.sh[1P.shp.shr.she.shs.shu.shf.sh
+charan
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash presuf.sh[1Pcat>presuf.sh
+str="shivcharan"
+pre="s.*v"
+str=${str#"$pre"}
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>presuf.shbash presuf.sh
+shivcharan
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash presuf.sh[1Pcat>presuf.shbash presuf.sh[1Pcat>presuf.sh[3Pbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v="1234abczip1234abc"
+echo $v
+#v1=$(echo $v | sed 's/abc/ABC/')
+v1=${v0/#abc/ABC}
+echo $v1
+#v2=$(echo $v | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo $v2
+pat="1.*4"
+v=${v#"$pat"}
+echo "${v}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash presuf.sh[1Pcat>presuf.shbash presuf.sh[1Pcat>presuf.sh[3Pbash 15.sh[1Pcat>15.shbash 15.sh
+1234abczip1234abc
+
+
+1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash presuf.sh[5Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo $v
+#v1=$(echo $v | sed 's/abc/ABC/')
+v1=${v0/#abc/ABC}
+echo $v1
+#v2=$(echo $v | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo $v2
+pat="1.*4"
+v=${v#"$pat"}
+echo "${v}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+
+1234abczip1234abc
+1234ABCzip1234ABC
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo $v0
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/#abc/ABC}
+echo $v1
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo $v2
+pat="1.*4"
+v=${v0#"$pat"}
+echo "${v0}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234abczip1234abc
+1234abczip1234abc
+1234ABCzip1234ABC
+1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo $v0
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo $v1
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo $v2
+pat="1.*4"
+v=${v0#"$pat"}
+echo "${v0}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+1234abczip1234abc
+1234ABCzip1234abc
+1234ABCzip1234ABC
+1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ "[Kecho "1234abczip1234abc" |[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kvar="1234abczip1234abc" | [K[K[K; echo %[K
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ $[Kvar="1234abczip1234abc"; echo $var
+1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ var="1234abczip1234abc"; echo $var | grep "1.*4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"
+[01;31m[K1234abczip1234[m[Kabc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ var="1234abczip1234abc"; echo $var | grep "1.*4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v4=${v0%%1.*4}
+echo "v4=${v0}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shvar="1234abczip1234abc"; echo $var | grep "1.*4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pbash 15.sh[1Pcat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v4=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shvar="1234abczip1234abc"; echo $var | grep "1.*4" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v4=${v0%%1*4}
+echo "v4=${v0}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v4=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v4=${v0%%1234}
+echo "v4=${v0}"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v4=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v4=${v0%%1234}
+echo "v4=v4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v4=v4
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v4=${v0%%1234}
+echo "v4=$v4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v4=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v4=${v0%%abc}
+echo "v4=$v4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v4=1234abczip1234
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v4=${v0%1234}
+echo "v4=$v4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v4=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v3=${v0#1234}
+echo "v3=$v3"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v3=abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.*4"
+v3=${v0#"$pat"}
+echo "v3=$v3"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v3=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.shbash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.[0-9]4"
+v3=${v0#"$pat"}
+echo "v3=$v3"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v3=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.[0-9]4"
+v3=${v0#1.[0-9]4}
+echo "v3=$v3"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v3=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 12.sh[K[K[K[K[K[K>12.shj[K
+#!/bin/bash
+echo      tot=$! 1+$2    {1.^[[D^[[D             +=${1..5}
+echo "tot    $tot
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>12.shbash 15.sh[1Pcat>15.shbash 15.sh[1P.sh2.sh
+12.sh: line 2: ${1..5}: bad substitution
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 12.sh 1 2 3 4 5
+12.sh: line 2: ${1..5}: bad substitution
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 12.sh 1 2 3 4 5[K[1Pcat>12.sh
+#!/bin/bash
+for i in $ {1..5}; do echo $i^[[D^[[D          ( $($i); do e  ne
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>12.shbash 12.sh 1 2 3 4 5[11Pcat>12.shbash 12.sh 1 2 3 4 5[K 1 2 3 4 5[K 1 2 3 4 5
+12.sh: line 2: 1: command not found
+
+12.sh: line 2: 2: command not found
+
+12.sh: line 2: 3: command not found
+
+12.sh: line 2: 4: command not found
+
+12.sh: line 2: 5: command not found
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 12.sh 1 2 3 4 5[11Pcat>12.sh
+#!/bin/bash
+for i in {1..5}; do echo $i; done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>12.shbash 12.sh 1 2 3 4 5
+1
+2
+3
+4
+5
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 12.sh 1 2 3 4 5[K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 12.sh 1 2 3 4 5
+1
+2
+3
+4
+5
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ecit
+
+Command 'ecit' not found, did you mean:
+
+  command 'edit' from deb mime-support (3.64ubuntu1)
+
+Try: sudo apt install <deb name>
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+There are stopped jobs.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-12-12 18:47:50+05:30 [COMMAND_EXIT_CODE="1"]
+Script started on 2021-12-13 09:51:57+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="58" LINES="29"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit[K[K[K[Kcat>ex1[K[K[K[K ex1[K[K[K15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.[0-9]4"
+v3=${v0#1.[0-9]4}
+echo "v3=$v3"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 15.sh[1P15.sh>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.[0-9]4"
+v3=${v0#1234}
+echo "v3=$v3"
+v4=${v0%%*1234}
+echo "v4=$v4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.sh[1P15.sh[1P15.sh[1P15.sh[1P15.shb15.sha15.shs15.shh15.sh 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v3=abczip1234abc
+v4=1234abczip1234abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 15.sh[1Pcat>15.sh
+#!/bin/bash
+v0="1234abczip1234abc"
+echo "v0=$v0"
+#v1=$(echo $v0 | sed 's/abc/ABC/')
+v1=${v0/abc/ABC}
+echo "v1=$v1"
+#v2=$(echo $v0 | sed 's/abc/ABC/g')
+v2=${v0//abc/ABC}
+echo "v2=$v2"
+pat="1.[0-9]4"
+v3=${v0#1234}
+echo "v3=$v3"
+v4=${v0##*1234}
+echo "v4=$v4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>15.shbash 15.sh
+v0=1234abczip1234abc
+v1=1234ABCzip1234abc
+v2=1234ABCzip1234ABC
+v3=abczip1234abc
+v4=abc
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-12-13 09:53:09+05:30 [COMMAND_EXIT_CODE="0"]

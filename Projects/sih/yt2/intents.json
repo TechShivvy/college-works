@@ -1,0 +1,112 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "When was AICTE founded?",
+        "What is AICTE?",
+        "What is the Abbreviation of AICTE?",
+        "Tell me the Abbreviation of AICTE?",
+        "All India Council for technical education",
+        "Tell me something about AICTE"
+      ],
+      "responses": [
+        "All India Council for Technical Education (AICTE) was set up in November 1945 as a national-level apex advisory body to conduct a survey on the facilities available for technical education and to promote development in the country in a coordinated and integrated manner."
+      ]
+    },
+    {
+      "tag": "Group",
+      "patterns": [
+        "what is national working group?",
+        "About national working group"
+      ],
+      "responses": [
+        "The Government of India (the Ministry of Human Resource Development) also constituted a National Working Group to look into the role of AICTE in the context of proliferation of technical institutions, maintenance of standards, and other related matters. The Working Group recommended that AICTE be vested with the necessary statutory authority for making it more effective, which would consequently require restructuring and strengthening with the necessary infrastructure and operating mechanisms."
+      ]
+    },
+    {
+      "tag": "ACT1987",
+      "patterns": [
+        "What is the Act 1987?",
+        "Why was the Act 1987 passed?",
+        "Tell me about The All India Council For Technical Education Act 1987."
+      ],
+      "responses": [
+        "The AICTE Act was constituted to provide for the establishment of an All India Council for Technical Education with a view to proper planning and co-ordinated development of a technical education system throughout the country, the promotion of qualitative improvements of such education in relation to planned quantitative growth, and regulation & proper maintenance of norms and standards in the technical education system and for the matters connected therewith."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "mission",
+      "patterns": [
+        "missions of aicte",
+        "missions",
+        "objectives",
+        "objectives of aicte",
+        "What are the objectives of aicte?",
+        "Tell the missions of aicte?"
+      ],
+      "responses": [
+        "A true facilitator and an objective regulator.\nTransparent governance and accountable approach towards the society.\nPlanned and coordinated development of Technical Education in the country by ensuring world-class standards of institutions through accreditation.",
+        "Emphasis on developing high quality institutions, academic excellence, and innovative research and development programmes.\nNetworking with/ or a network of institutions for optimum resource utilization.\nDissemination of knowledge",
+	"Technology forecasting and global manpower planning.\nPromoting industry-institution interaction for developing new products, services, and patents.\nInculcating entrepreneurship",
+	"Encouraging indigenous technology.\nFocusing on non-formal education.\nProviding affordable education to all.\nMaking Technical Education in India globally acceptable"
+      ]
+    },
+    {
+      "tag": "vision",
+      "patterns": [
+        "visions of aicte",
+        "visions",
+        "What are the visions of aicte?",
+        "Tell the visions of aicte",
+        "List some of the visions of aicte"
+      ],
+      "responses": [
+        "To be a world-class organization leading technological and socio-economic development of the country by enhancing the global competitiveness of technical manpower and by ensuring high quality technical education to all sections of the society."
+      ]
+    }
+  ]
+}

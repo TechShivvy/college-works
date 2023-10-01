@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8">
+  <title>Searching Strings</title>
+  <script>
+    var letters = "abcdefghijklmnopqrstuvwxyzabcdefghijklm";
+    function buttonPressed()
+    {
+      var inputField = document.getElementById( "inputField" );
+      document.getElementById( "results" ).innerHTML =
+      "<p>First occurrence is located at index " +
+      letters.indexOf( inputField.value ) +"</p>" +
+      "<p>Last occurrence is located at index " +
+      letters.lastIndexOf( inputField.value ) + "</p>" + 
+      "<p>First occurrence from index 12 is located at index " +
+      letters.indexOf( inputField.value, 12 ) + "</p>" +
+      "<p>Last occurrence from index 12 is located at index " +
+      letters.lastIndexOf( inputField.value, 12 ) + "</p>";
+    } // end function buttonPressed
+    // register click event handler for searchButton
+    function start()
+    {
+      var searchButton = document.getElementById( "searchButton" );
+      searchButton.addEventListener( "click", buttonPressed, false );
+    } // end function start
+    window.addEventListener( "load", start, false );  
+  </script>
+</head>
+<body>
+  <form id = "searchForm" action = "#">
+    <h1>The string to search is:
+    abcdefghijklmnopqrstuvwxyzabcdefghijklm</h1>
+    <p>Enter the substring to search for
+    <input id = "inputField" type = "search">
+    <input id = "searchButton" type = "button" value = "Search"></p>
+    <div id = "results"></div>
+  </form>
+</body>
+</html>

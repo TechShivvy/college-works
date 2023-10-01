@@ -1,0 +1,26 @@
+<html>
+<body>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script>
+    function myFunction() {
+      var str = "re, green, red, green, gren, gr, blue, yellow";
+      var patt1 = /(green|blue)/;
+      var result = str.match(patt1);
+      document.getElementById("demo").innerHTML = result;
+      
+      var str = "123456789";
+      var patt1 = /[1-4]/g;
+      var result = str.match(patt1);
+      document.getElementById("demo1").innerHTML = result;
+      
+      var str = "Is this all there is?";
+      var patt1 = /[^th]/g; 
+      var result = str.match(patt1);
+      document.getElementById("demo2").innerHTML = result;
+    }
+  </script>
+</body>
+</html>

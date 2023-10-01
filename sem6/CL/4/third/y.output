@@ -1,0 +1,1551 @@
+Terminals unused in grammar
+
+    WHILE
+    KEYWORD
+    SPL
+
+
+State 7 conflicts: 1 shift/reduce
+State 15 conflicts: 1 shift/reduce
+State 32 conflicts: 1 shift/reduce
+State 37 conflicts: 1 shift/reduce
+State 56 conflicts: 4 shift/reduce
+State 57 conflicts: 4 shift/reduce
+State 58 conflicts: 4 shift/reduce
+State 59 conflicts: 4 shift/reduce
+State 77 conflicts: 1 shift/reduce
+State 79 conflicts: 1 shift/reduce
+State 85 conflicts: 1 shift/reduce
+State 96 conflicts: 1 shift/reduce
+State 97 conflicts: 1 shift/reduce
+State 105 conflicts: 1 shift/reduce
+
+
+Grammar
+
+    0 $accept: program $end
+
+    1 program: ε
+    2        | statement NEWLINE program
+    3        | statement
+
+    4 statement: import
+    5          | assignment
+    6          | funcdef
+    7          | for
+    8          | cond
+    9          | return
+   10          | FUNCCALL
+   11          | NEWLINE
+
+   12 for: FOR IDENTIFIER IN FUNCCALL COLON NEWLINE INDENT program DEDENT program
+
+   13 cond: IF expr COLON NEWLINE INDENT program DEDENT program
+   14     | IF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+   17 import: IMPORT IDENTIFIER
+   18       | IMPORT IDENTIFIER AS IDENTIFIER
+   19       | FROM IDENTIFIER IMPORT IDENTIFIER
+   20       | FROM IDENTIFIER IMPORT IDENTIFIER AS IDENTIFIER
+
+   21 funcdef: DEF FUNCCALL COLON NEWLINE INDENT program DEDENT program
+
+   22 return: RETURN expr
+
+   23 assignment: expr ARITH_ASSIGN_OP expr
+   24           | expr ASSIGN expr
+
+   25 list: LSQ args RSQ
+
+   26 args: ε
+   27     | expr
+   28     | expr COMMA args
+
+   29 expr: IDENTIFIER
+   30     | FUNCCALL
+   31     | NUMBER
+   32     | STRING
+   33     | list
+   34     | IDENTIFIER list
+   35     | LPAREN expr RPAREN
+   36     | IDENTIFIER list COMMA IDENTIFIER list
+   37     | IDENTIFIER RELOP IDENTIFIER
+   38     | expr ARITH_OP expr
+   39     | expr RELOP expr
+   40     | expr LOP expr
+   41     | expr BOP expr
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256)
+    AS (258) 18 20
+    DEF (259) 21
+    FOR (260) 12
+    FROM (261) 19 20
+    IF (262) 13 14 15 16
+    IMPORT (263) 17 18 19 20
+    IN (264) 12
+    RETURN (265) 22
+    WHILE (266)
+    KEYWORD (267)
+    IDENTIFIER (268) 12 17 18 19 20 29 34 36 37
+    NUMBER (269) 31
+    STRING (270) 32
+    ARITH_ASSIGN_OP (271) 23
+    ARITH_OP (272) 38
+    RELOP (273) 37 39
+    LOP (274) 40
+    BOP (275) 41
+    ASSIGN (276) 24
+    NEWLINE (277) 2 11 12 13 14 15 16 21
+    INDENT (278) 12 13 14 15 16 21
+    DEDENT (279) 12 13 14 15 16 21
+    FUNCCALL (280) 10 12 21 30
+    SPL (281)
+    COLON (282) 12 13 14 15 16 21
+    COMMA (283) 28 36
+    LPAREN (284) 35
+    RPAREN (285) 35
+    LSQ (286) 25
+    RSQ (287) 25
+    ELIF (288) 15 16
+    ELSE (289) 14 16
+
+
+Nonterminals, with rules where they appear
+
+    $accept (35)
+        on left: 0
+    program (36)
+        on left: 1 2 3
+        on right: 0 2 12 13 14 15 16 21
+    statement (37)
+        on left: 4 5 6 7 8 9 10 11
+        on right: 2 3
+    for (38)
+        on left: 12
+        on right: 7
+    cond (39)
+        on left: 13 14 15 16
+        on right: 8
+    import (40)
+        on left: 17 18 19 20
+        on right: 4
+    funcdef (41)
+        on left: 21
+        on right: 6
+    return (42)
+        on left: 22
+        on right: 9
+    assignment (43)
+        on left: 23 24
+        on right: 5
+    list (44)
+        on left: 25
+        on right: 33 34 36
+    args (45)
+        on left: 26 27 28
+        on right: 25 28
+    expr (46)
+        on left: 29 30 31 32 33 34 35 36 37 38 39 40 41
+        on right: 13 14 15 16 22 23 24 27 28 35 38 39 40 41
+
+
+State 0
+
+    0 $accept: • program $end
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 1 (program)
+
+    program     go to state 14
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 1
+
+   21 funcdef: DEF • FUNCCALL COLON NEWLINE INDENT program DEDENT program
+
+    FUNCCALL  shift, and go to state 24
+
+
+State 2
+
+   12 for: FOR • IDENTIFIER IN FUNCCALL COLON NEWLINE INDENT program DEDENT program
+
+    IDENTIFIER  shift, and go to state 25
+
+
+State 3
+
+   19 import: FROM • IDENTIFIER IMPORT IDENTIFIER
+   20       | FROM • IDENTIFIER IMPORT IDENTIFIER AS IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 26
+
+
+State 4
+
+   13 cond: IF • expr COLON NEWLINE INDENT program DEDENT program
+   14     | IF • expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF • expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF • expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 28
+
+
+State 5
+
+   17 import: IMPORT • IDENTIFIER
+   18       | IMPORT • IDENTIFIER AS IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 29
+
+
+State 6
+
+   22 return: RETURN • expr
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 30
+
+
+State 7
+
+   29 expr: IDENTIFIER •
+   34     | IDENTIFIER • list
+   36     | IDENTIFIER • list COMMA IDENTIFIER list
+   37     | IDENTIFIER • RELOP IDENTIFIER
+
+    RELOP  shift, and go to state 31
+    LSQ    shift, and go to state 13
+
+    RELOP     [reduce using rule 29 (expr)]
+    $default  reduce using rule 29 (expr)
+
+    list  go to state 32
+
+
+State 8
+
+   31 expr: NUMBER •
+
+    $default  reduce using rule 31 (expr)
+
+
+State 9
+
+   32 expr: STRING •
+
+    $default  reduce using rule 32 (expr)
+
+
+State 10
+
+   11 statement: NEWLINE •
+
+    $default  reduce using rule 11 (statement)
+
+
+State 11
+
+   10 statement: FUNCCALL •
+   30 expr: FUNCCALL •
+
+    $end      reduce using rule 10 (statement)
+    NEWLINE   reduce using rule 10 (statement)
+    DEDENT    reduce using rule 10 (statement)
+    $default  reduce using rule 30 (expr)
+
+
+State 12
+
+   35 expr: LPAREN • expr RPAREN
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 33
+
+
+State 13
+
+   25 list: LSQ • args RSQ
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 26 (args)
+
+    list  go to state 22
+    args  go to state 34
+    expr  go to state 35
+
+
+State 14
+
+    0 $accept: program • $end
+
+    $end  shift, and go to state 36
+
+
+State 15
+
+    2 program: statement • NEWLINE program
+    3        | statement •
+
+    NEWLINE  shift, and go to state 37
+
+    NEWLINE   [reduce using rule 3 (program)]
+    $default  reduce using rule 3 (program)
+
+
+State 16
+
+    7 statement: for •
+
+    $default  reduce using rule 7 (statement)
+
+
+State 17
+
+    8 statement: cond •
+
+    $default  reduce using rule 8 (statement)
+
+
+State 18
+
+    4 statement: import •
+
+    $default  reduce using rule 4 (statement)
+
+
+State 19
+
+    6 statement: funcdef •
+
+    $default  reduce using rule 6 (statement)
+
+
+State 20
+
+    9 statement: return •
+
+    $default  reduce using rule 9 (statement)
+
+
+State 21
+
+    5 statement: assignment •
+
+    $default  reduce using rule 5 (statement)
+
+
+State 22
+
+   33 expr: list •
+
+    $default  reduce using rule 33 (expr)
+
+
+State 23
+
+   23 assignment: expr • ARITH_ASSIGN_OP expr
+   24           | expr • ASSIGN expr
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_ASSIGN_OP  shift, and go to state 38
+    ARITH_OP         shift, and go to state 39
+    RELOP            shift, and go to state 40
+    LOP              shift, and go to state 41
+    BOP              shift, and go to state 42
+    ASSIGN           shift, and go to state 43
+
+
+State 24
+
+   21 funcdef: DEF FUNCCALL • COLON NEWLINE INDENT program DEDENT program
+
+    COLON  shift, and go to state 44
+
+
+State 25
+
+   12 for: FOR IDENTIFIER • IN FUNCCALL COLON NEWLINE INDENT program DEDENT program
+
+    IN  shift, and go to state 45
+
+
+State 26
+
+   19 import: FROM IDENTIFIER • IMPORT IDENTIFIER
+   20       | FROM IDENTIFIER • IMPORT IDENTIFIER AS IDENTIFIER
+
+    IMPORT  shift, and go to state 46
+
+
+State 27
+
+   30 expr: FUNCCALL •
+
+    $default  reduce using rule 30 (expr)
+
+
+State 28
+
+   13 cond: IF expr • COLON NEWLINE INDENT program DEDENT program
+   14     | IF expr • COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF expr • COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr • COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+    COLON     shift, and go to state 47
+
+
+State 29
+
+   17 import: IMPORT IDENTIFIER •
+   18       | IMPORT IDENTIFIER • AS IDENTIFIER
+
+    AS  shift, and go to state 48
+
+    $default  reduce using rule 17 (import)
+
+
+State 30
+
+   22 return: RETURN expr •
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+
+    $default  reduce using rule 22 (return)
+
+
+State 31
+
+   37 expr: IDENTIFIER RELOP • IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 49
+
+
+State 32
+
+   34 expr: IDENTIFIER list •
+   36     | IDENTIFIER list • COMMA IDENTIFIER list
+
+    COMMA  shift, and go to state 50
+
+    COMMA     [reduce using rule 34 (expr)]
+    $default  reduce using rule 34 (expr)
+
+
+State 33
+
+   35 expr: LPAREN expr • RPAREN
+   38     | expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+    RPAREN    shift, and go to state 51
+
+
+State 34
+
+   25 list: LSQ args • RSQ
+
+    RSQ  shift, and go to state 52
+
+
+State 35
+
+   27 args: expr •
+   28     | expr • COMMA args
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+    COMMA     shift, and go to state 53
+
+    $default  reduce using rule 27 (args)
+
+
+State 36
+
+    0 $accept: program $end •
+
+    $default  accept
+
+
+State 37
+
+    2 program: statement NEWLINE • program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    NEWLINE   [reduce using rule 1 (program)]
+    $default  reduce using rule 1 (program)
+
+    program     go to state 54
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 38
+
+   23 assignment: expr ARITH_ASSIGN_OP • expr
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 55
+
+
+State 39
+
+   38 expr: expr ARITH_OP • expr
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 56
+
+
+State 40
+
+   39 expr: expr RELOP • expr
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 57
+
+
+State 41
+
+   40 expr: expr LOP • expr
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 58
+
+
+State 42
+
+   41 expr: expr BOP • expr
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 59
+
+
+State 43
+
+   24 assignment: expr ASSIGN • expr
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 60
+
+
+State 44
+
+   21 funcdef: DEF FUNCCALL COLON • NEWLINE INDENT program DEDENT program
+
+    NEWLINE  shift, and go to state 61
+
+
+State 45
+
+   12 for: FOR IDENTIFIER IN • FUNCCALL COLON NEWLINE INDENT program DEDENT program
+
+    FUNCCALL  shift, and go to state 62
+
+
+State 46
+
+   19 import: FROM IDENTIFIER IMPORT • IDENTIFIER
+   20       | FROM IDENTIFIER IMPORT • IDENTIFIER AS IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 63
+
+
+State 47
+
+   13 cond: IF expr COLON • NEWLINE INDENT program DEDENT program
+   14     | IF expr COLON • NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF expr COLON • NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON • NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    NEWLINE  shift, and go to state 64
+
+
+State 48
+
+   18 import: IMPORT IDENTIFIER AS • IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 65
+
+
+State 49
+
+   37 expr: IDENTIFIER RELOP IDENTIFIER •
+
+    $default  reduce using rule 37 (expr)
+
+
+State 50
+
+   36 expr: IDENTIFIER list COMMA • IDENTIFIER list
+
+    IDENTIFIER  shift, and go to state 66
+
+
+State 51
+
+   35 expr: LPAREN expr RPAREN •
+
+    $default  reduce using rule 35 (expr)
+
+
+State 52
+
+   25 list: LSQ args RSQ •
+
+    $default  reduce using rule 25 (list)
+
+
+State 53
+
+   28 args: expr COMMA • args
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 26 (args)
+
+    list  go to state 22
+    args  go to state 67
+    expr  go to state 35
+
+
+State 54
+
+    2 program: statement NEWLINE program •
+
+    $default  reduce using rule 2 (program)
+
+
+State 55
+
+   23 assignment: expr ARITH_ASSIGN_OP expr •
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+
+    $default  reduce using rule 23 (assignment)
+
+
+State 56
+
+   38 expr: expr • ARITH_OP expr
+   38     | expr ARITH_OP expr •
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+
+    ARITH_OP  [reduce using rule 38 (expr)]
+    RELOP     [reduce using rule 38 (expr)]
+    LOP       [reduce using rule 38 (expr)]
+    BOP       [reduce using rule 38 (expr)]
+    $default  reduce using rule 38 (expr)
+
+
+State 57
+
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   39     | expr RELOP expr •
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+
+    ARITH_OP  [reduce using rule 39 (expr)]
+    RELOP     [reduce using rule 39 (expr)]
+    LOP       [reduce using rule 39 (expr)]
+    BOP       [reduce using rule 39 (expr)]
+    $default  reduce using rule 39 (expr)
+
+
+State 58
+
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   40     | expr LOP expr •
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+
+    ARITH_OP  [reduce using rule 40 (expr)]
+    RELOP     [reduce using rule 40 (expr)]
+    LOP       [reduce using rule 40 (expr)]
+    BOP       [reduce using rule 40 (expr)]
+    $default  reduce using rule 40 (expr)
+
+
+State 59
+
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+   41     | expr BOP expr •
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+
+    ARITH_OP  [reduce using rule 41 (expr)]
+    RELOP     [reduce using rule 41 (expr)]
+    LOP       [reduce using rule 41 (expr)]
+    BOP       [reduce using rule 41 (expr)]
+    $default  reduce using rule 41 (expr)
+
+
+State 60
+
+   24 assignment: expr ASSIGN expr •
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+
+    $default  reduce using rule 24 (assignment)
+
+
+State 61
+
+   21 funcdef: DEF FUNCCALL COLON NEWLINE • INDENT program DEDENT program
+
+    INDENT  shift, and go to state 68
+
+
+State 62
+
+   12 for: FOR IDENTIFIER IN FUNCCALL • COLON NEWLINE INDENT program DEDENT program
+
+    COLON  shift, and go to state 69
+
+
+State 63
+
+   19 import: FROM IDENTIFIER IMPORT IDENTIFIER •
+   20       | FROM IDENTIFIER IMPORT IDENTIFIER • AS IDENTIFIER
+
+    AS  shift, and go to state 70
+
+    $default  reduce using rule 19 (import)
+
+
+State 64
+
+   13 cond: IF expr COLON NEWLINE • INDENT program DEDENT program
+   14     | IF expr COLON NEWLINE • INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF expr COLON NEWLINE • INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE • INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    INDENT  shift, and go to state 71
+
+
+State 65
+
+   18 import: IMPORT IDENTIFIER AS IDENTIFIER •
+
+    $default  reduce using rule 18 (import)
+
+
+State 66
+
+   36 expr: IDENTIFIER list COMMA IDENTIFIER • list
+
+    LSQ  shift, and go to state 13
+
+    list  go to state 72
+
+
+State 67
+
+   28 args: expr COMMA args •
+
+    $default  reduce using rule 28 (args)
+
+
+State 68
+
+   21 funcdef: DEF FUNCCALL COLON NEWLINE INDENT • program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 1 (program)
+
+    program     go to state 73
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 69
+
+   12 for: FOR IDENTIFIER IN FUNCCALL COLON • NEWLINE INDENT program DEDENT program
+
+    NEWLINE  shift, and go to state 74
+
+
+State 70
+
+   20 import: FROM IDENTIFIER IMPORT IDENTIFIER AS • IDENTIFIER
+
+    IDENTIFIER  shift, and go to state 75
+
+
+State 71
+
+   13 cond: IF expr COLON NEWLINE INDENT • program DEDENT program
+   14     | IF expr COLON NEWLINE INDENT • program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF expr COLON NEWLINE INDENT • program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT • program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 1 (program)
+
+    program     go to state 76
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 72
+
+   36 expr: IDENTIFIER list COMMA IDENTIFIER list •
+
+    $default  reduce using rule 36 (expr)
+
+
+State 73
+
+   21 funcdef: DEF FUNCCALL COLON NEWLINE INDENT program • DEDENT program
+
+    DEDENT  shift, and go to state 77
+
+
+State 74
+
+   12 for: FOR IDENTIFIER IN FUNCCALL COLON NEWLINE • INDENT program DEDENT program
+
+    INDENT  shift, and go to state 78
+
+
+State 75
+
+   20 import: FROM IDENTIFIER IMPORT IDENTIFIER AS IDENTIFIER •
+
+    $default  reduce using rule 20 (import)
+
+
+State 76
+
+   13 cond: IF expr COLON NEWLINE INDENT program • DEDENT program
+   14     | IF expr COLON NEWLINE INDENT program • DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF expr COLON NEWLINE INDENT program • DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program • DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    DEDENT  shift, and go to state 79
+
+
+State 77
+
+   21 funcdef: DEF FUNCCALL COLON NEWLINE INDENT program DEDENT • program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    NEWLINE   [reduce using rule 1 (program)]
+    $default  reduce using rule 1 (program)
+
+    program     go to state 80
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 78
+
+   12 for: FOR IDENTIFIER IN FUNCCALL COLON NEWLINE INDENT • program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 1 (program)
+
+    program     go to state 81
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 79
+
+   13 cond: IF expr COLON NEWLINE INDENT program DEDENT • program
+   14     | IF expr COLON NEWLINE INDENT program DEDENT • ELSE COLON NEWLINE INDENT program DEDENT program
+   15     | IF expr COLON NEWLINE INDENT program DEDENT • ELIF expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT • ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+    ELIF        shift, and go to state 82
+    ELSE        shift, and go to state 83
+
+    NEWLINE   [reduce using rule 1 (program)]
+    $default  reduce using rule 1 (program)
+
+    program     go to state 84
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 80
+
+   21 funcdef: DEF FUNCCALL COLON NEWLINE INDENT program DEDENT program •
+
+    $default  reduce using rule 21 (funcdef)
+
+
+State 81
+
+   12 for: FOR IDENTIFIER IN FUNCCALL COLON NEWLINE INDENT program • DEDENT program
+
+    DEDENT  shift, and go to state 85
+
+
+State 82
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF • expr COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF • expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    FUNCCALL    shift, and go to state 27
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    list  go to state 22
+    expr  go to state 86
+
+
+State 83
+
+   14 cond: IF expr COLON NEWLINE INDENT program DEDENT ELSE • COLON NEWLINE INDENT program DEDENT program
+
+    COLON  shift, and go to state 87
+
+
+State 84
+
+   13 cond: IF expr COLON NEWLINE INDENT program DEDENT program •
+
+    $default  reduce using rule 13 (cond)
+
+
+State 85
+
+   12 for: FOR IDENTIFIER IN FUNCCALL COLON NEWLINE INDENT program DEDENT • program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    NEWLINE   [reduce using rule 1 (program)]
+    $default  reduce using rule 1 (program)
+
+    program     go to state 88
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 86
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr • COLON NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr • COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+   38 expr: expr • ARITH_OP expr
+   39     | expr • RELOP expr
+   40     | expr • LOP expr
+   41     | expr • BOP expr
+
+    ARITH_OP  shift, and go to state 39
+    RELOP     shift, and go to state 40
+    LOP       shift, and go to state 41
+    BOP       shift, and go to state 42
+    COLON     shift, and go to state 89
+
+
+State 87
+
+   14 cond: IF expr COLON NEWLINE INDENT program DEDENT ELSE COLON • NEWLINE INDENT program DEDENT program
+
+    NEWLINE  shift, and go to state 90
+
+
+State 88
+
+   12 for: FOR IDENTIFIER IN FUNCCALL COLON NEWLINE INDENT program DEDENT program •
+
+    $default  reduce using rule 12 (for)
+
+
+State 89
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON • NEWLINE INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON • NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    NEWLINE  shift, and go to state 91
+
+
+State 90
+
+   14 cond: IF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE • INDENT program DEDENT program
+
+    INDENT  shift, and go to state 92
+
+
+State 91
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE • INDENT program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE • INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    INDENT  shift, and go to state 93
+
+
+State 92
+
+   14 cond: IF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT • program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 1 (program)
+
+    program     go to state 94
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 93
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT • program DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT • program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 1 (program)
+
+    program     go to state 95
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 94
+
+   14 cond: IF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program • DEDENT program
+
+    DEDENT  shift, and go to state 96
+
+
+State 95
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program • DEDENT program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program • DEDENT ELSE COLON NEWLINE INDENT program DEDENT program
+
+    DEDENT  shift, and go to state 97
+
+
+State 96
+
+   14 cond: IF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT • program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    NEWLINE   [reduce using rule 1 (program)]
+    $default  reduce using rule 1 (program)
+
+    program     go to state 98
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 97
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT • program
+   16     | IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT • ELSE COLON NEWLINE INDENT program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+    ELSE        shift, and go to state 99
+
+    NEWLINE   [reduce using rule 1 (program)]
+    $default  reduce using rule 1 (program)
+
+    program     go to state 100
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 98
+
+   14 cond: IF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program •
+
+    $default  reduce using rule 14 (cond)
+
+
+State 99
+
+   16 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE • COLON NEWLINE INDENT program DEDENT program
+
+    COLON  shift, and go to state 101
+
+
+State 100
+
+   15 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT program •
+
+    $default  reduce using rule 15 (cond)
+
+
+State 101
+
+   16 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON • NEWLINE INDENT program DEDENT program
+
+    NEWLINE  shift, and go to state 102
+
+
+State 102
+
+   16 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE • INDENT program DEDENT program
+
+    INDENT  shift, and go to state 103
+
+
+State 103
+
+   16 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT • program DEDENT program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    $default  reduce using rule 1 (program)
+
+    program     go to state 104
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 104
+
+   16 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program • DEDENT program
+
+    DEDENT  shift, and go to state 105
+
+
+State 105
+
+   16 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT • program
+
+    DEF         shift, and go to state 1
+    FOR         shift, and go to state 2
+    FROM        shift, and go to state 3
+    IF          shift, and go to state 4
+    IMPORT      shift, and go to state 5
+    RETURN      shift, and go to state 6
+    IDENTIFIER  shift, and go to state 7
+    NUMBER      shift, and go to state 8
+    STRING      shift, and go to state 9
+    NEWLINE     shift, and go to state 10
+    FUNCCALL    shift, and go to state 11
+    LPAREN      shift, and go to state 12
+    LSQ         shift, and go to state 13
+
+    NEWLINE   [reduce using rule 1 (program)]
+    $default  reduce using rule 1 (program)
+
+    program     go to state 106
+    statement   go to state 15
+    for         go to state 16
+    cond        go to state 17
+    import      go to state 18
+    funcdef     go to state 19
+    return      go to state 20
+    assignment  go to state 21
+    list        go to state 22
+    expr        go to state 23
+
+
+State 106
+
+   16 cond: IF expr COLON NEWLINE INDENT program DEDENT ELIF expr COLON NEWLINE INDENT program DEDENT ELSE COLON NEWLINE INDENT program DEDENT program •
+
+    $default  reduce using rule 16 (cond)

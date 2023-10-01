@@ -1,0 +1,37 @@
+<html >
+<head>
+<title>Class Average Program</title>  
+  
+<script type = "text/javascript">
+	var total,          // sum of grades
+	gradeCounter,   // number of grades entered
+	gradeValue,     // grade value
+	average,        // average of all grades
+	grade;          // grade typed by user
+    
+	total = 0;          // clear total
+	gradeCounter = 1;   // prepare to loop
+	
+	while ( gradeCounter <= 3 ) 
+	{  // loop 10 times
+  
+		grade = window.prompt("Enter integer grade:","0");
+		gradeValue = parseInt( grade );
+		// add gradeValue to total
+		total = total + gradeValue;  
+    // add 1 to gradeCounter
+		gradeCounter = gradeCounter + 1;
+	}
+      
+	// Termination Phase
+	average = total / 3;  // calculate the average
+   
+	// display average of exam grades
+	document.writeln( 
+		"<h1>Class average is " + average + "</h1>" );
+	</script>
+   
+</head>   
+<body>
+</body>
+</html>

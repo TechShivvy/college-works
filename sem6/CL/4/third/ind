@@ -1,0 +1,32 @@
+int c, indent;
+    while ((c = getchar()) != EOF && (c == ' ' || c == '\t')) {
+        if (c == '\t') {
+            indent = 8 - (indent_top % 8);
+        } else {
+            indent = 1;
+        }
+        while (indent-- > 0) {
+            putchar(c);
+        }
+        indent_top += indent;
+    }
+    if (c != EOF) {
+        ungetc(c, stdin);
+        yyless(0); // go back one position
+    }
+    if (indent_top != indent_stack[indent_top - 1]) {
+        if (indent_top > indent_stack[indent_top - 1]) {
+            indent_stack[indent_top++] = indent_top;
+            return INDENT;
+        } else {
+            while (indent_top < indent_stack[indent_top - 1]) {
+                indent_top++;
+                if (indent_top == 1) {
+                    fprintf(stderr, "Error: bad indentation on line %d\n", lineno);
+                    exit(1);
+                }
+                return DEDENT;
+            }
+        }
+    }
+    return NEWLINE;

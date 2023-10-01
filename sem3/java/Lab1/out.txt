@@ -1,0 +1,422 @@
+~/demo$ gcc studappl.c
+~/demo$ ./a.out
+No of Records to be Inserted: 2
+
+Enter Student details: 
+
+Enter Roll No: 2
+Enter Name:Shiv
+Enter mark 1,2 and 3: 80 90 70
+
+Enter Roll No: 4
+Enter Name:Sid
+Enter mark 1,2 and 3: 91 92 93
+
+Records: 
+
+Name: Shiv
+Rno: 2
+Mark 1: 80
+Mark 2: 90
+Mark 3: 70
+Total : 240
+Result: P
+
+Name: Sid
+Rno: 4
+Mark 1: 91
+Mark 2: 92
+Mark 3: 93
+Total : 276
+Result: P
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 1
+
+At Front: 
+
+New Student Details: 
+Enter Roll No: 3
+Enter Name:Srini
+Enter mark 1,2 and 3: 91 95 99
+
+Records: 
+
+Name: Srini
+Rno: 3
+Mark 1: 91
+Mark 2: 95
+Mark 3: 99
+Total : 285
+Result: P
+
+Name: Shiv
+Rno: 2
+Mark 1: 80
+Mark 2: 90
+Mark 3: 70
+Total : 240
+Result: P
+
+Name: Sid
+Rno: 4
+Mark 1: 91
+Mark 2: 92
+Mark 3: 93
+Total : 276
+Result: P
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 2
+
+At End: 
+
+New Student Details: 
+Enter Roll No: 1
+Enter Name:Hitesh
+Enter mark 1,2 and 3: 99 99 99
+
+Records: 
+
+Name: Srini
+Rno: 3
+Mark 1: 91
+Mark 2: 95
+Mark 3: 99
+Total : 285
+Result: P
+
+Name: Shiv
+Rno: 2
+Mark 1: 80
+Mark 2: 90
+Mark 3: 70
+Total : 240
+Result: P
+
+Name: Sid
+Rno: 4
+Mark 1: 91
+Mark 2: 92
+Mark 3: 93
+Total : 276
+Result: P
+
+Name: Hitesh
+Rno: 1
+Mark 1: 99
+Mark 2: 99
+Mark 3: 99
+Total : 297
+Result: P
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 3
+
+After RegNo: 
+
+Insert at: 4
+
+New Student Details: 
+Enter Roll No: 7
+Enter Name:Samuel
+Enter mark 1,2 and 3: 50 40 30
+
+Records: 
+
+Name: Srini
+Rno: 3
+Mark 1: 91
+Mark 2: 95
+Mark 3: 99
+Total : 285
+Result: P
+
+Name: Shiv
+Rno: 2
+Mark 1: 80
+Mark 2: 90
+Mark 3: 70
+Total : 240
+Result: P
+
+Name: Sid
+Rno: 4
+Mark 1: 91
+Mark 2: 92
+Mark 3: 93
+Total : 276
+Result: P
+
+Name: Samuel
+Rno: 7
+Mark 1: 50
+Mark 2: 40
+Mark 3: 30
+Total : 120
+Result: F
+
+Name: Hitesh
+Rno: 1
+Mark 1: 99
+Mark 2: 99
+Mark 3: 99
+Total : 297
+Result: P
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 4
+
+Search Name: 
+
+Enter Name: Shiv
+
+
+TESTING: Shiv
+
+
+Records: 
+
+Name: Shiv
+Rno: 2
+Mark 1: 80
+Mark 2: 90
+Mark 3: 70
+Total : 240
+Result: P
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 3
+
+After RegNo: 
+
+Insert at: 2
+
+New Student Details: 
+Enter Roll No: 10  
+Enter Name:Samuel
+Enter mark 1,2 and 3: 91 91 91
+
+Records: 
+
+Name: Srini
+Rno: 3
+Mark 1: 91
+Mark 2: 95
+Mark 3: 99
+Total : 285
+Result: P
+
+Name: Samuel
+Rno: 10
+Mark 1: 91
+Mark 2: 91
+Mark 3: 91
+Total : 273
+Result: P
+
+Name: Shiv
+Rno: 2
+Mark 1: 80
+Mark 2: 90
+Mark 3: 70
+Total : 240
+Result: P
+
+Name: Sid
+Rno: 4
+Mark 1: 91
+Mark 2: 92
+Mark 3: 93
+Total : 276
+Result: P
+
+Name: Samuel
+Rno: 7
+Mark 1: 50
+Mark 2: 40
+Mark 3: 30
+Total : 120
+Result: F
+
+Name: Hitesh
+Rno: 1
+Mark 1: 99
+Mark 2: 99
+Mark 3: 99
+Total : 297
+Result: P
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 4
+
+Search Name: 
+
+Enter Name: Samuel
+
+
+TESTING: Samuel
+
+
+
+TESTING: Samuel
+
+
+Records: 
+
+Name: Samuel
+Rno: 10
+Mark 1: 91
+Mark 2: 91
+Mark 3: 91
+Total : 273
+Result: P
+
+Name: Samuel
+Rno: 7
+Mark 1: 50
+Mark 2: 40
+Mark 3: 30
+Total : 120
+Result: F
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 4
+
+Search Name: 
+
+Enter Name: malini
+
+Records: 
+
+Name: N/A
+Rno: 0
+Mark 1: 0
+Mark 2: 0
+Mark 3: 0
+Total : 0
+Result: �
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 5
+
+Deletion: 
+
+Enter Reg. No.: 10
+
+Records: 
+
+Name: Srini
+Rno: 3
+Mark 1: 91
+Mark 2: 95
+Mark 3: 99
+Total : 285
+Result: P
+
+Name: Shiv
+Rno: 2
+Mark 1: 80
+Mark 2: 90
+Mark 3: 70
+Total : 240
+Result: P
+
+Name: Sid
+Rno: 4
+Mark 1: 91
+Mark 2: 92
+Mark 3: 93
+Total : 276
+Result: P
+
+Name: Samuel
+Rno: 7
+Mark 1: 50
+Mark 2: 40
+Mark 3: 30
+Total : 120
+Result: F
+
+Name: Hitesh
+Rno: 1
+Mark 1: 99
+Mark 2: 99
+Mark 3: 99
+Total : 297
+Result: P
+
+Menu: 
+
+1.Insert a record at Front
+2.Insert a Record at Back
+3.After a RegNo
+4.Search Name
+5.Delete a REcord
+8.Exit
+
+Enter your choice: 8

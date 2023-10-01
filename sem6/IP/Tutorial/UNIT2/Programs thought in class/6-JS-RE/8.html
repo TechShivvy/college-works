@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="myFunction()">Try it</button><p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  
+  <script>
+    function myFunction() {
+	    // Matches any string that contains at least one o
+	    var str = "Hellooo World! Helloo"; 
+	    var patt1 = /o+/g;
+	    var result = str.match(patt1);
+	    document.getElementById("demo").innerHTML = result;
+	
+      //Matches any string that contains zero or more occurrences of o
+	    var str = "Hellooo World! Helloo"; 
+	    var patt1 = /lo*/g;
+	    var result = str.match(patt1);
+	    document.getElementById("demo1").innerHTML = result;
+	
+      //Matches any string that contains zero or one occurrences of 0
+	    var str = "1, 100 or 1000?";
+	    var patt1 = /10?/g;
+	    var result = str.match(patt1);
+	    document.getElementById("demo2").innerHTML = result;
+    }
+  </script>
+</body>
+</html>

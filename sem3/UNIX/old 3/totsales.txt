@@ -1,0 +1,12 @@
+March: 43
+October: 101
+August: 58
+June: 149
+May: 97
+February: 64
+November: 34
+January: 32
+April: 0
+December: 0
+September: 0
+July: 23

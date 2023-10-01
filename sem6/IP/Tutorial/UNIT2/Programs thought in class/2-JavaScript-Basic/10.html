@@ -1,0 +1,23 @@
+<html >
+<head>
+<title>Calculating Compound Interest</title>
+ <script type = "text/javascript">
+
+var amount, principal = 1000.0, rate = .05;
+document.writeln("<table border=\"1\"width=\"50%\">");
+document.writeln( "<caption>Calculating Compound 					Interest</caption>" );
+document.writeln("<tr><th align = \"left\">Year</th>" );
+document.writeln("<th align = \"left\">Amount on deposit</th>" );
+document.writeln( "</tr>" );
+for ( var year = 1; year <= 10; ++year ) 
+{
+amount = principal * Math.pow( 1.0 + rate, year );
+document.writeln( "<tr><td>" + year + 
+	"</td><td>" + Math.round( amount * 100 ) / 100 + 
+	"</td></tr>" );
+}
+document.writeln( "</table>" );
+</script>
+
+</head><body></body>
+</html>

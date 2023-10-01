@@ -1,0 +1,477 @@
+Script started on 2022-02-11 23:27:10+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="86" LINES="24"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat [K[K[K[Kgrep Ch6S1F1[C[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1e Ch6S1F1d Ch6S1F1t Ch6S1F1
+
+Command 'gedt' not found, did you mean:
+
+  command 'gedit' from snap gedit (3.36.2+git14.c07b37c55)
+  command 'gedit' from deb gedit (3.36.2-0ubuntu1)
+
+See 'snap info <snapname>' for additional versions.
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedt Ch6S1F1[1@i
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -o Ch6S1F1
+^Z
+[1]+  Stopped                 sort -o Ch6S1F1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -o Ch6S1F1[C[C[1P Ch6S1F1[1P Ch6S1F1[1PCh6S1F1
+1425 Juan 14.25 
+1451 Ben 21.77 
+2277 Tuan 18.77
+4321 George 21.11 
+6781 Anna 16.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort Ch6S1F1[K[K[K[K[K[K[K[K[K[K[K[Ksort -d' ' Ch6S1F1
+sort: invalid option -- ' '
+Try 'sort --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -d' ' Ch6S1F1[1P[1@t
+1425 Juan 14.25 
+1451 Ben 21.77 
+2277 Tuan 18.77
+4321 George 21.11 
+6781 Anna 16.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -t' ' Ch6S1F1[C[1P Ch6S1F1[1PCh6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1- Ch6S1F1o Ch6S1F1[C[C[C[C[C[C[C[C Ch6S1F1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S1F1
+1425 Juan 14.25 
+1451 Ben 21.77 
+2277 Tuan 18.77
+4321 George 21.11 
+6781 Anna 16.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S1F1[K[K[K[K[K[K[K[K[K[K[Ksort [K[K[K[K[Kcat |[K[K[K[K[Kcut -[K-c5-4[K11[K0,11[K2-15[K6 Ch6S1F1
+ Juan 4.25 
+ Ben 2.77 
+ Tuan 8.77
+ Georg 21.1
+ Anna 6.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -c5-10,12-16 Ch6S1F1[1P[1@6
+Juan 4.25 
+Ben 2.77 
+Tuan 8.77
+Georg 21.1
+Anna 6.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -c6-10,12-16 Ch6S1F1| paste f1[K2 f1
+paste: f2: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -c6-10,12-16 Ch6S1F1| paste f2 f1[1@-[C[C[C[C[1P1[1P1,1
+paste: invalid option -- 'f'
+Try 'paste --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -c6-10,12-16 Ch6S1F1| paste -f2,1[C[C[Cf2 f1[K5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pat[C[C[C[C[C[C[C[C[13@ut -c5-10,12-16[C[C[C[C[C[C[C[C[C[C[C[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1- Ch6S1F1f Ch6S1F13 Ch6S1F1, Ch6S1F12 Ch6S1F1
+1425 Juan 14.25 
+1451 Ben 21.77 
+2277 Tuan 18.77
+4321 George 21.11 
+6781 Anna 16.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -f3,2 Ch6S1F1[1P Ch6S1F1[1P Ch6S1F1
+1425 Juan 14.25 
+1451 Ben 21.77 
+2277 Tuan 18.77
+4321 George 21.11 
+6781 Anna 16.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -f3 Ch6S1F1[1@ 
+1425 Juan 14.25 
+1451 Ben 21.77 
+2277 Tuan 18.77
+4321 George 21.11 
+6781 Anna 16.77 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -f 3 Ch6S1F1[C[C[C[C[C[1@-[1@d[1@'[1@ [1@'[1@ 
+14.25
+21.77
+18.77
+21.11
+16.77
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f 3 Ch6S1F1[C[1P[C[1P Ch6S1F11 Ch6S1F1, Ch6S1F13 Ch6S1F1, Ch6S1F12 Ch6S1F1
+1425 Juan 14.25
+1451 Ben 21.77
+2277 Tuan 18.77
+4321 George 21.11
+6781 Anna 16.77
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3,2 Ch6S1F1[1@ 
+1425 Juan 14.25
+1451 Ben 21.77
+2277 Tuan 18.77
+4321 George 21.11
+6781 Anna 16.77
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f 1,3,2 Ch6S1F1[C[1P[1P[1P
+Juan 14.25
+Ben 21.77
+Tuan 18.77
+George 21.11
+Anna 16.77
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f3,2 Ch6S1F1[C[C[1P Ch6S1F1[1P Ch6S1F1[1P Ch6S1F11 Ch6S1F1, Ch6S1F13 Ch6S1F1
+1425 14.25
+1451 21.77
+2277 18.77
+4321 21.11
+6781 16.77
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3 Ch6S1F1| paste [K[K[K[K[K[K[K[K[K1 ; [K[K[K[K1>temp && ci[Kut -d -f1[K2 Ch6S1F1|[K | paste temp
+1425 14.25
+1451 21.77
+2277 18.77
+4321 21.11
+6781 16.77
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3 Ch6S1F1>temp && cut -d -f2 Ch6S1F1 | paste temp[1@'[C[1@ [1@'
+1425 14.25
+1451 21.77
+2277 18.77
+4321 21.11
+6781 16.77
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3 Ch6S1F1>temp && cut -d' ' -f2 Ch6S1F1 | paste tempctempatemp[Ctemp>temp
+paste: cat: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3 Ch6S1F1>temp && cut -d' ' -f2 Ch6S1F1 | paste cat>temp[C[C[C[1Ptemp[1Pemp[1Ptemp[1Ptemp
+1425 14.25
+1451 21.77
+2277 18.77
+4321 21.11
+6781 16.77
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3 Ch6S1F1>temp && cut -d' ' -f2 Ch6S1F1 | paste temp[C[C->tem p2
+paste: temp-: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3 Ch6S1F1>temp && cut -d' ' -f2 Ch6S1F1 | paste temp->temp2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ->temp2[A]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cut -d' ' -f1,3 Ch6S1F1>temp && cut -d' ' -f2 Ch6S1F1 | paste temp ->temp2[K[A]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat temp2
+1425 14.25	Juan
+1451 21.77	Ben
+2277 18.77	Tuan
+4321 21.11	George
+6781 16.77	Anna
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat temp2[C[C[C[C[C[K[K[K[K[K[K[K[K[Kgedit [Kgedit cut -d' ' -f1,3 Ch6S1F1>temp && cut -d' ' -f2 Ch6S1F1 | paste temp ->temp[A]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C->temp2[A]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>temp[4Ptemp[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K3,2[C[C[C[C[C[C[C[C[3@ 1,[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[3P 3[C[C[C[C[C[C[C[C[6P[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C,2 Ch6S1F1c6-10,12-16 Ch6S1F1| paste -f2,1f2 f1[K5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pat[C[C[C[C[C[C[C[C[12@sort -o Ch6S1F1[C[C[C[C[C[C[C[C[5Pt' '[C[C[C[C[C[C[C[Cd[C[C[C[C[C[C[C[C[C[C[C[6PCh6S1F1-o Ch6S1F1[2Pgedit[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[1@i[C[C[C[C[C[C[C[C[C[K2[K1[C[1PF12F1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ tac Ch6S2f1[K[KF1
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+COUNTS CHARACTERS} WORDS, OR’LINES
+DELETES DUPLICATE LINES
+TRANSLATES ONE OR MORE CHARACTERS
+PASSES NUMBER OF SPECIFIED LINES AT THE END OF DATA
+ARRANGES DATA IN SEQUENCE
+COMBINES COLUMNS
+PASSES NUMBER OF SPECIFIED LINES AT BEGINNING
+PASSES ONLY SPECIFIED COLUMNS
+PASSES ALL DATA FROM INPUT TO OUTPUT
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ tac Ch6S2F1>Ch6S2F1enx[Kcr[C[1PncrEncr
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ tac Ch6S2F1>Ch6S2F1Encr[K[2@gedit[C[C[C[C[C[C[C[C[KCh6S2F1[C[C[K2[K[1PF3F[C1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit Ch6S3F1[K[K[K[K[K[K[K[K[K[K[K[K[Ktr '[A-Z']'\'[1P'[C[C[C[K[1P[A-Z][C[C[C[C[C [F-ZA-E] Ch[K[K[1@c[1@a[C[1@t[1@|[1P[1@ [1@C[1@h[1@6[1@S[1@3[1@F[1@1[1@|[1@ 
+FQUMFGJYNHFQ KFHYX.
+YMJ KNWXY YMWJJ QJYYJWX FWJ FGH.
+YMJ RJINFS QJYYJWX FWJ RS.
+YMJ QFXY YMWJJ QJYYJWX FWJ CDE.
+YMJ KNWXY BTWI NS RD INHYNTSFWD NX FFQ.
+YMJ QFXY BTWI NS RD INHYNTSFWD NX EDYMZR.
+YMJ VZNHP GWTBS KTC OZRUJI TAJW YMJ QFED ITL.
+YMJ QFXY QJYYJW RFD GJ UWTSTZSHJI EJJ TW EJI.
+YMJ KNWXY LWJJP QJYYJW NX FQUMF.
+YMJ QFXY LWJJP QJYYJW NX TRJLF.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1| tr [A-Z] [F-ZA-E] [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pgedit Ch6S3F1tac Ch6S2F1>Ch6S2F1Encr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pgedit Ch6S3F1[C[1PF14F1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep -c Ch6S4f[KF1
+^[[A^Z
+[2]+  Stopped                 grep --color=auto -c Ch6S4F1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep -c Ch6S4F1`[C[C[C[C[C[C[C[K'Ch6S4F1.Ch6S4F1'Ch6S4F1 Ch6S4F1
+7
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort so[K[K-o [K[K[KCh6F[KS4F1
+1122 23.55 28 
+1420 12.56 45 
+1443 23.23 19 
+2341 45.12 34 
+2351 67.90 56 
+3456 14.56 22 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort Ch6S4F1[K[K[K[K[K[K[K[K[K[K[K[Ksort -r [Kk[K[K[K[K[K[K[K[Kcat [K[K[K[Ksort -nrk2,2 ch6[K[K[KCh6S4F1|head 1
+head: cannot open '1' for reading: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk2,2 Ch6S4F1|head 1[1@ [C[C[C[C[C[C-1[C[K1
+2351 67.90 56 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk3,3 Ch6S2[K4F1| head [K[K[K[K[Kcut -f1[C-f1d-f1'-f1'-f1[1P-f1[1P-f1[1P-f1[1Pf1[C[C[C
+2351 67.90 56 
+1420 12.56 45 
+2341 45.12 34 
+1122 23.55 28 
+3456 14.56 22 
+1443 23.23 19 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk3,3 Ch6S4F1| cut -f1[C-f1d-f1'-f1'-f1 -f1
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk3,3 Ch6S4F1| cut -d'' -f1[C[1@ 
+2351
+1420
+2341
+1122
+3456
+1443
+8001
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk3,3 Ch6S4F1| cut -d' ' -f1[K[K[K[K[K[K[K[K[K[K[K[K[Khead -c4
+2351]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk3,3 Ch6S4F1| head -c4[1@-[1@f[1@1[1@ [C[C[C[C[C[C[1@-[1@d[1@ [1@'[1P[1P[1@;[1P[1@'[1@ [1@'[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K1
+sort: invalid option -- '1'
+Try 'sort --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk3,3 -f1 Ch6S4F1| head -1[C[K[K-1
+sort: invalid option -- '1'
+Try 'sort --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -nrk3,3 -f1 Ch6S4F1| head -1[C[C[C[C[C[1P[1P[1P[C[1@-[1@f[1@1[1@ 
+sort: invalid option -- '1'
+Try 'sort --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -f1 -nrk3,3  Ch6S4F1| head -1[1P[1P[1P
+2351 67.90 56 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort  -nrk3,3  Ch6S4F1| head -1[C[C[C[C[C[C[C[C[C[C[19P[1P[1P[1P[1P[1P[1P[1P[1P[1P -1[1P-1[1P1[Kcat>summa
+1 4
+1 5
+7 4
+3 1
+3 5
+  3 2
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort summa
+1 4
+1 5
+3 1
+3 2
+3 5
+7 4
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m summa[K[K[K[K[K[K[K[K[K[Kp Ch6S4F1 Ch6S5F1[1@c
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m Ch6S4F1 Ch6S5F1
+1420 12.56 45 
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ uniq Ch6S4F1[C[C[K[K[K[K[K[K[K[K[K[K[K[Ksort -m Ch6S4F1 Ch6S5F1>Ch6F[KS5F2
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m Ch6S4F1 Ch6S5F1>Ch6S5F2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCh6S5F2[KuCh6S5F2nCh6S5F2iCh6S5F2qCh6S5F2 Ch6S5F2
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ uniq Ch6S5F2sort -m Ch6S4F1 Ch6S5F1>Ch6S5F2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat>Ch6S5F2
+1420    12.56	45
+2456	14.56	22
+2341	45.12	34
+1322	23.56	28
+1443	23.23	19
+2351	67.90	56
+3467	56.90	14
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>Ch6S5F2uniq Ch6S5F2sort -m Ch6S4F1 Ch6S5F1>Ch6S5F2[C[C[1P>Ch6S5F22>Ch6S5F2[1P>Ch6S5F22>Ch6S5F2[C[1P[1@5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K3[K[K[K[K[K[K[K[K
+1420 12.56 45 
+1420    12.56	452456	14.56	222341	45.12	341322	23.56	281443	23.23	192351	67.90	563467	56.90	141420    12.56	45
+2456	14.56	22
+2341	45.12	34
+1322	23.56	28
+1443	23.23	19
+2351	67.90	56
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+3467	56.90	14
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m Ch6S5F1 Ch6S5F2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat>Ch6S5F2[1PCh6S5F2 Ch6S5F2
+1420    12.56	452456	14.56	222341	45.12	341322	23.56	281443	23.23	192351	67.90	563467	56.90	141420    12.56	45
+2456	14.56	22
+2341	45.12	34
+1322	23.56	28
+1443	23.23	19
+2351	67.90	56
+3467	56.90	14
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S5F2[1PCh6S5F2>Ch6S5F2[C[C[C[C[C[C[C
+1420    12.56	45
+2456	14.56	22
+2341	45.12	34
+1322	23.56	28
+1443	23.23	19
+2351	67.90	56
+3467	56.90	14
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>Ch6S5F2[1PCh6S5F2 Ch6S5F2
+1420    12.56	45
+2456	14.56	22
+2341	45.12	34
+1322	23.56	28
+1443	23.23	19
+2351	67.90	56
+3467	56.90	14
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S5F2[C[C[1PF25F2[C[C[K1
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S5F12>Ch6S5F2 Ch6S5F2[12@sort -m Ch6S5F1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat>Ch6S5F2uniq Ch6S5F2sort -m Ch6S4F1 Ch6S5F1>Ch6S5F2[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pcp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Psort summacp Ch6S4F1 Ch6S5F1[5@sort -m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>Ch6S5F2[K[C[1P[1@5[C[C[C[C[C[C[C[C[C[1P1F1[C[K2
+1420    12.56	45
+1420 12.56 45 
+2456	14.56	22
+2341	45.12	34
+1322	23.56	28
+1443	23.23	19
+2351	67.90	56
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+3467	56.90	14
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m Ch6S5F1 Ch6S5F2[C[1P[1P[1P[1P[1P[1P[1P[1@c[1@a[1@t
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+1420    12.56	45
+2456	14.56	22
+2341	45.12	34
+1322	23.56	28
+1443	23.23	19
+2351	67.90	56
+3467	56.90	14
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit Ch6S5F2
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit Ch6S5F2[C[C[C[K1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit Ch6S5F12
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit Ch6S5F212[6@cat Ch6S5F1[C[C[C[C[C[C[C[C[4@sort -m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+1420 12.56 45
+2456 14.56 22
+2341 45.12 34
+1322 23.56 28
+1443 23.23 19
+2351 67.90 56
+3467 56.90 14
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S5F1 Ch6S5F2[6Pgedit[C[C[C[C[C[C[C[C12[6@cat Ch6S5F1[C[C[C[C[C[C[C[C[4@sort -m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat Ch6S5F1sort -m Ch6S5F1 Ch6S5F2
+1420 12.56 45
+1420 12.56 45 
+2456 14.56 22
+2341 45.12 34
+1322 23.56 28
+1443 23.23 19
+2351 67.90 56
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+3467 56.90 14
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m Ch6S5F1 Ch6S5F2[1P[1P[1P[1P[1P[1P[1P[1@u[1@n[1@i[1@q[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ uniq Ch6S5F1 Ch6S5F2> [K[K[K2
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ uniq Ch6S5F1 Ch6S5F2[3@sort -m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pgedit[C[C[C[C[C[C[C[C12[6@cat Ch6S5F1[C[C[C[C[C[C[C[C[4@sort -m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat Ch6S5F12
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S5F2[9@uniq Ch6S5F1[C[C[C[C[C[C[C[C[3@sort -m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pgedit[C[C[C[C[C[C[C[C12[6@cat Ch6S5F1[C[C[C[C[C[C[C[C[4@sort -m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat Ch6S5F12>Ch6S5F2 Ch6S5F2[12@sort -m Ch6S5F1[C[C[C[C[C[C[C[C>Ch6S5F3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m Ch6S5F1 Ch6S5F2>Ch6S5F3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCh6S5F3[KuCh6S5F3nCh6S5F3iCh6S5F3qCh6S5F3 Ch6S5F3
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ uniq Ch6S5F3sort -m Ch6S5F1 Ch6S5F2>Ch6S5F3[C[1@ [1@-[1@k[1@1[1@,[1@1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -m -k1,1 Ch6S5F1 Ch6S5F2>Ch6S5F3[1@d
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -md -k1,1 Ch6S5F1 Ch6S5F2>Ch6S5F3[C[1@'[C[1@ [1@'
+sort: invalid option -- ' '
+Try 'sort --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -md' ' -k1,1 Ch6S5F1 Ch6S5F2>Ch6S5F3[1P[1P[1P[1P[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksort -md -k1,1 Ch6S5F1 Ch6S5F2>Ch6S5F3[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K -k1,1 Ch6S5F1 Ch6S5F2>Ch6S5F3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuniq Ch6S5F3[Ksort -m -k1,1 Ch6S5F1 Ch6S5F2>Ch6S5F3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch5[K6f1[K[KF6[K5S[K[K[KS5F3
+1420 12.56 45 
+1420 12.56 45 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+3456 14.56 22 
+2341 45.12 34 
+1122 23.55 28 
+1443 23.23 19 
+2351 67.90 56 
+8001 7.00 14 
+8001 7.00 14 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit C6[Kh6S6F1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -n2[Kk1,3 Ch6S6F1
+BUS 34 2 20
+CIS 15 1 45
+CIS 45 1 38
+CIS 54 1 20
+CIS 54 2 67
+ENG 11 2 89
+MTH 35 1 56
+MTH 35 2 41
+PE  17 2 25
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ clea[K[K[K[Kend[Kd
+
+Command 'end' not found, did you mean:
+
+  command 'gnd' from snap gnd (master)
+  command 'bnd' from deb bnd (3.5.0-4)
+  command 'nd' from deb nd (0.8.2-8build1)
+  command 'env' from deb coreutils (8.30-3ubuntu2)
+  command 'ed' from deb ed (1.16-1)
+  command 'eid' from deb id-utils (4.6+git20120811-4ubuntu2)
+  command 'snd' from deb snd-gtk-jack (20.1-1)
+  command 'snd' from deb snd-gtk-pulse (20.1-1)
+  command 'snd' from deb snd-nox (20.1-1)
+  command 'ent' from deb ent (1.2debian-2)
+  command 'send' from deb mailutils-mh (1:3.7-2.1)
+  command 'send' from deb mmh (0.4-2)
+  command 'send' from deb nmh (1.7.1-6)
+
+See 'snap info <snapname>' for additional versions.
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit s[K
+exit
+There are stopped jobs.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ s\[K[Kend
+
+Command 'end' not found, did you mean:
+
+  command 'gnd' from snap gnd (master)
+  command 'env' from deb coreutils (8.30-3ubuntu2)
+  command 'bnd' from deb bnd (3.5.0-4)
+  command 'send' from deb mailutils-mh (1:3.7-2.1)
+  command 'send' from deb mmh (0.4-2)
+  command 'send' from deb nmh (1.7.1-6)
+  command 'ed' from deb ed (1.16-1)
+  command 'nd' from deb nd (0.8.2-8build1)
+  command 'eid' from deb id-utils (4.6+git20120811-4ubuntu2)
+  command 'snd' from deb snd-gtk-jack (20.1-1)
+  command 'snd' from deb snd-gtk-pulse (20.1-1)
+  command 'snd' from deb snd-nox (20.1-1)
+  command 'ent' from deb ent (1.2debian-2)
+
+See 'snap info <snapname>' for additional versions.
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exir [Kt[K[Kt script
+exit
+There are stopped jobs.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit script[K[K[K[K[K[K[K
+exit
+
+Script done on 2022-02-12 00:56:04+05:30 [COMMAND_EXIT_CODE="1"]

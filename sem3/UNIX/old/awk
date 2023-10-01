@@ -1,0 +1,101 @@
+Script started on Mon Nov 22 08:44:23 2021
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ january[K[K[K[K[K[K[Kcat [K>sales,[K.txt
+January 20
+February 30
+Mrach 43       arch 43
+February 34
+January 12
+June 89
+May 97
+June 60
+July 23
+August 12 3
+August 45
+October 56
+October 45
+November 34
+^Dbash-3.2$ cat>totsales.awk
+{
+a[$1]+=$2
+}
+END
+{
+printf^[[D     f("JAn  an: %d\n",a["January] "])
+prin ntf("Feb: %d\n",a["February"])
+printf("Mar: %d\n,a["March"])
+printf("April  : %d\n,a["April] "])
+printf("May: %d\n,                  ^Dbash-3.2$ cat>totsales.awk[3Psales.txttotsales.awk
+{ {
+a[$1]+ +=$2
+}
+END
+{
+split("January February March April May June July August september         September October N November Deceme ber",mon)
+for(i in month   n)
+{
+printf("%s: %d\n",mon[i],a[mon[i]])
+}
+}
+^Dbash-3.2$ awk -f totsales.awk sales.txt
+awk: syntax error at source line 2 source file totsales.awk
+ context is
+	END >>> 
+ <<< 
+awk: bailing out at source line 2 source file totsales.awk
+bash-3.2$ catawk -f totsales.awk sales.txt[C[C[C[C[C[C[C[C[C[C[13Pcat>totsales.awk
+{
+a[$1]+=$2
+}
+END{
+split("January February March April May June July August September October November December",mon)
+for(i in mon) 
+{
+printf("%s: %d\n",mon[i],a[mon[i]])
+}
+}
+^Dbash-3.2$ cat>totsales.awk[C[C[C[C[C[C[C[C[C[Cawk -f totsales.awk sales.txt
+February: 64
+March: 43
+April: 0
+May: 97
+June: 149
+July: 23
+August: 58
+September: 0
+October: 101
+November: 34
+December: 0
+January: 32
+bash-3.2$ awk -f totsales.awk sales.txt>totsales.txt
+bash-3.2$ awk -f totsales.awk sales.txt>totsales.txt[K[C[C[C[C[C[C[C[C[C[C[13Pcat>totsales.awk[K[K[Ktxt[1Ptotsales.txt totsales.txt
+February: 64
+March: 43
+April: 0
+May: 97
+June: 149
+July: 23
+August: 58
+September: 0
+October: 101
+November: 34
+December: 0
+January: 32
+bash-3.2$ cat>nosales.[K.awk
+{
+if($2==0)
+{
+	printf  $0
+}
+}^D^[[3~     
+^Dbash-3.2$ cat>nosales.awk totsales.txt[C[C[C[C[C[C[C[C[C[Cawk -f totsales.awk sales.txt>totsales.txt[1P[1P[1P[1@n[1@o[C[C[C[C[C[C[C[C[C[Ctsales.txt>totsales.txtosales.txt>totsales.txttsales.txt>totsales.txt[C[C[C[C[C[C[C[C[C[1Ptotsales.txt[1Potsales.txt[1Ptsales.txt[1Psales.txt[1Pales.txt[1Ples.txt[1Pes.txt[1Ps.txt[1P.txt[1Ptxt[1Pxt[1Pt[K
+April: 0
+September: 0
+December: 0
+bash-3.2$ exit
+exit
+
+Script done on Mon Nov 22 09:07:06 2021

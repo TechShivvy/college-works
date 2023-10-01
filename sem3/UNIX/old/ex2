@@ -1,0 +1,1405 @@
+Script started on 2021-12-12 11:52:36+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="65" LINES="23"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ./a.outgcc appl.c[3P./a.outgcc appl.c[3P./a.out[Kcat>ex4-1.sh
+@ #!/bin/bash
+red   ad "En   -p "Enter cost price: " cp
+red -   ad -p "enter       Eb nter selling price: " sp
+if[  [ "$sp" -ge "$co p" ]; then
+	echo print     "profir  it=$(($sp-$cp))"
+else
+	echo p "p[r  rofit=       loss=$(($cp-$sp))"
+if
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-1.sh
+Enter cost price: 100
+Enter selling price: 120
+ex4-1.sh: line 9: syntax error: unexpected end of file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-1.sh[1Pcat>ex4-1.sh
+#!/bin/bash
+read -p "Enter cost price: " cp
+read -p "Enter selling price: " sp
+if [ "$sp" -ge "$cp" ]; then
+	echo "profit=$(($sp-$cp))"
+else
+	echo "loss=$(($cp-$sp))"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-1.shbash ex4-1.sh
+Enter cost price: 100
+Enter selling price: 120
+profit=20
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-1.sh[1Pcat>ex4-1.shbash ex4-1.sh
+Enter cost price: 100
+Enter selling price: 80
+loss=20
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash [K[K[K[K[Kcat>ex4-2.sh
+#!/bin/bash
+echo "enter the password"
+
+
+read password             ^Z
+[1]+  Stopped                 cat > ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-1.sh[1Pcat>ex4-2.sh
+#!/bash   in/bash
+red -p      ad ' " -; p "Enter the password: "  
+^Z
+[2]+  Stopped                 cat > ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password" pw
+l="${pw  #pw}"
+if [$count -; le 7             $count -l3 e 7 ]; then
+	echo "Weak ^[[A^[[A^Z
+[3]+  Stopped                 cat > ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-1.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password" pw
+l="${#pw}"
+if    echo "$pw"|  | grep -1 q  -q [a-z] &&  grep -q [a A-Z                   A-z Za-z] & grep -1 q { [0-9]
+if $; l  [ $l-    -ne 0    ne 0 ]; then
+	echo "Weak password"
+else
+q	 	echo "String     ogn  ng password" 
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-1.sh[1Pcat>ex4-2.shbash ex4-1.sh[1P.sh3.sh[1P.sh2.sh
+Enter the passwordBroKolee9
+s
+s
+s
+s
+s
+snvdhv
+s
+s
+^[[A^Z
+[4]+  Stopped                 bash ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh^C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ #!/bin/bash
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ read -p "Enter the password[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16P#!/bin/bashbash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"
+echo ; l
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.sh[1P#!/bin/bashbash ex4-2.sh
+Enter the password passs
+l
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"^[[D     "
+eco \   ho $l
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+Enter the password passs
+5
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"^[[B     "
+echo "$pw" | grep -q [A-Za-z] & grep -q [0-9]
+if [ $? -b ne 0]  ]; then
+	echo "Weak password"
+else
+	echo "strong        Strong password"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+Enter the password pass
+
+
+^Z
+[5]+  Stopped                 bash ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep -q [A-Za-z] & grep -q [0-9]
+if test $? -r eq 0 ; then
+	echo "Weak St       Strin  ong password"
+else
+	echo "weak password"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+Enter the password password
+^[[A^Z
+[6]+  Stopped                 bash ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep -q [A-Za-z] & grep -q [0-9]
+	if test $? -eq 0 ; then
+			echo "Strong password"
+	es lse
+		echo "weak"
+	fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh[1Pcat>ex4-2.shbash ex4-2.sh
+Enter the password mdlkcaq
+
+
+
+
+^Z
+[7]+  Stopped                 bash ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ #!/bin/bash
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ read -p "Enter the password " pw
+Enter the password ^Z^[[A^Z
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ read -p "Enter the password " pw[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21P#!/bin/bashbash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep -q [A-Za-z] & grep -q [0-9]^[[D                             E|  { [A-Z] a-z] | grep -E qE [0-9]
+if test $? -eq 0 ; then
+	echo "Strong password"
+else
+	echo "weak password"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shread -p "Enter the password " pw[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21P#!/bin/bashbash ex4-2.sh
+Enter the password dljnavl
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh
+Enter the password ksnjwJJJSK
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh
+Enter the password aefqwen45745
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.shbash ex4-2.sh
+Enter the password afSWDW6
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.shread -p "Enter the password " pw[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pcat>ex4-2.shread -p "Enter the password " pw[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep -qE [A-Z\ \ ] | frep      grep -qE [a-z] | grep-  -eQ  qE [a-  0-9]
+if test $? -eq 0 ; then
+	echo "Strong password"
+else
+	echo "weak password"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+Enter the password ff
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh
+Enter the password asdger643
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ fseheRWE6
+fseheRWE6: command not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ fseheRWE6bash ex4-2.sh
+Enter the password rgqFRW6
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[4PfseheRWE6bash ex4-2.sh[4PfseheRWE6bash ex4-2.sh[1Pcat>ex4-2.shbash ex4-2.sh[1Pcat>ex4-2.sh
+read -p "please enter password:" pass
+count=`echo ${#pass}`
+if [[ $count -ne 8 ]];then
+echo "Password length should be 8 charactore"
+exit 1;
+fi
+echo $count | grep "[A-Z]" | grep "[a-z]" | grep "[0-9]"
+if test $? -eq 0 ; then
+	echo "Strong password"
+else
+	echo "weak password"
+fi
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+please enter password:dvsdv
+Password length should be 8 charactore
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ascasvsvW909ghhh
+ascasvsvW909ghhh: command not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ascasvsvW909ghhh[3Pbash ex4-2.sh
+please enter password:WDHBQHKh78
+Password length should be 8 charactore
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ jhjhYUi8
+jhjhYUi8: command not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ jhjhYUi8bash ex4-2.sh
+please enter password:jshjUIS7
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[5PjhjhYUi8bash ex4-2.sh[5PjhjhYUi8bash ex4-2.shascasvsvW909ghhh[3Pbash ex4-2.sh[1Pcat>ex4-2.sh
+read -p "please enter password:" pass
+count=`echo ${#pass}`
+if [[ $count -ne 8 ]];then
+echo "Password length should be 8 charactore"
+exit 1;
+fi
+echo $count | grep "[A-Z]" | grep "[a-z]" | grep "[0-9]"read -p "please enter password:" pass
+count=`echo ${#pass}`
+if [[ $count -ne 8 ]];then
+echo "Password length should be 8 charactore"
+exit 1;
+fi
+echo $count | grep "[A-Z]" | grep "[a-z]" | grep "[0-9]"^Z
+[8]+  Stopped                 cat > ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.sh
+read -p "please enter password:" pass
+count=`echo ${#pass}`
+if [[ $count -ne 8 ]];then
+echo "Password length should be 8 charactore"
+exit 1;
+fi
+echo $count | grep "[A-Z]" | grep "[a-z]" | grep "[0-9]"^[[A^Z
+[9]+  Stopped                 cat > ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh[1Pcat>ex4-2.sh
+read -p "please enter password:" pass
+count=`echo ${#pass}`
+if [[ $count -ne 8 ]];then
+echo "Password length should be 8 charactore"
+exit 1;
+fi
+echo $count | grep "[A-Z]" | grep "[a-z]" | grep "[0-9]" | grep "[@#$%^&*]"
+
+if [[ $? -ne 0 ]];then
+
+echo "Password Must contain upparcase ,lowecase,number and special charactor"
+exit 2;
+
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+please enter password:jhjs* 8HHj
+Password Must contain upparcase ,lowecase,number and special charactor
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.shbash ex4-2.sh[1Pcat>ex4-2.sh
+^[[A^[[A^Z
+[10]+  Stopped                 cat > ex4-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep -qE [A-Z] | grep -qE [a-z] | grep -qE [0-9]
+if test $? -eq 0 ; then
+	echo "Strong password"
+else
+	echo "weak password"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+Enter the password jshjsIKAH9
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep [A-Z] | grep [a-z] | grep [0-9]
+if test $? -eq 0 ; then
+	echo "Strong password"
+else
+	echo "weak password"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+Enter the password ssssfjaj((   99sJJJ
+ssssfja99sJJJ
+Strong password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ #!/bin/bash
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ read -p "Enter the password " pw
+Enter the password ^Z^[[A^[[A^Z
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ read -p "Enter the password " pw[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21P#!/bin/bashbash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep [A-Z] | grep [a-z] | grep [0-9]
+ifif [[ $? -ne 0 ]]^[[D^[[D          && count     l -lw e 7 ]]^[[D                                  if [[ $? -ne 0 ]]^[[D      % $$  && l -le 7 ]]; then
+	echo "Strong password"
+else
+	echo "weak password"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shread -p "Enter the password " pw[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21P#!/bin/bashbash ex4-2.sh
+Enter the password h
+Strong password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh
+Enter the password jia
+Strong password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.shread -p "Enter the password " pw[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pcat>ex4-2.shbash ex4-2.sh[Kbash ex4-2.sh
+Enter the password jahHHHi9
+jahHHHi9
+weak password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.sh
+!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep [A-Z] | grep [a-z] | grep [0-9]
+if [[ $? -ne 0 && l -le 7 ]]; then
+	echo "Weak Password"
+else
+\ 	echo "strong        Sy trong password"  
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep [A-Z] | grep [a-z] | grep [0-9]
+if [[ $? -ne 0 && l -le 7 ]]; then
+	echo "Weak Password"
+else
+        echo "Strong password" 
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.sh[K[K[K[K[K[K[K[K[K[K[K[Kbash ex4-2.sh[1Pcat>ex4-2.shbash ex4-2.sh
+Enter the password nlnflnrlker
+Strong password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[Kbash ex4-2.sh[1Pcat>ex4-2.sh
+#!/bin/bash
+read -p "Enter the password " pw
+l="${#pw}"    
+echo "$pw" | grep [A-Z] | grep [a-z] | grep [0-9]
+if [[ $? -ne 0 || l -le 7 ]]; then
+	echo "Weak Password"
+else
+        echo "Strong password" 
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-2.shbash ex4-2.sh
+Enter the password djnsnfsojno
+Weak Password
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-2.sh[1Pcat>ex4-2.shbash ex4-2.sh[1Pcat>ex4-2.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.shv.sh2.sh-.sh1.sh0.sh
+cse1100@brokolee:~$ cat v10.sh
+if test -f $arg; then
+	echo "It is a file"
+elif test -d $arg; then
+		echo "It is a Directory"
+else
+	echo "It is not reg file or direc!"
+fi
+^Z
+[11]+  Stopped                 cat > v2-10.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.shbash ex4-2.sh[1Pcat>v2-10.sh
+#!/bin/bash
+cse1100@brokolee:~$ cat v10.sh
+if test -f $arg; then
+	echo "It is a file"
+elif test -d $arg; then
+		echo "It is a Directory"
+else
+	echo "It is not reg file or direc!"
+^[[A^Z
+[12]+  Stopped                 cat > v2-10.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.sh
+#!/bin/bash
+if tst  st  est -f $arg; then
+	e^Z
+[13]+  Stopped                 cat > v2-10.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.shbash ex4-2.sh[1Pcat>v2-10.sh
+#1 !/bin/bash
+id f test -e $arg; then
+	echo "it  I file exists"            File exists"^Z
+[14]+  Stopped                 cat > v2-10.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.sh
+#!/bin/bash
+if test ! -f e " $arg  ; then
+	echo "File doesnt exists "
+	ecit     xi  t 1;
+if test -f          echo "File exists"
+if test - -f $arg; then
+	echo "regular         Regular file"
+else  if
+	echo "      ^[[A    ^Z
+[15]+  Stopped                 cat > v2-10.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.sh
+cat>v2-10.sh
+#!/bin/bash
+if test ! -e $arg; then
+	echo "File doesnt exist"
+	exit 1;
+echo "File exists"
+if test -f $arg; then
+	echo "Regular file"
+elif test -d $arg; then
+	echo "Directory"
+fi
+if test -r $arg; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $arg; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $arg; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -o $arg; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi^Z
+[16]+  Stopped                 cat > v2-10.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.sh
+cat>v2-10.sh
+#!/bin/bash
+if test ! -e $arg; then
+	echo "File doesnt exist"
+	exit 1;
+echo "File exists"
+if test -f $arg; then
+	echo "Regular file"
+elif test -d $arg; then
+	echo "Directory"
+fi
+if test -r $arg; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $arg; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $arg; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -o $arg; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.sh
+#!/bin/bash
+cat>v2-10.sh
+#!/bin/bash
+if test ! -e $arg; then
+	echo "File doesnt exist"
+	exit 1;
+echo "File exists"
+if test -f $arg; then
+	echo "Regular file"
+elif test -d $arg; then
+	echo "Directory"
+fi
+if test -r $arg; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $arg; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $arg; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -o $arg; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi^Z
+[17]+  Stopped                 cat > ex4-3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.sh
+#!/bin/bash
+for arg; do
+	export arg
+	sh ./v10
+^Z
+[18]+  Stopped                 cat > ex4-3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.sh
+#!/bin/bash
+for arg; do
+	export arg
+	sh ./v10  2-10.sh
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.shv2-10.shbash ex4-2.sh[1Pcat>ex4-2.shbash ex4-2.sh[1P.sh3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music
+
+^[[1;2B^[[1;2B^Z
+[19]+  Stopped                 bash ex4-3.sh Music
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music[K[1Pcat>ex4-3.sh
+^[[A^Z
+[20]+  Stopped                 cat > ex4-3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.shbash ex4-3.sh Music[K[1Pcat>ex4-3.shv2-10.shbash ex4-2.sh[1Pcat>v2-10.sh
+#!/bin/bash
+if test ! -e $arg; then
+	echo "File doesnt exist"
+	exit 1;
+echo "File exists"
+if test -f $arg; then
+	echo "Regular file"
+elif test -d $arg; then
+	echo "Directory"
+fi
+if test -r $arg; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $arg; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $arg; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -o $arg; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.shex4-3.sh
+#!/bin/bash
+for arg; do
+	export arg
+	sh ./v2-10.sh
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.shv2-10.shex4-3.shbash ex4-3.sh Music
+./v2-10.sh: 31: Syntax error: end of file unexpected (expecting "fi")
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music[7Pcat>ex4-3.shv2-10.sh
+#!/bin/bash
+if test ! -e $arg; then
+	echo "File doesnt exist"
+	exit 1;
+fi
+echo "File exists"
+if test -f $arg; then
+	echo "Regular file"
+elif test -d $arg; then
+	echo "Directory"
+fi
+if test -r $arg; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $arg; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $arg; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -o $arg; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.shbash ex4-3.sh Music[7Pcat>ex4-3.shv2-10.shex4-3.shbash ex4-3.sh Music[7Pcat>v2-10.sh[Kcat>v2-10.shbash ex4-3.sh Music
+File exists
+Directory
+Readable
+Writable
+Executable
+./v2-10.sh: 27: test: -o: unexpected operator
+You aren't the owner of the file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music[7Pcat>v2-10.sh
+#!/bin/bash
+if test ! -e $arg; then
+	echo "File doesnt exist"
+	exit 1;
+fi
+echo "File exists"
+if test -f $arg; then
+	echo "Regular file"
+elif test -d $arg; then
+	echo "Directory"
+fi
+if test -r $arg; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $arg; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $arg; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -O $arg; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi0 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>v2-10.shbash ex4-3.sh Music
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music1
+File doesnt exist
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktouch xxx
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ls -l xxx
+-rw-rw-r-- 1 cse1100 cse1100 0 Dec 12 13:04 xxx
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ chown cs[K[Ksa[K[Khitesh xxx
+chown: invalid user: ‘hitesh’
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ chown hitesh xxx[7Pls -l[C[C[C[Ctouch[C[C[C[Cbash ex4-3.sh Music1[K DS xxx
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+File exists
+Regular file
+Readable
+Writable
+Not executable
+You are the owner of the file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music DS xxx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pchown hitesh[C[C[C[C[7Pls -l[C[C[C[Ctouch[C[C[C[Cbash ex4-3.sh Music1[K[7Pcat>v2-10.shbash ex4-3.sh Music[7Pcat>v2-10.shbash ex4-3.sh Music[7Pcat>v2-10.shbash ex4-3.sh Music[7Pcat>v2-10.shbash ex4-3.sh Music[7Pcat>ex4-3.shv2-10.shex4-3.sh
+#!/bin/bash
+for arg; do
+	export arg
+	sh ./v2-10.sh^[[A    ^Z
+[21]+  Stopped                 cat > ex4-3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.shbash ex4-3.sh Music DS xxx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcat>ex4-3.sh
+#!/bin/bash
+for arg; do
+	echo n   "expor     $arg : "  "
+	ec xport arg
+	sh ./v2-10.sh
+	echo ""
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3.shbash ex4-3.sh Music DS xxx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pchown hitesh[C[C[C[C[10@bash ex4-3.sh Music DS[C[C[C[C
+Music :
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+
+DS :
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+
+xxx :
+File exists
+Regular file
+Readable
+Writable
+Not executable
+You are the owner of the file
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ A[Kbash ex4-3.sh Music DS xxx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcat>ex4-3.sh-.sh1.sh[1P.sh2.sh
+in  finfo(){
+#!/bin/bash
+if test ! -e $1; then
+	echo "File doesnt exist"
+	exit 1;
+fi
+echo "File exists"
+if test -f $1; then
+	echo "Regular file"
+elif test -d $1; then
+	echo "Directory"
+fi
+if test -r $1; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $1; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $1; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -O $1; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi
+}
+
+#!/bin/bash
+if test ! -e $1; then
+	echo "File doesnt exist"
+	exit 1;
+fi
+echo "File exists"
+if test -f $1; then
+	echo "Regular file"
+elif test -d $1; then
+	echo "Directory"
+fi
+if test -r $1; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $1; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $1; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -O $1; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi#!/bin/bash
+for arg; do
+	echo "$arg :"^[[A     "
+	^Z
+[22]+  Stopped                 cat > ex4-3-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3-2.sh
+^[[1;2A       finfo()   () {
+#!/bin/bash
+for arg; do
+	echo "$arg :"^Z
+[23]+  Stopped                 cat > ex4-3-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3-2.shbash ex4-3.sh Music DS xxx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat>ex4-3-2.sh
+#!/bin/bash
+finfo () {
+	#!/bin/bash
+if test ! -e $1; then
+	echo "File doesnt exist"
+	exit 1;
+fi
+echo "File exists"
+if test -f $1; then
+	echo "Regular file"
+elif test -d $1; then
+	echo "Directory"
+fi
+if test -r $1; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $1; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $1; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -O $1; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi
+
+for arg; do
+	echo "$arg :"^[[A    
+	findo  fo $arg
+	echo ""
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3-2.shbash ex4-3.sh Music DS xxx
+Music :
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+
+DS :
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+
+xxx :
+File exists
+Regular file
+Readable
+Writable
+Not executable
+You are the owner of the file
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3.sh Music DS xxx[C[1@-[1@2
+ex4-3-2.sh: line 40: syntax error: unexpected end of file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex4-3-2.sh Music DS xxx[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat>ex4-3-2.sh
+#!/bin/bash
+finfo () {
+if test ! -e $1; then
+	echo "File doesnt exist"
+	exit 1;
+fi
+echo "File exists"
+if test -f $1; then
+	echo "Regular file"
+elif test -d $1; then
+	echo "Directory"
+fi
+if test -r $1; then
+	echo "Readable"
+else
+	echo "Not readable"
+fi
+if test -w $1; then
+	echo "Writable"
+else
+	echo "Not writable"
+fi
+if test -x $1; then
+	echo "Executable"
+else
+	echo "Not executable"
+fi
+if test -O $1; then
+	echo "You are the owner of the file"
+else
+	echo "You aren't the owner of the file"
+fi
+}
+
+for arg; do
+	echo "$arg :"    
+	finfo $arg
+	echo ""
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex4-3-2.shbash ex4-3-2.sh Music DS xxx
+Music :
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+
+DS :
+File exists
+Directory
+Readable
+Writable
+Executable
+You are the owner of the file
+
+xxx :
+File exists
+Regular file
+Readable
+Writable
+Not executable
+You are the owner of the file
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-1.sh
+#!/bin/bash
+eho    cho -e "1:  $1\n$1\  2\n$2 3\n$4\n% $5\n  "
+^Z
+[24]+  Stopped                 cat > ex1-1.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-1.shbash ex4-3-2.sh Music DS xxx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pcat>ex1-1.sh[1Pex1-1.sh ex1-1.sh
+#!/bin/bash
+echo -e "$1\n$2\n$3\n$4\n$5"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat ex1-1.sh[C[1P ex1-1.sh[1P ex1-1.sh[1P ex1-1.shb ex1-1.sha ex1-1.shs ex1-1.shh ex1-1.sh
+
+
+
+
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex1-1.sh hh[Kello hi my name is
+hello
+hi
+my
+name
+is
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex1-1.sh hello hi my name is[K[K[K
+hello
+hi
+my
+name
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex1-1.sh hello hi my name ji koo
+hello
+hi
+my
+name
+ji
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>bash ex1-1.sh hello hi my name ji koo[K is[K[1Pcat[C[C[C[C[C[C[C[C[C>ex1-1.sh[1P.sh2.sh
+echo "$1        $4="BroKOLee"
+echo "$1 $2 $3 $1 4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-2.sh
+$1="BroKOLee"
+echo "$1 $2 $3 $4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-2.shbash ex1-1.sh hello hi my name ji koo[K is[K[1P.sh2.sh[C[C[C Shivcgar[K[K[Kharan is my name
+ex1-2.sh: line 1: Shivcharan=BroKOLee: command not found
+Shivcharan is my name
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex1-2.sh Shivcharan is my name[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pcat>ex1-2.sh
+set $1="BroKOLee"
+echo "$1 $2 $3 $4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-2.shbash ex1-2.sh Shivcharan is my name
+Shivcharan=BroKOLee   
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex1-2.sh Shivcharan is my name[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pcat>ex1-2.sh
+let $1="BroKOLee"
+echo "$1 $2 $3 $4"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-2.shbash ex1-2.sh Shivcharan is my name
+Shivcharan is my name
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex1-2.sh Shivcharan is my name[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pcat>ex1-2.sh
+echo "Before change: $1 $1 2 $3 $4"
+set haha u fool !
+echo "aftw    After chnage    ange: $1 $2 $3 $4 $5"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-2.sh
+#!/bin/bash
+echo "Before change: $1 $2 $3 $4"
+set haha u fool !         you     , you fooool sikee  !
+echo "After change: $1 $2 $3 $4 $5"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex1-2.shbash ex1-2.sh Shivcharan is my name
+Before change: Shivcharan is my name
+After change: haha, you fooool sike !
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+There are stopped jobs.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ee[K[Kexit
+exit
+
+Script done on 2021-12-12 16:36:29+05:30 [COMMAND_EXIT_CODE="1"]
+Script started on 2021-12-14 06:33:49+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="86" LINES="24"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit[K[K[K[Kcat>2-1.sh
+#!/bin/bash
+countlines()
+{
+     count=$(cat $1|wc -l)
+}
+read  -p "Enter filename : " filename
+countlines $filename
+echo "Number of lines : $count"
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-1.sh
+Enter filename : ello
+Number of lines : 3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat ello
+a
+A
+hey
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat ellobash 2-1.sh[1Pcat>2-1.sh[C[C[1P.sh2.sh
+#!/bin/bash
+count()
+{
+        c=$(cat $filename|grep -c $word)
+}
+read -p "Enter filename : " file
+if test -f $file ; then
+        read -p "Enter word : " word
+        count
+        echo "Number of occurences of the word : $c"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>2-2.sh[2P ellobash 2-1.sh[1P.sh2.sh
+Enter filename : 2-1.sh
+Enter word : lines
+^[[A^Z
+[1]+  Stopped                 bash 2-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh[1Pcat>2-2.sh
+#!/bin/bash
+count()
+{
+        c=$(cat $filename|grep -c $1)
+}
+read -p "Enter filename : " file
+if test -f $file ; then
+        read -p "Enter word : " word
+        count $word
+        echo "Number of occurences of the word : $c"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>2-2.shbash 2-2.sh
+Enter filename : 2-1.sh
+Enter word : lines
+^[[A^Z
+[2]+  Stopped                 bash 2-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh[1Pcat>2-2.shbash 2-2.sh
+Enter filename : ^[[A^[[A^Z
+[3]+  Stopped                 bash 2-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh[1Pcat>2-2.sh
+#!/bin/bash
+occ()
+{
+        c=$(cat $filename|grep -c $1)
+}
+read -p "Enter filename : " file
+if test -f $file ; then
+        read -p "Enter word : " word
+        occ 
+        echo "Number of occurences of the word : $c"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>2-2.shbash 2-2.sh
+Enter filename : 2-1.sh
+Enter word : lines
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+^Z
+[4]+  Stopped                 bash 2-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh[1Pcat>2-2.sh
+#!/bin/bash
+occ()
+{
+        c=$(cat $filename|grep -c $word)
+}
+read -p "Enter filename : " file
+if test -f $file ; then
+        read -p "Enter word : " word
+        occ 
+        echo "Number of occurences of the word : $c"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>2-2.shbash 2-2.sh
+Enter filename : 2-1.sh
+Enter word : lines
+^Z
+[5]+  Stopped                 bash 2-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh[1Pcat>2-2.sh
+#!/bin/bash
+occ()
+{
+        c=$(cat $filename|grep -c $word)
+}
+read -p "Enter filename : " file
+if test -f $file ; then
+        read -p "Enter word : " word
+        occ 
+        echo "Number of occurences of the word : $c"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>2-2.sh
+#!/bin/bash
+occur()
+{
+        count=$(cat $filename|grep -c $word)
+}
+echo "Enter filename : "
+read filename
+if [ -f $filename ];then
+        echo "Enter word : "
+        read word
+        occur
+        echo "Number of occurences of the word : $count"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>2-2.shbash 2-2.sh
+Enter filename : 
+2-1.sh
+Enter word : 
+lines
+Number of occurences of the word : 3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh
+2-2.sh: line 6: read-: command not found
+Enter a word to search: ^[[A
+grep: Unmatched [, [^, [:, [., or [=
+^Z
+[6]+  Stopped                 bash 2-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh
+Enter filename : 2-1.sh
+Enter a word to search: hi  lines
+^[[A^Z
+[7]+  Stopped                 bash 2-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-2.sh[1Pcat>2-2.shbash 2-2.sh
+Enter filename : 2-1.sh
+Enter a word to search: lines
+Number of occurences of the word : 3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 2-2.sh
+#!/bin/bash
+countwords()
+{
+        count=$(cat $file | grep -c $word)
+}
+read -p "Enter filename : " file
+if test -f $file ;then
+        read -p "Enter a word to search: " word
+        countwords
+        echo "Number of occurences of the word : $count"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bah[K[K[Kcat 2-2.sh
+#!/bin/bash
+countwords()
+{
+        count=$(cat $file | grep -c $word)
+}
+read -p "Enter filename : " file
+if test -f $file ;then
+        read -p "Enter a word to search: " word
+        countwords
+        echo "Number of occurences of the word : $count"
+else
+        echo "File not found"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 2-2.sh[1@bash[C[C[C[C[C[C[C
+Enter filename : 2-1.sh
+Enter a word to search: lin es    nes
+Number of occurences of the word : 3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ touch 2-3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ touch 2-3.sh[1Pbash 2-2.sh[1P.sh3.sh
+2-3.sh: line 23: syntax error: unexpected end of file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-3.sh 99 89 77 65 43 22 12
+99 : S
+89 : A
+77 : B
+65 : C
+43 : U
+22 : U
+12 : U
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-3.sh 99 89 77 65 43 22 12[1P[1P[1@5[1@8[C[1@5[C[1P 12
+99 : S
+89 : A
+77 : B
+65 : C
+58 : D
+52 : E
+12 : U
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 2-3.sh 99 89 77 65 58 52 12
+grades:
+99 : S
+89 : A
+77 : B
+65 : C
+58 : D
+52 : E
+12 : U
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 2-3.sh
+#!/bin/bash
+gradecalculator()
+{
+	if [ $a -ge 91 ]; then 
+		grade="S"
+	elif [ $a -ge 81 ] ; then
+		grade="A"
+	elif [ $a -ge 71 ]; then
+		grade="B"
+	elif [ $a -ge 61 ]; then
+		grade="C"
+	elif [ $a -ge 57 ]; then
+		grade="D"
+	elif [ $a -ge 51 ]; then
+		grade="E"
+	else
+		grade="U"
+	fi
+	echo "$a : $grade"
+}
+echo grades:
+for a; do
+	gradecalculator $a
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 2-3.shbash 2-3.sh 99 89 77 65 58 52 12
+grades:
+99 : S
+89 : A
+77 : B
+65 : C
+58 : D
+52 : E
+12 : U
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ touch 2-[K[K3-1.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ touch 3-1.shbash 2-3.sh 99 89 77 65 58 52 12[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat 2-3.sh[Kbash 2-3.sh 99 89 77 65 58 52 1243 2[C[C[C[C[K[1@touc[C[C[C[C[C[C[C[C[1Pbas[C[C[C[C[C[C[C[C[1P.sh1.sh[1P-1.sh3-1.sh
+111
+112
+113
+121
+122
+123
+131
+132
+133
+211
+212
+213
+221
+222
+223
+231
+232
+233
+311
+312
+313
+321
+322
+323
+331
+332
+333
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-1.sh[1@touc[C[C[C[C[C[C[C[C[1P 3-1.sh[1P 3-1.sh[1P 3-1.sh[1P 3-1.sh[1P 3-1.shc 3-1.sha 3-1.sht 3-1.sh
+for i in 1 2 3; do
+  for j in 1 2 3; do
+    for k in 1 2 3; do
+      echo $i$j$k
+    done
+  done
+done
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 3-1.sh[1@bash[C[C[C[C[C[C[C
+111
+112
+113
+121
+122
+123
+131
+132
+133
+211
+212
+213
+221
+222
+223
+231
+232
+233
+311
+312
+313
+321
+322
+323
+331
+332
+333
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ca==[K[K[K[Ktouch 3-2.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ touch 3-2.sh[1Pbash 3-1.sh[1Pcat[C[C[C[C[C[C[C[1@bash[C[C[C[C[C[C[C[1P.sh2.sh
+Tables of 1
+1*1=1
+1*2=2
+1*3=3
+1*4=4
+1*5=5
+1*6=6
+1*7=7
+1*8=8
+1*9=9
+1*10=10
+
+Tables of 3
+3*1=3
+3*2=6
+3*3=9
+3*4=12
+3*5=15
+3*6=18
+3*7=21
+3*8=24
+3*9=27
+3*10=30
+
+Tables of 5
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+5*6=30
+5*7=35
+5*8=40
+5*9=45
+5*10=50
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-2.sh[1@touc[C[C[C[C[C[C[C[C[1P 3-2.sh[1P 3-2.sh[1P 3-2.sh[1P 3-2.sh[1P 3-2.shc 3-2.sha 3-2.sht 3-2.sh
+for i in `seq 1 2 5`; do
+	echo "Tables of $i"
+	for j in {1..10}; do
+		echo "$i*$j=$(( $i*$j ))"
+	done
+	echo
+done
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 3-2.sh[1@bash[C[C[C[C[C[C[C
+Tables of 1
+1*1=1
+1*2=2
+1*3=3
+1*4=4
+1*5=5
+1*6=6
+1*7=7
+1*8=8
+1*9=9
+1*10=10
+
+Tables of 3
+3*1=3
+3*2=6
+3*3=9
+3*4=12
+3*5=15
+3*6=18
+3*7=21
+3*8=24
+3*9=27
+3*10=30
+
+Tables of 5
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+5*6=30
+5*7=35
+5*8=40
+5*9=45
+5*10=50
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ touc [Kh 3-3.sh[K[K[K[K[K[K[K[K[K[K[K[Kgedit 3-2[K3.sg[Kh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit 3-3.sh[1Pbash 3-2.sh[1P.sh3.sh
+Enter a wordhi
+rev: cannot open str: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-3.sh
+Enter a wordhi
+yes
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-3.sh
+Enter a wordhi
+yes
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-3.sh
+Enter a wordhi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-3.sh
+Enter a wordmam
+yes
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-3.sh[1@gedit[C[C[C[C[C[C[C[1Pbash 3-2.sh[1Pcat[C[C[C[C[C[C[C[1@bash[C[C[C[C[C[C[C[1Pcat[C[C[C[C[C[C[C[1P.sh3.sh
+#!/bin/bash
+read -p "Enter a word" str
+if [ "$str" == $(echo "$str" |rev) ]; then
+	echo Yes, it is a palindrome!
+else
+	echo No, it is not a palindrome.
+fi
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 3-3.sh[1@bash[C[C[C[C[C[C[C
+Enter a word^[[A^Z
+[8]+  Stopped                 bash 3-3.sh
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-3.sh[1Pcat[C[C[C[C[C[C[C
+#!/bin/bash
+read -p "Enter a word: " str
+if [ "$str" == $(echo "$str" |rev) ]; then
+	echo Yes, it is a palindrome!
+else
+	echo No, it is not a palindrome.
+fi
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat 3-3.sh[1@bash[C[C[C[C[C[C[C
+Enter a word: malayalam
+Yes, it is a palindrome!
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash 3-3.sh
+Enter a word: baba
+No, it is not a palindrome.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ 
+]0;cse1100@b

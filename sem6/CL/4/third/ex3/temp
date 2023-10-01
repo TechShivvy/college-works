@@ -1,0 +1,2 @@
+keyword "def"|"False"|"await"|"else"|"pass"|"None"|"break"|"except"|"in"|"raise"|"True"|"class"|"finally"|"is"|"return"|"and"|"continue"|"for"|"lambda"|"try"|"def"|"nonlocal"|"while"|"assert"|"del"|"global"|"not"|"with"|"async"|"elif"|"and"|"yield"
+{keyword} {printf("%s : Keyword\n",yytext); return KEYWORD;}

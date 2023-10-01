@@ -1,0 +1,23 @@
+<html>
+<body>
+  <p>
+    Search for the characters<br> "LO“ <br>in the    <strong>       
+    beginning </strong> of a word in the phrase:<br>"HELLO, LOOK AT 
+    YOU!"
+  </p>
+  <p>Found in position(start): <span id="demo"></span></p>
+  <p>Found in position(end): <span id="demo1"></span></p>
+  
+  <script>
+    var str = "HELLO, LOOK AT YOU!"; 
+    var patt1 = /\bLO/;
+    var result = str.search(patt1);
+    document.getElementById("demo").innerHTML = result;
+
+    var patt2 = /OU\b/;
+    var result1 = str.search(patt2);
+    document.getElementById("demo1").innerHTML = result1;
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://startbootstrap.github.io/startbootstrap-scrolling-nav/css/scrolling-nav.css" crossorigin="anonymous">
+	
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script type=text/javascript>
+		$(function() {
+		  $('a#process_input').bind('click', function() {
+			$.getJSON('/chatbot', {
+			  proglang: $('input[name="proglang"]').val(),
+			}, function(data) {
+			  $("#result").text(data.result);
+			});
+			return false;
+		  });
+		});
+	</script>
+</head>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Welcome to Scrolling Nav</h1>
+      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+    </div>
+  </header>
+
+<!--   <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About this page</h2>
+          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <ul>
+            <li>Clickable nav links that smooth scroll to page sections</li>
+            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Chatbot</h2>
+          <p class="lead" id=result>What can i help you with?</p>
+          <div class="input-group input-group-sm mb-3">
+          	<input type="text" class="form-control" aria-label="Sizing example input" name=proglang aria-describedby="inputGroup-sizing-sm">
+          </div>
+          <a href=# id=process_input><button type="button" class="btn btn-primary btn-lg btn-block">ASK</button></a>
+	     <!--    <form>
+				<input type=text size=5 name=proglang>
+				<a href=# id=process_input><button class='btn btn-default'>Submit</button></a>
+			</form> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--   	<div class='container'>
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Welcome! Which is the best programming language of them all?</h3>
+				<i id=result>hi</i>
+				<form>
+					<input type=text size=5 name=proglang>
+					<a href=# id=process_input><button class='btn btn-default'>Submit</button></a>
+				</form>
+	
+			</div>
+		</div>
+	</div> -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+</body>

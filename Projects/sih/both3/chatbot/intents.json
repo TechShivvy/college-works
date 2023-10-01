@@ -1,0 +1,517 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","exit"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "When was AICTE founded?",
+        "What is AICTE?",
+        "What is the Abbreviation of AICTE?",
+        "Tell me the Abbreviation of AICTE?",
+        "All India Council for technical education",
+        "Tell me something about AICTE"
+      ],
+      "responses": [
+        "All India Council for Technical Education (AICTE) was set up in November 1945 as a national-level apex advisory body to conduct a survey on the facilities available for technical education and to promote development in the country in a coordinated and integrated manner."
+      ]
+    },
+    {
+      "tag": "Group",
+      "patterns": [
+        "what is national working group?",
+        "About national working group"
+      ],
+      "responses": [
+        "The Government of India (the Ministry of Human Resource Development) also constituted a National Working Group to look into the role of AICTE in the context of proliferation of technical institutions, maintenance of standards, and other related matters. The Working Group recommended that AICTE be vested with the necessary statutory authority for making it more effective, which would consequently require restructuring and strengthening with the necessary infrastructure and operating mechanisms."
+      ]
+    },
+    {
+      "tag": "ACT1987",
+      "patterns": [
+        "Act 1987",
+        "What is the Act 1987?",
+        "Why was the Act 1987 passed?",
+        "Tell me about The All India Council For Technical Education Act 1987."
+      ],
+      "responses": [
+        "The AICTE Act was constituted to provide for the establishment of an All India Council for Technical Education with a view to proper planning and co-ordinated development of a technical education system throughout the country, the promotion of qualitative improvements of such education in relation to planned quantitative growth, and regulation & proper maintenance of norms and standards in the technical education system and for the matters connected therewith."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "mission",
+      "patterns": [
+        "missions of aicte",
+        "missions",
+        "objectives",
+        "objectives of aicte",
+        "What are the objectives of aicte?",
+        "Tell the missions of aicte?"
+      ],
+      "responses": [
+        "A true facilitator and an objective regulator.\nTransparent governance and accountable approach towards the society.\nPlanned and coordinated development of Technical Education in the country by ensuring world-class standards of institutions through accreditation.",
+        "Emphasis on developing high quality institutions, academic excellence, and innovative research and development programmes.\nNetworking with/ or a network of institutions for optimum resource utilization.\nDissemination of knowledge",
+	"Technology forecasting and global manpower planning.\nPromoting industry-institution interaction for developing new products, services, and patents.\nInculcating entrepreneurship",
+	"Encouraging indigenous technology.\nFocusing on non-formal education.\nProviding affordable education to all.\nMaking Technical Education in India globally acceptable"
+      ]
+    },
+    {
+      "tag": "vision",
+      "patterns": [
+        "visions of aicte",
+        "visions",
+        "What are the visions of aicte?",
+        "Tell the visions of aicte?"
+      ],
+      "responses": [
+        "To be a world-class organization leading technological and socio-economic development of the country by enhancing the global competitiveness of technical manpower and by ensuring high quality technical education to all sections of the society."
+      ]
+    },
+    
+    {
+      "tag": "education",
+      "patterns": [
+        "Right to education",
+        "What is Right to education"
+      ],
+      "responses": [
+        "The Right to Education has been established as a basic human right: since 1952, Article 2 of the first Protocol to the European Convention on Human Rights obliges all signatory parties to guarantee the right to education. At world level, the United Nations' International Covenant on Economic, Social and Cultural Rights of 1966 guarantees this right under its Article 13."
+      ]
+    },
+    {
+      "tag": "5yearplan",
+      "patterns": [
+        "what is the 5 year plan?",
+        "5 year"
+      ],
+      "responses": [
+        "The role of education in facilitating social and economic progress is well recognized. It opens up opportunities leading to both individual and group entitlements."
+      ]
+    },
+    {
+      "tag": "Collaboration",
+      "patterns": [
+        "universities has AICTE collaborated with",
+        "What International universities has AICTE collaborated with?",
+        "MOU has AICTE established?",
+        "collaboration"
+
+        
+      ],
+      "responses": [
+        "AICTE has collaborated and esablished various MOU's with various Internation and Indian Istututes and Industries."
+      ]
+    },
+    {
+      "tag": " Vocational_education",
+      "patterns": [
+        "what is Vocational Education",
+        "define vocational education"
+        
+      ],
+      "responses": [
+        "Generally, vocation and career are used interchangeably. Vocational education might be classified as teaching procedural knowledge. This may be contrasted with declarative knowledge, as used in education in a usually broader scientific field, which might concentrate on theory and abstract conceptual knowledge, characteristic of tertiary education.Vocational education can be at the secondary or post-secondary level and can interact with the apprenticeship system. Increasingly, vocational education can be recognised in terms of recognition of prior learning and partial academic credit towards tertiary education (e.g., at a university) as credit; however, it is rarely considered in its own form to fall under the traditional definition of a higher education."
+      ]
+    },
+    {
+      "tag": "voced_queries",
+      "patterns": [
+        "What are the colleges that provide vocational education?",
+        " Where can I apply for vocational education?",
+        "What are the approved courses for vocational education?",
+        "vocational colleges"
+      ],
+      "responses": [
+        "There are many colleges that provide vocational education and provide various courses to choose from, the link to which can be found below or on our page undr educaion."
+
+      ]
+    },
+    {
+      "tag": "Community_Colleges",
+      "patterns": [
+        "Do I have a career if I go to a community college?",
+        "Are Community colleges good?",
+        "Affordable Education",
+        "Free Education"
+      ],
+      "responses": [
+        "There are many colleges that provide affordable and quality education to students. There are more than 3200 Polyechnic Institutions and ITI Centres that provide quality education for the unorgnized sector. Their Curriculum and List of Insitituions can be found on our page and also the link below"
+
+      ]
+    },
+   {
+    "tag": "ITI",
+    "patterns": [
+      "Do I have a career if I go to an ITI?",
+      "Is ITI good?",
+      "Is Polytechnic good?",
+      "Polytechnic College?",
+      
+      "Affordable Education",
+      "Free Education"
+    ],
+    "responses": [
+      "There are many colleges that provide affordable and quality education to students. There are more than 3200 Polyechnic Institutions and ITI Centres that provide quality education for the unorgnized sector. Their Curriculum and List of Insitituions can be found on our page and also the link below"
+      
+    ]
+   },
+   {
+    "tag": "Distance_Education",
+    "patterns": [
+      "What is Distance Education?"
+    ],
+    "responses": [
+      "Distance Education is a process to create and provide access to learning when the source of information and the learners are separated by time and distance, or both.\n In other words, distance learning is the process of creating an educational experience of equal qualitative value for the learner to best suit their needs outside the classroom. Distance education courses that require a physical on-site presence for any reason including the taking of examinations is considered to be a hybR&D or blended course of study.\nThis emerging technology is becoming widely used in universities and institutions around the globe. With the recent trend of technological advance, distance learning is becoming more recognized for its potential in providing individualized attention and communication with students internationally."
+      
+    ]
+   },
+   {
+    "tag": "IT",
+    "patterns": [
+      "What is IT",
+      "What is the AICTE doing to support IT and services?",
+      "What are the career options in IT?",
+      "ict"
+    ],
+    "responses": [
+      "Information and Communication Technology or ICTs allow users to participate in a rapidly changing world in which work and other activities are increasingly transformed by access to varied and developing technologies.The Indian Information Technology and industry accounts for a 5.9% of the country's GDP and export earnings as of 2009, while providing employment to a significant number of its tertiary sector workforce. More than 2.3 million people are employed in the sector either directly or indirectly, making it one of the biggest job creators in India and a mainstay of the national economy. More information can be found under the Education section of this website"
+
+    ]
+   },
+   
+  {
+    "tag": "Syllabus",
+    "patterns": [
+      "syllabus for engineering",
+      "Syllabus for postgraduate courses",
+      "engineering syllabus"
+  
+    ],
+    "responses": [
+      "Detailed information on the syllabus and curriculum for various undergraduate and postgraduate courses can be found on the AICtE website under Education > Model Syllabus and also by following the link below https://www.aicte-india.org/education/model-syllabus "
+    ]
+  },
+  {
+    "tag": "Curriculum",
+    "patterns": [
+      "what is the curriculum for engineering",
+      "curriculum for postgraduate courses",
+      "curriculum"
+  
+    ],
+    "responses": [
+      "Detailed information on the syllabus and curriculum for various undergraduate and postgraduate courses can be found on the AICtE website under Education > Model Syllabus and also by following the link below https://www.aicte-india.org/education/model-syllabus "
+
+    ]
+  },
+  {
+    "tag": "library",
+    "patterns": [
+      "E Library services available?",
+      "find books for free",
+      "Where can I download books for free?",
+      "access books?",
+      "download books?",
+      "library"
+  
+    ],
+    "responses": [
+      "Various free Digital Material and E Books can be found on the link given below  https://www.aicte-india.org/education/library-services "
+
+    ]
+  },
+  {
+  "tag":"scheme_MGRI",
+        
+        "patterns" :[
+            "MITACS GLOBALINK RESEARCH INTERNSHIP",
+            "MGRI"
+        ],
+        "responses" :[
+            "Scheme to foster cross-border partnerships focussed on creating a platform that opens the path for collaborative research between Canada and India to a wider pool of student talent in India."
+        ]
+    },
+    {
+        "tag":"scheme_SSS" ,
+        "patterns" :[
+            " SWANATH SCHOLARSHIP SCHEME",
+            " SSS "
+        ],
+        "responses" :[
+            "AICTE has approved AICTE – SWANATH SCHOLARSHIP SCHEME for children from any one of the following categories: \n1. Orphan \n2. Either or both parents died due to Covid-19\n3. Wards of Armed Forces and Central Paramilitary Forces martyred in action (Shaheed)\nto provide them financial support of Rs. 50,000/- per annum for every year of study."
+        ]
+        },
+        {
+            "tag":"scheme_YUVAK",
+            "patterns" :[
+                "YOUTH UNDERTAKING VISIT FOR ACQUIRING KNOWLEDGE ",
+                "YUVAK"
+            ],
+            "responses" :[
+                "AICTE Scheme for study tour of ATAL TUNNEL, Himachal Pradesh– YOUTH UNDERTAKING VISIT FOR ACQUIRING KNOWLEDGE (YUVAK)"
+            ]
+        },
+        {
+            "tag":"scheme_LILA",
+            "patterns" :[
+                "LILAVATI AWARD",
+                "LILA AWARD"
+            ],
+            "responses" :[
+                "AICTE intends to seek applications for AICTEs LILAVATI AWARD-2021-22 based on the theme “Women Empowerment” from the eligible teams of AICTE approved institutions, who have undertaken remarkable intervention for the cause and made an impact that showcases their work under eight different sub-themes."
+
+            ]
+        },
+        {
+            "tag":"scheme_PG",
+            "patterns" :[
+                "SCHOLARSHIP FOR PG",
+                "PG SCHOLARSHIPS",
+                "PG FELLOWSHIP"
+            ],
+            "responses" :[
+                "Scholarship is awarded to full time GATE/GPAT qualified students admitted to M.E./ M. Tech/ M. Arch and M.Pharma courses in AICTE approved Institutions/Colleges @Rs. 12,400/- PM/ student."
+            ]
+        },
+        {
+            "tag":"scheme_ADF",
+            "patterns" :[
+                "AICTE DOCTORAL FELLOWSHIP",
+                "ADF"
+            ],
+            "responses" :[
+                "Admitting full time meritorious research scholars by providing research fellowship who wants to seek admission to Ph.D. in AICTE approved Technical Institutes/University Departments for carrying out research in thrust areas"
+            ]
+        },
+        {
+            "tag":"scheme_PRAGATI",
+            "patterns" :[
+              "PRAGATI SCHOLARSHIP",
+              "PRAGATI SCHEME"
+
+            ],
+            "responses" :[
+                "Scholarship/Contingency is awarded to meritorious girls taking admission in AICTE approved Technical institution at Degree/ Diploma. Total 10000 scholarship are given @ Rs 50000 as incidentals each year."
+
+            ]
+        },
+        {
+            "tag":"scheme_SAKSHAM",
+            "patterns" :[
+              "SAKSHAM SCHOLARSHIP",
+              "SAKSHAM"
+            ],
+            "responses" :[
+                "Scholarship/Contingency is awarded to Differently abled students taking admission in AICTE approved Technical institution at Degree/ Diploma. Scholarship given @ Rs 50000 as incidentals each year."
+            ]
+        },
+        {
+            "tag":"scheme_SSPCA",
+            "patterns" :[
+              "SUPPORT TO STUDENTS FOR PARTICIPATING IN COMPETITION ABROAD ",
+              "SSPCA"
+            ],
+            "responses" :[
+                "The objective of the scheme is to provide travel assistance registration fees to a team of minimum 2 to 10 students for attending competition at international level in order to encourage engineering students to improve their field of technical education."
+            ]
+        },
+        
+        {
+            "tag":"scheme_PMSSS",
+            "patterns" :[
+                "PRIME MINISTERS SPECIAL SCHOLARSHIP SCHEME PMSSS",
+                "PMSSS"
+
+            ],
+            "responses" :[
+                "Objective of the Scheme is to build up capacities in youth of J&K, educate, enable and empowering them to compete in normal course, enhancing and boosting employment potentials in students of J&K. Total 5000 scholarship are given @ Rs. 100000/- as Maintenance Charges and academic fee as Rs. 30000/- to General Degree, Rs. 125000/- to Engineering Degree & Rs. 300000/- to Medical Degree each year."
+            ]
+        },
+        {
+            "tag":"scheme_INAE",
+            "patterns" :[
+                "INAE TRAVEL GRANT SCHEME",
+                "ITGS"
+                
+          
+            ],
+            "responses" :[
+                "An “AICTE-INAE Travel Grant Scheme” for Engineering Students to present papers abroad has been launched for enhancing the quality of engineering education in the country."
+            ]
+        },
+        
+        {
+            "tag":"scheme_STTP",
+            "patterns" :[
+                "STTP-SFURTI",
+                "STTP"
+            ],
+            "responses" :[
+                "STTP-SFURTI intends to conduct faculty and student trainings through financial assistance from AICTE to enable faculty members and students in the field of technical education to introspect and learn techniques that can help prepare faculty and students to impart there research work in the development of small-scale business for the nation."
+            ]
+        },
+        {
+            "tag":"scheme_NITTT",
+            "patterns" :[
+                "NATIONAL INITIATIVE FOR TECHNICAL TEACHERS TRAINING",
+                "NITTT"
+                
+          
+            ],
+            "responses" :[
+                "In order to train the Inductee Teachers in AICTE approved / recognised institutions, National Initiative for Technical Teachers Training (for Inductee Teachers) has been launched. It imparts training to the Inductee Teachers in three phases. The first phase of the training programme for the Inductee Teachers shall be conducted in Massive Open Online Courses (MOOCs) mode for eight modules on the SWAYAM platform through the NITTT portal www.nittt.ac.in followed by one-month industrial internship (second phase) and then mentor based training (third phase)."
+            ]
+        },
+        {
+            "tag":"scheme_FDP",
+            "patterns" :[
+               "FACULTY DEVELOPMENT PROGRAMME ",
+               "FDP"
+          
+            ],
+            "responses" :[
+                "The scheme is intended to Institutions for induction training to teachers employed in AICTE approved Technical Institutions to facilitate up-gradation of knowledge and skill. Rs 5-7 Lakh are granted for the 2 weeks FDP."
+            ]
+        },
+        {
+            "tag":"scheme_PDS",
+            "patterns" :[
+                "PROFESSIONAL DEVELOPMENT SCHEME"
+               
+          
+            ],
+            "responses" :[
+                "The scheme enables meritorious faculty to interact at International Level Conferences, both within and outside India, Seminars, and Symposia. "
+                
+            ]
+        },
+        {
+            "tag":"scheme_INAE",
+            "patterns" :[
+                "INAE- DISTINGUISHED VISITING PROFESSORSHIP SCHEME",
+                "INAE SCHEME",
+                "INAE"
+               
+          
+            ],
+            "responses" :[
+                "AICTE and INAE distinguished visiting Professor scheme envisages promotion of industry-institute interaction."
+                
+                
+            ]
+        },
+        {
+            "tag":"scheme_IDEA",
+            "patterns" :[
+               "IDEA LAB",
+               "IDEA DEVELOPMENT AND EVALUATION"
+
+            ],
+            "responses" :[
+                "AICTE has decided to establish AICTE-IDEA (Idea Development, Evaluation & Application) Lab in AICTE approved institutions, encouraging students for application of science, technologies, engineering and mathematics (STEM) fundamentals towards enhanced hands-on experience, learning by doing and product visualisation."
+                
+                
+            ]
+        },
+        {
+            "tag":"scheme_SPICES",
+            "patterns" :[
+              "SCHEME FOR PROMOTING INTERESTS, CREATIVITY AND ETHICS AMONG STUDENTS ",
+              "SPICES",
+              "INTERESTS, CREATIVITY AND ETHICS AMONG STUDENTS"
+       
+         ],
+            "responses" :[
+              "To energize and position students club/ Chapters/ Societies as facilitating entity for pursuit of individual interests, creative work, showcasing talent, networking and teamwork opportunities, social experience; organization and management skills, exposure to professional ethics etc."
+             
+         ]
+        },
+        {
+            "tag":"scheme_SS",
+            "patterns" :[
+                "SHODH SINDHU",
+                "SHODH"
+      
+           
+             ],
+             "responses" :[
+                 "Free access to e-Journals/ e-Resources to AICTE approved Government/ Government-Aided technical institutes is facilitated through INFLIBNET, subscription of which is paid by AICTE."                 
+             ]
+        },
+        {
+            "tag":"scheme_GAINER",
+            "patterns" :[
+               "GRANT FOR AUGMENTING INFRASTRUCTURE IN NORTH EASTERN REGION",
+               "GAINER"
+           
+             ],
+             "responses" :[
+                 " To enhance the functional efficiency of the technical institutes located in far-flung areas of North East India, AICTE has launched a scheme for providing logistics support to the technical institutes of NER by extending financial assistance for construction of rain water harvesting system, alternative power support & availability/connection of internet facility"
+             ]
+        },
+        {
+            "tag":"scheme_KARMA",
+            "patterns" :[
+               " KAUSHAL AUGMENTATION AND RESTRUCTURING MISSION OF AICTE",
+               "KARMA"
+           
+             ],
+             "responses" :[
+                 "AICTE is initiating “Kaushal Augmentation and Restructuring Mission of AICTE” (KARMA) for all AICTE approved institutions in the country to overcome the dual challenge of scarcity of skilled manpower in jobs and low skill level of those who are presently in jobs."
+             ]
+        },
+        {
+            "tag":"scheme_PMKVY",
+            "patterns" :[
+                "PRADHAN MANTRI KAUSHAL VIKAS YOJNA",
+                "PMKVY"
+           
+             ],
+             "responses" :[
+                 "AICTE is implementing the PMKVY for Technical Institutes scheme through AICTE approved Technical Institutions in the country.Under this Scheme in next three years, 10.5 Lakh youth are to be given Engineering Skills."
+            ]
+        }
+
+  ]
+}

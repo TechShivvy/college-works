@@ -1,0 +1,28 @@
+<html>
+<body>
+  <h2>Arrays vs Objects</h2>
+  <h3>Array Elements Can Be Objects</h3>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <script>
+    
+    var person = ["John", "David", 46];
+    var current_time = new Date();
+    var myArray =new Array();
+    myArray[0] = current_time;
+    myArray[1] = myFunction;
+    //myArray[1] = myFunction();
+    myArray[2] = person;
+
+    function myFunction()
+      {return "This is a function - an array element";}
+    
+    document.getElementById("demo").innerHTML = myArray[0];
+    document.getElementById("demo1").innerHTML = myArray[1];
+    document.getElementById("demo2").innerHTML = myArray[2];
+    document.getElementById("demo3").innerHTML = myArray[2][0];
+    </script>
+</body>
+</html>

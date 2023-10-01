@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>There are two different ways to access an object property.</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+// Create an object:
+/* var person = {
+  firstName: "Hefzia",
+  lastName : "Sam",
+  id     :  5566
+}; */
+
+ var person = {
+  firstName: "John",
+  lastName : "David",
+  id : 5566,
+  fullName : function() {
+	  return this.firstName + " " + this.lastName;
+}
+}; 
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.fullName();
+//without the () parentheses, it will return the function definition
+document.getElementById("demo1").innerHTML =
+person.fullName;
+</script>
+
+</body>
+</html>
+
+

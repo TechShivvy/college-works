@@ -1,0 +1,14 @@
+<html>
+<body>
+<p>Hello World!</p>
+<p class="intro">DOM</p>
+<p class="intro">Example</p>
+<p id="demo"></p>
+
+<script>
+	var x = document.querySelectorAll("p.intro");
+	document.getElementById("demo").innerHTML = 
+		'The first paragraph (index 1) with class="intro": ' + x[1].innerHTML;
+</script>
+</body>
+</html>

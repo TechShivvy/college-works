@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Die Rolling</title> 
+      <style>
+        img           { margin-right: 10px; }
+      </style>
+      <script src = "RollDice.js"></script>
+   </head>
+   <body>
+      <p><img id = "die1" src = "blank.png" alt = "1">
+         <img id = "die2" src = "blank.png" alt = "2">
+         <img id = "die3" src = "blank.png" alt = "3">
+         <img id = "die4" src = "blank.png" alt = "4">
+         <img id = "die5" src = "blank.png" alt = "5">
+         <img id = "die6" src = "blank.png" alt = "6"></p>
+      <form action = "#">
+         <input id = "rollButton" type = "button" value = "Roll Dice" onclick="rollDice()">
+      </form>
+      <div id = "frequencyTableDiv"></div>
+   </body>
+</html>

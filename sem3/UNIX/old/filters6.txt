@@ -1,0 +1,50 @@
+Script started on 2021-10-14 20:27:08+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="101" LINES="48"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat C[K[K>ch[K[KCh6S6F1
+CIS	14 511	15    	1	45
+Ci IS	54	1	20
+BUS	34	2	20
+ENG	11	2	89
+CIS	45	1	38
+MTH	35	1	56
+MTH	35	2	41
+PE	17	2	25
+CIS 54   	54	2	67
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>Ch6S6F1[1PCh6S6F1 Ch6S6F1
+CIS	15	1	45
+CIS	54	1	20
+BUS	34	2	20
+ENG	11	2	89
+CIS	45	1	38
+MTH	35	1	56
+MTH	35	2	41
+PE	17	2	25
+CIS	54	2	67
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort+0 [K[K[K -3 Ch6S6F[KF1
+sort: invalid option -- '3'
+Try 'sort --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort -3 Ch6S6F1[1@+[1@0[1@ 
+BUS	34	2	20
+CIS	15	1	45
+CIS	45	1	38
+CIS	54	1	20
+CIS	54	2	67
+ENG	11	2	89
+MTH	35	1	56
+MTH	35	2	41
+PE	17	2	25
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort +0 -3 Ch6S6F1>Ch6S6F1s[KSort
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort +0 -3 Ch6S6F1>Ch6S6F1Sort[K[3P[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[CSort
+BUS	34	2	20
+CIS	15	1	45
+CIS	45	1	38
+CIS	54	1	20
+CIS	54	2	67
+ENG	11	2	89
+MTH	35	1	56
+MTH	35	2	41
+PE	17	2	25
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ^C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-10-14 20:43:05+05:30 [COMMAND_EXIT_CODE="130"]

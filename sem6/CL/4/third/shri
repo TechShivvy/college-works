@@ -1,0 +1,30 @@
+long_stmt: statement long_stmt
+         | statement
+         ;
+
+statement: DEF ID '(' expr ')' ':' '~' long_stmt '@'
+        | FOR ID IN ID '(' expr ')' ':' '~' long_stmt '@'
+        | cond_stmt
+        | RETURN ID 
+        | assign_statement
+;
+
+cond_stmt: IF expr ':' '~' long_stmt '@' ELSE ':' '~' long_stmt '@'
+         | IF expr ':' '~' long_stmt '@'
+;
+
+assign_statement: 
+    assign_statement ASSIGNMENT_OP expr
+    | expr
+    ;
+
+expr: 
+    expr ARITHMETIC_OP expr 
+    | expr RELATIONAL_OP expr 
+    | expr ',' expr
+    | ID '(' expr ')' 
+    | ID 
+    | NUM 
+    | ID '[' ID ']' 
+    | LIST
+    ;

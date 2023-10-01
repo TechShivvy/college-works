@@ -1,0 +1,16 @@
+speech-dispatcher	114
+sssd	126
+sync	4
+sys	3
+syslog	104
+systemd-coredump	999
+systemd-network	100
+systemd-resolve	101
+systemd-timesync	102
+tcpdump	108
+tss	106
+usbmux	110
+uucp	10
+uuidd	107
+whoopsie	120
+www-data	33

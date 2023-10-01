@@ -1,0 +1,182 @@
+Script started on 2021-10-31 19:24:38+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ java Q1[K[K[K[K[K[K[Kcat?[K>a6-e5-f1
+* Section
+A section heading starts with *.
+** Subsection
+A subsection heading starts with **.
+We *emphasize* a phrase by delimiting it *.
+*** Subsubsection
+A subsubsection starts with ***.
+*It is a great organization, indeed!*^C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>a6-e5-f1[C[1Pa6-e5-f1 a6-e5-f1
+* Section
+A section heading starts with *.
+** Subsection
+A subsection heading starts with **.
+We *emphasize* a phrase by delimiting it *.
+*** Subsubsection
+A subsubsection starts with ***.
+*It is a great organization, indeed!*]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat a6-e5-f1>a6-e5-f1>a6-e5-f1
+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>>a6-e5-f1[1P a6-e5-f1
+* Section
+A section heading starts with *.
+** Subsection
+A subsection heading starts with **.
+We *emphasize* a phrase by delimiting it *.
+*** Subsubsection
+A subsubsection starts with ***.
+*It is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^8"[K[K*' a6-f4[K[Ke5-f1
+[01;31m[K*[m[K Section
+[01;31m[K*[m[K* Subsection
+[01;31m[K*[m[K** Subsubsection
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^*' a6-e5-f1[1@+[1@`[1P[1P[C[1@.[C
+[01;31m[K* Section[m[K
+[01;31m[KA section heading starts with *.[m[K
+[01;31m[K** Subsection[m[K
+[01;31m[KA subsection heading starts with **.[m[K
+[01;31m[KWe *emphasize* a phrase by delimiting it *.[m[K
+[01;31m[K*** Subsubsection[m[K
+[01;31m[KA subsubsection starts with ***.[m[K
+[01;31m[K*It is a great organization, indeed!*[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^.*' a6-e5-f1[1P[C[C[1@\[1@{[1@1[1@\[1@}
+[01;31m[K*[m[K Section
+[01;31m[K*[m[K* Subsection
+[01;31m[K*[m[K** Subsubsection
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^*\{1\}' a6-e5-f1[4P.*[C[C[C[C[C[C[C[C[C[C[1P[C[1@-[1@v[1@ [C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-v [C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pcat[C[C[C[C[C[C[C[C[C[6@grep '^*'[C[C[C[C[C[C[C[C[C[3@-v [C[C[C[C[C[C[C[C[C[C[C[C[C[2@'^*\{1\}[C[C[C[C[C[C[C[C[C[C[1@-[1@v[1@ [C[C[C[C[C[C[1P[1@2[C[1P[1@,
+grep: Unmatched \{
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep -v '^*\{2,}' a6-e5-f1[1@\
+* Section
+A section heading starts with *.
+A subsection heading starts with **.
+We *emphasize* a phrase by delimiting it *.
+A subsubsection starts with ***.
+*It is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep -v '^*\{2,\}' a6-e5-f1[1P[C[C[C[C[C[C[C[C[C[C[C[3P'^*\{1\[C[C[C[C[C[C[C[C[C[C[C[1@,
+[01;31m[K*[m[K Section
+A section heading starts with *.
+[01;31m[K*[m[K* Subsection
+A subsection heading starts with **.
+We *emphasize* a phrase by delimiting it *.
+[01;31m[K*[m[K** Subsubsection
+A subsubsection starts with ***.
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^*\{,1\}' a6-e5-f1[3@-v '^*\{2,[C[C[C[C[C[C[C[C[C[C[C[C[3P'^*\{,1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgrep '^*\{,1\}' a6-e5-f1[3@-v '^*\{2,[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[3P'^*\{1\[C[C[C[C[C[C[C[C[C[C[C[1@.[1P[1P[1P[1P[1P
+[01;31m[K* [m[KSection
+[01;31m[K**[m[K Subsection
+[01;31m[K**[m[K* Subsubsection
+[01;31m[K*I[m[Kt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^*.' a6-e5-f1[1P[1P[1@"[C[C[C[1P a6-e5-f1" a6-e5-f1
+[01;31m[K*[m[K Section
+[01;31m[K*[m[K* Subsection
+[01;31m[K*[m[K** Subsubsection
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^*" a6-e5-f1[1P
+[01;31m[K*[m[K Section
+A section heading starts with [01;31m[K*[m[K.
+[01;31m[K*[m[K[01;31m[K*[m[K Subsection
+A subsection heading starts with [01;31m[K*[m[K[01;31m[K*[m[K.
+We [01;31m[K*[m[Kemphasize[01;31m[K*[m[K a phrase by delimiting it [01;31m[K*[m[K.
+[01;31m[K*[m[K[01;31m[K*[m[K[01;31m[K*[m[K Subsubsection
+A subsubsection starts with [01;31m[K*[m[K[01;31m[K*[m[K[01;31m[K*[m[K.
+[01;31m[K*[m[KIt is a great organization, indeed![01;31m[K*[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "*" a6-e5-f1[1@^[C[C[C[C[C[C[C[C[C[C[C[1@'^*.'[C[C[C[C[C[C[C[C[C[5@\{,1\}[C[C[C[C[C[C[C[C[C[C[3@-v '^*\{2,[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[3P'^*\{1\[C[C[C[C[C[C[C[C[C[C[C[2P-v '^*[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pcat[C[C[C[C[C[C[C[C[C[6@grep '^*'[C[C[C[C[C[C[C[C[C[1@.[1@[[1@][1@^[1@*
+[01;31m[K* S[m[Kection
+[01;31m[K** [m[KSubsection
+[01;31m[K*It[m[K is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^*.[^*]' a6-e5-f1[1P
+[01;31m[K* [m[KSection
+[01;31m[K*I[m[Kt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^*[^*]' a6-e5-f1[C[1@\
+[01;31m[K* [m[KSection
+[01;31m[K*I[m[Kt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^\*[^*]' a6-e5-f1[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@\
+[01;31m[K* S[m[Kection
+[01;31m[K** [m[KSubsection
+[01;31m[K*It[m[K is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^\*.[^*]' a6-e5-f1[1P[1@?
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^\*?[^*]' a6-e5-f1[C[1P[1@+
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^\*+[^*]' a6-e5-f1[1P
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '^*+[^*]' a6-e5-f1[1P[1P[1P[1P[1P[C[1P a6-e5-f1" a6-e5-f1[1P[1@"
+[01;31m[K*[m[K Section
+[01;31m[K*[m[K* Subsection
+[01;31m[K*[m[K** Subsubsection
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^*" a6-e5-f1[1@.[1@[[1P[1P[1@*[1P[1@ 
+[01;31m[K* [m[KSection
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^* " a6-e5-f1[C[1P[1@.
+[01;31m[K* [m[KSection
+[01;31m[K**[m[K Subsection
+[01;31m[K**[m[K* Subsubsection
+[01;31m[K*I[m[Kt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^*." a6-e5-f1[C[1@[[1@^[1@*[1@]
+[01;31m[K* S[m[Kection
+[01;31m[K** [m[KSubsection
+[01;31m[K*It[m[K is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^*.[^*]" a6-e5-f1[C[1@^[1@\[C[1P
+[01;31m[K* S[m[Kection
+[01;31m[K** [m[KSubsection
+[01;31m[K*It[m[K is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^*.[^\*]" a6-e5-f1[1P[1P
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ 8[Kgrep "^*.[\]" a6-e5-f1[Kgrep "^*.[\]" a6-e5-f1[1P[1@^[1@*[1P[1@*[1P
+[01;31m[K* [m[KSection
+[01;31m[K*I[m[Kt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "*+[K\{,6\}:[K" a6-e5-f1
+[01;31m[K*[m[K Section
+A section heading starts with [01;31m[K*[m[K.
+[01;31m[K**[m[K Subsection
+A subsection heading starts with [01;31m[K**[m[K.
+We [01;31m[K*[m[Kemphasize[01;31m[K*[m[K a phrase by delimiting it [01;31m[K*[m[K.
+[01;31m[K***[m[K Subsubsection
+A subsubsection starts with [01;31m[K***[m[K.
+[01;31m[K*[m[KIt is a great organization, indeed![01;31m[K*[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "*\{,6\}" a6-e5-f1[1P^*[^*][C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1@\[1P[1@.[1@*[1@$
+[01;31m[K* Section[m[K
+[01;31m[K** Subsection[m[K
+[01;31m[K*** Subsubsection[m[K
+[01;31m[K*It is a great organization, indeed!*[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^*.*$" a6-e5-f1[C[C[C[1P[C[C[C[C[1P
+[01;31m[K* Section[m[K
+A section heading starts with [01;31m[K*.[m[K
+[01;31m[K** Subsection[m[K
+A subsection heading starts with [01;31m[K**.[m[K
+We [01;31m[K*emphasize* a phrase by delimiting it *.[m[K
+[01;31m[K*** Subsubsection[m[K
+A subsubsection starts with [01;31m[K***.[m[K
+[01;31m[K*It is a great organization, indeed!*[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "*.*" a6-e5-f1[1P[1@'[C[C[C[1P[1@*[1P a6-e5-f1' a6-e5-f1
+[01;31m[K* Section[m[K
+A section heading starts with [01;31m[K*.[m[K
+[01;31m[K** Subsection[m[K
+A subsection heading starts with [01;31m[K**.[m[K
+We [01;31m[K*emphasize* a phrase by delimiting it *.[m[K
+[01;31m[K*** Subsubsection[m[K
+A subsubsection starts with [01;31m[K***.[m[K
+[01;31m[K*It is a great organization, indeed!*[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '*.*' a6-e5-f1[1@\[1@\
+[01;31m[K***[m[K Subsubsection
+A subsubsection starts with [01;31m[K***[m[K.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '\*.\*' a6-e5-f1[2P*.[C[C[C[C[C[C[C[C[C[C[C"*.*"[C[C[C[C[C[C[C[C[C[2@^*.*$[C[C[C[C[C[C[C[C[C[C[2@*\{,6\}[C[C[C[C[C[C[C[C[C[C[1P^*[^*][C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1@\
+[01;31m[K*[m[K Section
+[01;31m[K*[m[K* Subsection
+[01;31m[K*[m[K** Subsubsection
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^\*" a6-e5-f1[1P
+[01;31m[K*[m[K Section
+[01;31m[K*[m[K* Subsection
+[01;31m[K*[m[K** Subsubsection
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^*" a6-e5-f1[1@\[C[C[C[C[C[C[C[C[C[C[C
+[01;31m[K*[m[K Section
+[01;31m[K*[m[K* Subsection
+[01;31m[K*[m[K** Subsubsection
+[01;31m[K*[m[KIt is a great organization, indeed!*
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep "^\*" a6-e5-f1[1P[C[C[C[C[C[C[C[C[C[C[C[1@\[C[C[C[C[C[C[C[C[C[C[C[2@'\*.\*'[C[C[C[C[C[C[C[C[C[1@[[1@^[C[1@\[1@*[1@]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '\*.[^\*]\*' a6-e5-f1[C[1P
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ grep '\*.[^*]\*' a6-e5-f1[1@\[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7P"^\*"[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kend[K[K[Kexit
+exit
+
+Script done on 2021-10-31 21:52:38+05:30 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+  
+  <script>
+    function myFunction() {
+      var str = "Visit W3Schools. Hello World!"; 
+      var patt1 = /\u0057/g; //hexadecimal number
+      var result = str.match(patt1);
+      document.getElementById("demo").innerHTML = result;
+  }
+</script>
+</body>
+</html>

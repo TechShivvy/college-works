@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  background-color: #4Ca4fA;
+  width:50%;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>removeEventListener()</h2>
+
+<div id="myDIV" onmousemove="myFunction()">
+   <p id="demo"></p>
+  <button onclick="removeHandler()" id="myBtn">Remove</button>
+</div>
+
+<script>
+//document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.random();
+}
+
+function removeHandler() {
+  document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+}
+</script>
+
+</body>
+</html>
+
+

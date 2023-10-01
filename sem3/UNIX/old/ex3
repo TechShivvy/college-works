@@ -1,0 +1,561 @@
+Script started on 2021-12-13 08:38:37+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="58" LINES="29"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat ex3[K[Kx3-1.sh
+cat: ex3-1.sh: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat ex3-1.sh[1Pex3-1.sh>ex3-1.sh[C[C[C[C[C[C[C[C
+#!/bin/bash
+mkcd
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-1.sh
+#!/bin/bash
+mkcd()
+{
+	mkdir $1 $2 $3
+	cd ~/"$3"
+}
+mkcd $1 $2 $3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-1.sh[C[1Pex3-1.sh[1Pex3-1.sh[1Pex3-1.sh[1Pex3-1.shbex3-1.shaex3-1.shsex3-1.shhex3-1.sh ex3-1.sh
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-1.sh[1Pcat>ex3-1.sh
+#!/bin/bash
+mkcd()
+{
+	mkdir "$1" "$2" "$3"
+	cd ~/"$3"
+}
+mkcd $1 $2 $3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-1.shbash ex3-1.sh
+mkdir: cannot create directory ‘’: No such file or directory
+mkdir: cannot create directory ‘’: No such file or directory
+mkdir: cannot create directory ‘’: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-1.sh[1Pcat>ex3-1.shbash ex3-1.sh[1Pcat>ex3-1.sh
+#!/bin/bash
+mkcd()
+{
+	$mkdir "$1" "$2" "$3"
+	$cd ~/"$3"
+}
+mkcd $1 $2 $3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-1.shbash ex3-1.sh
+ex3-1.sh: line 4: : command not found
+ex3-1.sh: line 5: /home/cse1100/: Is a directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-1.sh d1 d2 dd[K3
+ex3-1.sh: line 4: d1: command not found
+ex3-1.sh: line 5: /home/cse1100/d3: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-1.sh d1 d2 d3[K[1Pcat>ex3-1.sh
+#!/bin/bash
+mkcd()
+{
+	mkdir $1 $2 $3
+	cd ~/"$3"
+}
+mkcd $1 $2 $3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-1.shbash ex3-1.sh d1 d2 d3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echi[Ko d?
+d1 d2 d3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ echo d?bash ex3-1.sh d1 d2 d3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>ex3-1.sh
+#!/bin/bash
+mkcd()
+{
+	mkdir $1 $2 $3
+	cd ~/$3
+}
+mkcd $1 $2 $3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-1.sh[5Pecho d?cat>ex3-1.sh[Kcat>ex3-1.sh[5Pecho d?bash ex3-1.sh d1 d2 d3
+mkdir: cannot create directory ‘d1’: File exists
+mkdir: cannot create directory ‘d2’: File exists
+mkdir: cannot create directory ‘d3’: File exists
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ remove [K[K[K[K[K[Km -R d1 d2 d3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ rm -R d1 d2 d3[8@bash ex3-1.sh[C[C[C[C[C[C[C[C[C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ . ex3-1.sh
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ . ex3-1.sh [K[K[K[K[K[K[K[K[K[K[Kbash ex3-1.sh d1 d2 d3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Prm -R[C[C[C[C[C[C[C[C[C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ . scrip[K[K[K[K[Krm -R d1 d2 d3[Kbash ex3-1.sh d1 d2 d3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Prm -R[C[C[C[C[C[C[C[C[C[8@bash ex3-1.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Krm -R d1 d2 d3. [Krm -R d1 d2 d3[Kbash ex3-1.sh d1 d2 d3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Prm -R[C[C[C[C[C[C[C[C[C[8@bash ex3-1.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>ex3-1.shbash ex3-1.sh d1 d2 d3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Prm -R[C[C[C[C[C[C[C[C[C[8@bash ex3-1.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Krm -R d1 d2 d3. [Kex3-1.sh d1 d2 d3
+]0;cse1100@brokolee: ~/d3[01;32mcse1100@brokolee[00m:[01;34m~/d3[00m$ cd ..
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cd ... ex3-1.sh d1 d2 d3[5Prm -R[C[C[C[C[C[C[C[C[C[Kbash ex3-1.sh d1 d2 d3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Prm -R[C[C[C[C[C[C[C[C[C[8@bash ex3-1.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>ex3-1.sh[5Pecho d?cat>ex3-1.sh[1P.sh2.sh
+#!/bin/bash
+read -p Enter the filename file
+c=`cat $file | wc -c`
+w=`cat $file | wc -w`
+l=`grep -c "." $file`
+echo Number of characters in $file is $c
+echo Number of words in $file is $w
+echo Number of lines in $file is $l
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-2.sh[7Pd ... ex3-1.sh d1 d2 d3[5Prm -R[C[C[C[C[C[C[C[C[C[Kbash ex3-1.sh d1 d2 d3[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K2.[Kbash ex3-2.rm -R d1 d2 d3[3Pbash ex3-2.[Krm -R d1 d2 d3[5@. ex3-1.sh[C[C[C[C[C[C[C[C[Ccd ..[Kat>ex3-2.sh[Kcat>ex3-2.sh
+#!/bin/bash
+c=`cat $1 | wc -c`
+w=`cat $1 | wc -w`
+l=`grep -c "." $1`
+echo Number of characters in $1 is $c
+echo Number of words in $1 is $w
+echo Number of lines in $1 is $l
+echo
+l2=`grep -c "." $2`
+echo Number of lines in $2 is $l2
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-2.sh[7Pd ... ex3-1.sh d1 d2 d3[5Prm -R[C[C[C[C[C[C[C[C[C[Kbash ex3-2.sh cat ello
+Number of characters in cat is 55
+Number of words in cat is 10
+Number of lines in cat is 5
+
+Number of lines in ello is 3
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-2.sh cat ello[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>ex3-2.sh
+#!/bin/bash
+c=`cat $1 | wc -c`
+w=`cat $1 | wc -w`
+l=`grep -c "." $1`
+echo Number of characters in $1 is $c
+echo Number of words in $1 is $w
+echo Number of lines in $1 is $l
+echo
+l2=`grep -c "." $2`
+echo Number of lines in both $1 n $2 is $(($l2+$l))
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-2.shbash ex3-2.sh cat ello
+Number of characters in cat is 55
+Number of words in cat is 10
+Number of lines in cat is 5
+
+Number of lines in both cat n ello is 8
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ se[K[Ks[Kbash ex3-2.sh cat ello[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>ex3-2.sh[1P.sh3.sh[C[C[C[K[K[K[K[K[K[K[K[K[K[K[Kbash ex3-2.sh cat ello[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>ex3-2.sh[1P.sh4.sh
+#!/bin/bash
+n=$1
+while [ $n -ne 0 ]
+do
+    r=$(( $n % 10 ))
+    rev=$(( $rev * 10 + $r ))
+    n=$(( $n / 10 ))
+done
+echo "Reverse of $1  is $rev"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-4.shbash ex3-2.sh cat ello[K[K[K[K[K[K[K[K[1P[1@4[1@ [1P[C[C[C[C 5 6 7 
+ex3-4.sh: line 6: * 10 + 7 : syntax error: operand expected (error token is "* 10 + 7 ")
+Reverse of 567  is 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-4.sh 567 [6Pcat>ex3-4.sh
+#!/bin/bash
+n=$1
+rev=
+while [ $n -ne 0 ]
+do
+    r=$(( $n % 10 ))
+    rev=$(( $rev * 10 + $r ))
+    n=$(( $n / 10 ))
+done
+echo "Reverse of $1  is $rev"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-4.shbash ex3-4.sh 567 
+ex3-4.sh: line 7: * 10 + 7 : syntax error: operand expected (error token is "* 10 + 7 ")
+Reverse of 567  is 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-4.sh 567 [6Pcat>ex3-4.sh
+#!/bin/bash
+temp=$1
+while [ $temp -ne 0 ]
+do
+    reverse=$reverse$((temp%10))
+    temp=$((temp/10))
+done
+echo "Reverse of $1 is $reverse"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-4.shbash ex3-4.sh 567 
+Reverse of 567 is 765
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exx[Kit
+exit
+
+Script done on 2021-12-13 09:33:26+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-12-13 09:51:41+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="58" LINES="29"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-12-13 09:51:51+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-12-13 09:53:13+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="58" LINES="29"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit[K[K[K[Kcat ex3-7.sh
+cat: ex3-7.sh: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat ex3-7.sh[1Pex3-7.sh>ex3-7.sh
+#!/bin/bash
+read -p "Enter file and directory" file dir
+if !test -e $file; then
+	touch $file
+if !test -e $dir; then
+	mkdir $dir
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-7.sh[1Pex3-7.sh[1Pex3-7.sh[1Pex3-7.sh[1Pex3-7.shbex3-7.shaex3-7.shsex3-7.shhex3-7.sh ex3-7.sh
+Enter file and directoryhaha    testing DS  Videos
+ex3-7.sh: line 7: syntax error: unexpected end of file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-7.sh[1Pcat>ex3-7.sh
+#!/bin/bash
+read -p "Enter file and directory" file dir
+if !test -e $file; then
+	touch $file
+fi
+if !test -e $dir; then
+	mkdir $dir
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-7.shbash ex3-7.sh
+Enter file and directoryhaha Vd ideos
+ex3-7.sh: line 3: !test: command not found
+ex3-7.sh: line 6: !test: command not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-7.sh[1Pcat>ex3-7.sh
+#!/bin/bash
+read -p "Enter file and directory" file dir
+if [! -e $file]; then
+	touch $file
+fi
+if [! -e $dir]; then
+	mkdir $dir
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-7.shbash ex3-7.sh
+Enter file and directoryhaha      haha Vud  ideos
+ex3-7.sh: line 3: [!: command not found
+ex3-7.sh: line 6: [!: command not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-7.sh[1Pcat>ex3-7.sh
+#!/bin/bash
+read -p "Enter file and directory" file dir
+if [[ ! -e $file ]]; then
+	touch $file
+fi
+if [[[ ! -e $dir ]]; then
+	mkdir $dir
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-7.shbash ex3-7.sh
+Enter file and directoryhaha Videos
+ex3-7.sh: line 6: [[[: command not found
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-7.sh[1Pcat>ex3-7.sh
+#!/bin/bash
+read -p "Enter file and directory" file dir
+if [[ ! -e $file ]]; then
+	touch $file
+fi
+if [[ ! -e $dir ]]; then
+	mkdir $dir
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-7.shbash ex3-7.sh
+Enter file and directoryhaha videos      Videos
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ls -l
+total 940
+-rw-rw-r--  1 cse1100 cse1100    22 Nov  6 20:58 ',$w f3'
+-rw-rw-r--  1 cse1100 cse1100    22 Nov  6 20:58 ';$w f3'
+-rw-rw-r--  1 cse1100 cse1100   145 Dec  7 01:47  10.sh
+-rw-rw-r--  1 cse1100 cse1100    54 Dec  7 01:48  11.sh
+-rw-rw-r--  1 cse1100 cse1100    46 Dec 12 18:39  12.sh
+-rw-rw-r--  1 cse1100 cse1100   140 Dec 12 16:46  13.sh
+-rw-rw-r--  1 cse1100 cse1100   357 Dec 12 17:08  14.sh
+-rw-rw-r--  1 cse1100 cse1100   256 Dec 13 09:52  15.sh
+-rw-rw-r--  1 cse1100 cse1100    22 Nov  6 20:55 ';6w f3'
+-rw-rw-r--  1 cse1100 cse1100   107 Dec  7 01:22  8.sh
+-rw-rw-r--  1 cse1100 cse1100   177 Dec  7 01:22  9.sh
+-rw-rw-r--  1 cse1100 cse1100   112 Oct 31 22:04  a6-e1-f1
+-rw-rw-r--  1 cse1100 cse1100  1193 Oct 31 22:09  a6-e2-f1
+-rw-rw-r--  1 cse1100 cse1100  1185 Oct 31 22:09  a6-e2-f2
+-rw-rw-r--  1 cse1100 cse1100   580 Oct 31 22:09  a6-e2-f3
+-rw-rw-r--  1 cse1100 cse1100   605 Oct 31 22:09  a6-e2-f4
+-rw-rw-r--  1 cse1100 cse1100   109 Oct 31 22:37  a6-e3-f1
+-rw-rw-r--  1 cse1100 cse1100   258 Oct 29 16:58  a6-e4-f1
+-rw-rw-r--  1 cse1100 cse1100   227 Oct 31 19:25  a6-e5-f1
+-rw-rw-r--  1 cse1100 cse1100   133 Nov  6 20:44  a7-e1-f1
+-rw-rw-r--  1 cse1100 cse1100    97 Nov  6 19:30  a7-e4-f1
+-rw-rw-r--  1 cse1100 cse1100   103 Nov  6 19:30  a7-e4-f2
+-rw-rw-r--  1 cse1100 cse1100   249 Nov  6 22:27  a7-e6-f1
+-rw-rw-r--  1 cse1100 cse1100    28 Nov  6 22:31  a7-e6-f2.sed
+-rw-rw-r--  1 cse1100 cse1100   110 Nov  6 22:31  a7-e6-f3
+drw-rw-r--  2 cse1100 cse1100  4096 Oct 21 18:26  [0m[01;34mabhi[0m
+-rwxrw-rw-  1 cse1100 cse1100   325 Nov  9 17:30  [01;32madt.h[0m
+-rwxrw-rw-  1 cse1100 cse1100   679 Nov  9 17:35  [01;32mappl.c[0m
+-rw-rw-r--  1 cse1100 cse1100   284 Dec  7 01:22  ap.sh
+-rw-rw-r--  1 cse1100 cse1100  3039 Nov 29 01:32  awk
+-rw-rw-r--  1 cse1100 cse1100 28713 Nov 29 01:41  awk2
+-rw-rw-r--  1 cse1100 cse1100 17873 Dec  7 01:23  bash1
+-rw-rw-r--  1 cse1100 cse1100    55 Oct 14 14:01  cat
+-rw-rw-r--  1 cse1100 cse1100   200 Nov 29 01:30  Ch12S1F1
+-rw-rw-r--  1 cse1100 cse1100   219 Nov 29 01:31  Ch12S1F1.awk
+-rw-rw-r--  1 cse1100 cse1100   335 Nov 29 01:31  Ch12S1R1
+-rw-rw-r--  1 cse1100 cse1100    95 Nov 29 01:30  Ch12S3F1
+-rw-rw-r--  1 cse1100 cse1100   248 Nov 29 02:01  Ch12S3F1.awk
+-rw-rw-r--  1 cse1100 cse1100   219 Nov 29 01:31  Ch12S3R1
+-rw-rw-r--  1 cse1100 cse1100   308 Nov 29 02:08  Ch12S4.awk
+-rw-rw-r--  1 cse1100 cse1100    72 Nov 29 01:30  Ch12S4F1
+-rw-rw-r--  1 cse1100 cse1100   259 Nov 29 01:31  Ch12S4R1
+-rw-rw-r--  1 cse1100 cse1100    97 Oct 14 20:03  Ch6S1F1
+-rw-rw-r--  1 cse1100 cse1100   340 Oct 14 18:44  Ch6S2F1
+-rw-rw-r--  1 cse1100 cse1100   340 Oct 14 18:39  Ch6S2F1Encr
+-rw-rw-r--  1 cse1100 cse1100   359 Oct 14 19:07  Ch6S3F1
+-rw-rw-r--  1 cse1100 cse1100   359 Oct 14 19:04  Ch6S3F1Encr
+-rw-rw-r--  1 cse1100 cse1100    97 Oct 14 19:31  Ch6S4F1
+-rw-rw-r--  1 cse1100 cse1100    97 Oct 14 19:52  Ch6S5F1
+-rw-rw-r--  1 cse1100 cse1100    97 Oct 14 20:05  Ch6S5F1Sort
+-rw-rw-r--  1 cse1100 cse1100    98 Oct 14 19:55  Ch6S5F2
+-rw-rw-r--  1 cse1100 cse1100    98 Oct 14 20:06  Ch6S5F2Sort
+-rw-rw-r--  1 cse1100 cse1100   195 Oct 14 20:10  Ch6S5F3
+-rw-rw-r--  1 cse1100 cse1100   107 Oct 14 20:31  Ch6S6F1
+-rw-rw-r--  1 cse1100 cse1100   107 Oct 14 20:39  Ch6S6F1Sort
+-rw-r--r--  1 cse1100 cse1100  2811 Oct 14 20:49  Ch6S7F1
+-rw-rw-r--  1 cse1100 cse1100   541 Oct 14 23:08  Ch6S7F2
+-rw-rw-r--  1 cse1100 cse1100    81 Oct 14 13:54  copy
+drwxrwxr-x  2 cse1100 cse1100  4096 Dec 13 08:48  [01;34md1[0m
+drwxrwxr-x  2 cse1100 cse1100  4096 Dec 13 08:48  [01;34md2[0m
+drwxrwxr-x  2 cse1100 cse1100  4096 Dec 13 08:48  [01;34md3[0m
+-rw-rw-r--  1 cse1100 cse1100     9 Dec 12 16:46  date.txt
+-rw-rw-r--  1 cse1100 cse1100     7 Dec 12 16:46  day.txt
+drwxr-xr-x  2 cse1100 cse1100  4096 Nov 19 05:19  [01;34mDesktop[0m
+drwxr-xr-x  2 cse1100 cse1100  4096 Dec  5 01:12  [01;34mDocuments[0m
+drwxr-xr-x  2 cse1100 cse1100  4096 Dec  7 01:23  [01;34mDownloads[0m
+drwxrwxrwx 16 cse1100 cse1100  4096 Dec 13 01:59  [34;42mDS[0m
+-rw-rw-r--  1 cse1100 cse1100     8 Oct 14 13:36  ello
+-rw-rw-r--  1 cse1100 cse1100 48375 Dec 13 09:53  ex1
+-rw-rw-r--  1 cse1100 cse1100   106 Dec 13 09:35  ex1-12.sh
+-rw-rw-r--  1 cse1100 cse1100    41 Dec 12 13:26  ex1-1.sh
+-rw-rw-r--  1 cse1100 cse1100   110 Dec 12 13:35  ex1-2.sh
+-rw-rw-r--  1 cse1100 cse1100  1814 Dec 13 09:51  ex1.sh
+-rw-rw-r--  1 cse1100 cse1100 34357 Dec 12 16:36  ex2
+-rw-rw-r--  1 cse1100 cse1100  9755 Dec 13 09:51  ex3
+-rw-rw-r--  1 cse1100 cse1100    62 Dec 13 08:45  ex3-1.sh
+-rw-rw-r--  1 cse1100 cse1100   250 Dec 13 08:55  ex3-2.sh
+-rw-rw-r--  1 cse1100 cse1100   138 Dec 13 09:29  ex3-4.sh
+-rw-rw-r--  1 cse1100 cse1100   138 Dec 13 10:09  ex3-7.sh
+-rw-rw-r--  1 cse1100 cse1100   170 Dec 12 11:55  ex4-1.sh
+-rw-rw-r--  1 cse1100 cse1100   207 Dec 12 12:43  ex4-2.sh
+-rw-rw-r--  1 cse1100 cse1100   555 Dec 12 13:23  ex4-3-2.sh
+-rw-rw-r--  1 cse1100 cse1100    80 Dec 12 13:07  ex4-3.sh
+-rw-rw-r--  1 cse1100 cse1100    46 Nov  6 21:17  f1
+-rw-rw-r--  1 cse1100 cse1100    44 Nov  6 21:17  f2
+-rw-rw-r--  1 cse1100 cse1100    43 Nov  6 21:17  f3
+-rw-rw-r--  1 cse1100 cse1100     0 Nov  6 21:16  f4
+-rw-rw-r--  1 cse1100 cse1100     0 Nov  6 21:16 "f4' a7-e1-f1"
+-rw-rw-r--  1 cse1100 cse1100     0 Dec 12 16:47  file1
+-rwx-----x  1 cse1100 cse1100     0 Dec 12 17:08  [01;32mFile1[0m
+-rw-rw-r--  1 cse1100 cse1100     0 Dec 12 16:47  file2
+-r--------  1 cse1100 cse1100     0 Dec 12 17:08  File2
+-rw-rw-r--  1 cse1100 cse1100     0 Dec 12 16:47  file3
+--wx------  1 cse1100 cse1100     0 Dec 12 17:08  [01;32mFile3[0m
+-rw-rw-r--  1 cse1100 cse1100     0 Dec 12 16:47  file4
+-rw-rwxrw-  1 cse1100 cse1100     0 Dec 12 17:08  [01;32mFile4[0m
+-rw-rw-r--  1 cse1100 cse1100     0 Dec 12 16:47  file5
+----r--r-x  1 cse1100 cse1100     0 Dec 12 17:08  [01;32mFile5[0m
+---xrwxrwx  1 cse1100 cse1100     0 Dec 12 17:08  [01;32mFile6[0m
+--w--wxr--  1 cse1100 cse1100     0 Dec 12 17:08  [01;32mFile7[0m
+-r-x---rwx  1 cse1100 cse1100     0 Dec 12 17:08  [01;32mFile8[0m
+-rw-r--r--  1 cse1100 cse1100     0 Nov 10 14:52  file.txt
+-rw-rw-r--  1 cse1100 cse1100 67972 Oct 14 18:47  filters2.txt
+-rw-rw-r--  1 cse1100 cse1100 51159 Oct 14 19:12  filters3.txt
+-rw-rw-r--  1 cse1100 cse1100 13049 Oct 14 20:26  filters4.txt
+-rw-rw-r--  1 cse1100 cse1100  1676 Oct 14 20:43  filters6.txt
+-rw-rw-r--  1 cse1100 cse1100 36864 Oct 14 23:36  filters7.txt
+-rw-rw-r--  1 cse1100 cse1100 27967 Oct 14 14:03  filtersBU.txt
+-rw-rw-r--  1 cse1100 cse1100 28511 Oct 14 14:05  filters.txt
+-rw-rw-r--  1 cse1100 cse1100 13148 Oct 31 21:52  grep5a.txt
+-rw-rw-r--  1 cse1100 cse1100  3158 Oct 31 21:51  grepa1.txt
+-rw-rw-r--  1 cse1100 cse1100 16848 Oct 31 21:52  grepa2.txt
+-rw-rw-r--  1 cse1100 cse1100  5304 Oct 31 21:52  grepa3.txt
+-rw-rw-r--  1 cse1100 cse1100   930 Oct 29 16:57  grepa4.txt
+-rw-rw-r--  1 cse1100 cse1100     0 Dec 13 10:09  haha
+drw-rw-r--  2 cse1100 cse1100  4096 Nov 10 14:57  [01;34mhi[0m
+-rw-rw-r--  1 cse1100 cse1100    29 Oct 21 23:12  hslc
+-rw-rw-r--  1 cse1100 cse1100    29 Oct 21 23:10  hslink.txt
+-rwxrw-rw-  1 cse1100 cse1100  2557 Nov  9 17:30  [01;32mimpl.h[0m
+drwxrwxrwx 10 cse1100 cse1100  4096 Dec  5 04:18  [34;42mjava[0m
+-rw-rw-r--  1 cse1100 cse1100  4644 Nov 10 14:49  list.txt
+drwxr-xr-x  2 cse1100 cse1100  4096 Oct  9 23:49  [01;34mMusic[0m
+-rw-rw-r--  1 cse1100 cse1100    27 Nov 29 01:31  nosales.awk
+-rw-rw-r--  1 cse1100 cse1100     0 Nov 10 14:42  note
+-rw-rw-r--  1 cse1100 cse1100   188 Oct 14 23:48  part1
+-rw-rw-r--  1 cse1100 cse1100   164 Oct 14 23:48  part2
+-rw-rw-r--  1 cse1100 cse1100   211 Oct 14 23:48  part3
+-rw-rw-r--  1 cse1100 cse1100   563 Oct 14 23:54  part4
+-rw-rw-r--  1 cse1100 cse1100     0 Oct 31 22:43  paste
+drwxr-xr-x  2 cse1100 cse1100  4096 Dec  7 01:17  [01;34mPictures[0m
+-rw-rw-r--  1 cse1100 cse1100   322 Dec  7 01:22  pop.sh
+-rw-rw-r--  1 cse1100 cse1100  1765 Nov 29 13:54  pq.c
+-rw-rw-r--  1 cse1100 cse1100    56 Dec 12 17:52  presuf.sh
+drwxr-xr-x  2 cse1100 cse1100  4096 Oct  9 23:49  [01;34mPublic[0m
+-rw-rw-r--  1 cse1100 cse1100   340 Oct 14 18:43  rev
+-rw-rw-r--  1 cse1100 cse1100    54 Dec  5 12:49  script1.sh
+-rw-rw-r--  1 cse1100 cse1100    16 Nov  6 19:19  script2.sed
+-rw-rw-r--  1 cse1100 cse1100   251 Dec  5 13:43  script2.sh
+-rw-rw-r--  1 cse1100 cse1100    36 Nov  6 20:29  script.sed
+-rw-rw-r--  1 cse1100 cse1100    50 Dec  5 13:32  script.sh
+-rw-rw-r--  1 cse1100 cse1100 20557 Nov  6 19:12  sed.txt
+-rw-rw-r--  1 cse1100 cse1100    81 Oct 14 18:18  summa
+-rw-rw-r--  1 cse1100 cse1100    13 Dec  7 01:46  summa.sh
+drwxr-xr-x  2 cse1100 cse1100  4096 Oct  9 23:49  [01;34mTemplates[0m
+-rw-rw-r--  1 cse1100 cse1100    76 Dec  7 01:23  temp.sh
+-rw-rw-r--  1 cse1100 cse1100   153 Oct 14 20:21  testingCh6S5F3
+-rw-rw-r--  1 cse1100 cse1100   175 Nov 29 01:31  totsales.awk
+-rwxrwxr-x  1 cse1100 cse1100   151 Dec  7 01:39  [01;32mv10.sh[0m
+-rw-rw-r--  1 cse1100 cse1100   498 Dec 12 13:03  v2-10.sh
+-rw-rw-r--  1 cse1100 cse1100     9 Dec  5 13:06  var
+drwxr-xr-x  2 cse1100 cse1100  4096 Oct  9 23:49  [01;34mVideos[0m
+-rw-rw-r--  1 cse1100 cse1100     0 Dec 12 13:04  xxx
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ls -l[K[K[K[K[Kcat [K>ex3-6.sh
+#!/bin/bash^A             #!/bin/bash
+if cmp -s $1 $2; then
+    printf 'The file "%s" is the same as "%s"\n' "$file1" "$file2"
+else
+    printf 'The file "%s" is different from "%s"\n' "$file1" "$file2"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-6.sh[7Pls -lcat>ex3-6.sh[1Pex3-6.sh[1Pex3-6.sh[1Pex3-6.sh[1Pex3-6.shbex3-6.shaex3-6.shsex3-6.shhex3-6.sh ex3-6.sh
+cmp: missing operand after '-s'
+cmp: Try 'cmp --help' for more information.
+The file "" is different from ""
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-6.sh ello cat
+The file "" is different from ""
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-6.sh ello cat[K[K[Kello
+The file "" is the same as ""
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-6.sh ello ello[1Pcat[K[1Pcat>ex3-6.sh
+#!/bin/bash
+if cmp -s $1 $2; then
+    printf 'The file "%s" is the same as "%s"\n' "$1" "$2"
+else
+    printf 'The file "%s" is different from "%s"\n' "$1" "$2"
+fi
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-6.shbash ex3-6.sh ello ello
+The file "ello" is the same as "ello"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-6.sh ello ello[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pcat>ex3-6.shbash ex3-6.sh ello ello[1Pcat
+The file "ello" is different from "cat"
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cmp ello cat>newfile
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat newfile
+ello cat differ: byte 1, line 1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ e[Kecho 123456781234| grep 1234
+[01;31m[K1234[m[K5678[01;31m[K1234[m[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ {str/x?X\[K[K[K/X}[1P/X}1/X}2/X}3/X}4/X}[C[C[1P}%}[Cecho 123456781234| grep 1234[C[K[K[K[K[K[K[K[K[K[K[K[C[1P123456781234[1P123456781234[1P123456781234[1P123456781234[1P123456781234v123456781234a123456781234r123456781234=123456781234[C[C[C[C[C[C[C[C[C[C[C[C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ var=[K[K[K[K{var//1234/%}
+bash: {var//1234/%}: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.sj[Kh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+${$str//$pat/%}
+echo $str | tr '^%' ' '
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.sh{var//1234/%}[1Pcat>ex3-8.sh[1Px3-8.sh[1Px3-8.sh[1Px3-8.sh[1Px3-8.sh[1Px3-8.shbx3-8.shax3-8.shsx3-8.shhx3-8.sh x3-8.shex3-8.sh
+Enter exp: 12345671234
+Enter pat: 1234
+ex3-8.sh: line 4: ${$str//$pat/%}: bad substitution
+12345671234
+12345671234
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+${str//pat/%}
+echo $str | tr '^%' ' '
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 12345671234
+Enter pat: 1234
+ex3-8.sh: line 4: 12345671234: command not found
+12345671234
+12345671234
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+echo ${str//pat/'%'}
+echo $str | tr '^%' ' '
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 123412
+Enter pat: 12
+123412
+123412
+123412
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+echo ${str//pat/%}
+echo $str | tr '^%' ' '
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 123412
+Enter pat: 12
+123412
+123412
+123412
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+echo ${str//pat/+}
+echo $str | tr '^%' ' '
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 1234
+Enter pat: 12
+1234
+1234
+1234
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+s=${str//pat/A}
+echo $str | tr '^%' ' '
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 123412
+Enter pat: 12
+123412
+123412
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+echo ${str//pat/A}
+echo $str | tr '^%' ' '
+echo $str
+^[[A    ]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 1234
+Enter pat: 12
+1234
+1234
+1234
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+echo ${str//"$pat"/A}
+echo $str | tr '^%' ' '
+echo $str
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 123412
+Enter pat: 12
+A34A
+123412
+123412
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.shbash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+s=${str//"$pat"/A}
+echo $s | tr '^A' ' '
+echo $s
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 1234
+Enter pat: 12
+ 34
+A34
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+s=${str//"$pat"/A}
+echo $s | tr -c 'A' ' '
+echo $s
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 1234
+Enter pat: 12
+A   A34
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+#!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+s=${str//"$pat"/A}
+s=$(echo $s | tr -c 'A\n' ' ')
+echo length(s)
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.shbash ex3-8.sh
+Enter exp: 1234
+Enter pat: 12
+ex3-8.sh: line 6: syntax error near unexpected token `('
+ex3-8.sh: line 6: `echo length(s)'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ bash ex3-8.sh[1Pcat>ex3-8.sh
+^[[A    #!/bin/bash
+read -p  "Enter exp: " str
+read -p "Enter pat: " pat
+s=${str//"$pat"/A}
+s=$(echo $s | tr -c 'A\n' ' ')
+echo ${#s}
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>ex3-8.sh

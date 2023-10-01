@@ -1,0 +1,15 @@
+<html>
+<body>
+  <h2>Finding HTML Elements by Class Name</h2>
+  <p>Hello World!</p>
+  <p class="intro">DOM</p>
+  <p class="intro">JS</p>
+  <p id="demo"></p>
+  <script>
+	  var x = document.getElementsByClassName("intro");
+	  document.getElementById("demo").innerHTML = 
+		  'The paragraph (indices 0, 1) with class="intro": ' 
+      + x[0].innerHTML+' '+x[1].innerHTML ;
+  </script>
+</body>
+</html>

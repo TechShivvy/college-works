@@ -1,0 +1,124 @@
+/* all */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url('https://www.teahub.io/photos/full/282-2820540_background-image-for-html-page.jpg');
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-image: url('https://us.123rf.com/450wm/peshkov/peshkov1809/peshkov180900020/peshkov180900020.jpg?ver=6');
+  }
+  
+  .header h1 {
+    font-size: 48px;
+    color: lightblue;
+    -webkit-text-stroke: 2px darkblue;
+  }
+  
+  .header h2 {
+    font-size: 36px;
+    color: lightblue;
+    -webkit-text-stroke: 2px darkblue;
+  }
+  
+  
+  
+  
+  /*section elements*/
+  section {
+    margin-left: 20px;
+  }
+  
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .side {
+    flex: 30%;
+    padding: 20px;
+  }
+  
+  .main {
+    flex: 70%;
+    padding: 20px;
+  }
+  
+  
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    z-index: 0;
+  }
+  
+  /* Table */
+  #committee {
+    width: 50%;
+  }
+  
+  #committee td,
+  #committee th {
+    border: 2px solid darkblue;
+    padding: 8px;
+  }
+  
+  #committee th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkblue;
+    color: white;
+  }
+  
+  /*Format*/
+  .button {
+    width: 20%;
+    background-color: darkblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: lightblue;
+  }
+  
+  input[type=text] {
+    width: 30%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: text;
+  }
+  
+  #ses {
+    width: 30%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  section figure image {
+    width: 200px;
+    height: 200px;
+  
+  }

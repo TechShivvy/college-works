@@ -1,0 +1,164 @@
+Grammar
+
+    0 $accept: program $end
+
+    1 program: statement
+    2        | program statement
+
+    3 statement: ID ASSIGNMENT operand OPERATOR operand
+    4          | ID ASSIGNMENT operand OPERATOR operand OPERATOR operand
+    5          | ID ASSIGNMENT operand
+
+    6 operand: ID
+    7        | NUMBER
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256)
+    ASSIGNMENT (258) 3 4 5
+    OPERATOR <str> (259) 3 4
+    ID <str> (260) 3 4 5 6
+    NUMBER <str> (261) 7
+
+
+Nonterminals, with rules where they appear
+
+    $accept (7)
+        on left: 0
+    program (8)
+        on left: 1 2
+        on right: 0 2
+    statement (9)
+        on left: 3 4 5
+        on right: 1 2
+    operand <str> (10)
+        on left: 6 7
+        on right: 3 4 5
+
+
+State 0
+
+    0 $accept: • program $end
+
+    ID  shift, and go to state 1
+
+    program    go to state 2
+    statement  go to state 3
+
+
+State 1
+
+    3 statement: ID • ASSIGNMENT operand OPERATOR operand
+    4          | ID • ASSIGNMENT operand OPERATOR operand OPERATOR operand
+    5          | ID • ASSIGNMENT operand
+
+    ASSIGNMENT  shift, and go to state 4
+
+
+State 2
+
+    0 $accept: program • $end
+    2 program: program • statement
+
+    $end  shift, and go to state 5
+    ID    shift, and go to state 1
+
+    statement  go to state 6
+
+
+State 3
+
+    1 program: statement •
+
+    $default  reduce using rule 1 (program)
+
+
+State 4
+
+    3 statement: ID ASSIGNMENT • operand OPERATOR operand
+    4          | ID ASSIGNMENT • operand OPERATOR operand OPERATOR operand
+    5          | ID ASSIGNMENT • operand
+
+    ID      shift, and go to state 7
+    NUMBER  shift, and go to state 8
+
+    operand  go to state 9
+
+
+State 5
+
+    0 $accept: program $end •
+
+    $default  accept
+
+
+State 6
+
+    2 program: program statement •
+
+    $default  reduce using rule 2 (program)
+
+
+State 7
+
+    6 operand: ID •
+
+    $default  reduce using rule 6 (operand)
+
+
+State 8
+
+    7 operand: NUMBER •
+
+    $default  reduce using rule 7 (operand)
+
+
+State 9
+
+    3 statement: ID ASSIGNMENT operand • OPERATOR operand
+    4          | ID ASSIGNMENT operand • OPERATOR operand OPERATOR operand
+    5          | ID ASSIGNMENT operand •
+
+    OPERATOR  shift, and go to state 10
+
+    $default  reduce using rule 5 (statement)
+
+
+State 10
+
+    3 statement: ID ASSIGNMENT operand OPERATOR • operand
+    4          | ID ASSIGNMENT operand OPERATOR • operand OPERATOR operand
+
+    ID      shift, and go to state 7
+    NUMBER  shift, and go to state 8
+
+    operand  go to state 11
+
+
+State 11
+
+    3 statement: ID ASSIGNMENT operand OPERATOR operand •
+    4          | ID ASSIGNMENT operand OPERATOR operand • OPERATOR operand
+
+    OPERATOR  shift, and go to state 12
+
+    $default  reduce using rule 3 (statement)
+
+
+State 12
+
+    4 statement: ID ASSIGNMENT operand OPERATOR operand OPERATOR • operand
+
+    ID      shift, and go to state 7
+    NUMBER  shift, and go to state 8
+
+    operand  go to state 13
+
+
+State 13
+
+    4 statement: ID ASSIGNMENT operand OPERATOR operand OPERATOR operand •
+
+    $default  reduce using rule 4 (statement)

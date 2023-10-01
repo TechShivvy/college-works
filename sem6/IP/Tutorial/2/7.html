@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type = "text/javascript">
+        var total,          // sum of grades
+        gradeCounter,   // number of grades entered
+        gradeValue,     // grade value
+        average,        // average of all grades
+        grade,
+        name;          // grade typed by user
+        
+        total = 0;          // clear total
+        gradeCounter = 1;   // prepare to loop
+         document.writeln( "<table border = \"1\" width = \"50%\">" );
+        while ( gradeCounter <= 5 ) 
+        {  // loop 10 times
+    
+            grade = window.prompt("Enter integer grade:","0");
+            gradeValue = parseInt( grade );
+            name = window.prompt("Enter name:");
+
+            // add gradeValue to total
+            //total = total + gradeValue;  
+        // add 1 to gradeCounter
+            gradeCounter = gradeCounter + 1;
+           
+            if (gradeValue>90)
+            document.writeln( "<tr><td>"+ name + "</td>" + "<td>A</td></tr>");
+            else if ( gradeValue>80 && gradeValue<=90)
+            document.writeln( "<tr><td>"+ name + "</td>" + "<td>B</td></tr>");
+            else if ( gradeValue>70 && gradeValue<=80)
+            document.writeln( "<tr><td>"+ name + "</td>" + "<td>C</td></tr>");
+            else if ( gradeValue>60 && gradeValue<=70)
+            document.writeln( "<tr><td>"+ name + "</td>" + "<td>D</td></tr>");
+            else if ( gradeValue>50 && gradeValue<=60)
+            document.writeln( "<tr><td>"+ name + "</td>" + "<td>E</td></tr>");
+            else
+            document.writeln( "<tr><td>"+ name + "</td>" + "<td>F</td></tr>");
+            
+
+        }
+        document.writeln( "</table>" );
+        // Termination Phase
+        //average = total / 3;  // calculate the average
+    
+        // display average of exam grades
+        // document.writeln( 
+        //     "<h1>Class average is " + average + "</h1>" );
+	</script>
+</head>
+<body>
+    <!-- Read 5 student's name,  mark from user using prompt
+
+    mark>90 grade= “A”
+    mark between 80 and 90 grade= “B”
+    mark between 70 and 80 grade= “C”
+    mark between 60 and 70 grade= “D”
+    mark between 50 and 60 grade= “E”
+    mark between < 50 grade= “E”
+
+    Print student's name and grade in table format -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+* Section
+A section heading starts with *.
+** Subsection
+A subsection heading starts with **.
+We *emphasize* a phrase by delimiting it *.
+*** Subsubsection
+A subsubsection starts with ***.
+*It is a great organization, indeed!*

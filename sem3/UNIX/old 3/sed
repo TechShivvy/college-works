@@ -1,0 +1,400 @@
+Script started on 2022-02-12 01:38:56+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="91" LINES="45"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit a7e6[K[K1f1[K[K[Ke1f1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's\[K//'/[1P/ /[C[C[C[1P/^/[C[/A/-/Z/]/{/a/[1P/[1P/[/a/[1P/[1P/[1P/a/-/z/]/\^[A-Za-z]/[C(^[A-Za-z]/[C[C[C[C[C[C[C[C[C[C\/(/[1P/)/ /(/A/[1P/[1@C[1@C[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K\([A-Za-z]\)/ /./*/[C[C[C'\'2','\'1' \1'[C[C '[1@\[1@([C[C[1@)[C[1@\[C[C[C[C[C[C[C[C[C\'3'
+sed: -e expression #1, char 45: unterminated `s' command
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\(^[A-Za-z]\) \([A-Za-z]\) \(.*\)/\2, \1 \3' a7e1f1
+sed: -e expression #1, char 45: unterminated `s' command
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\(^[A-Za-z]\) \([A-Za-z]\) \(.*\)/\2, \1 \3' a7e1f1[1@/
+John Adams 55
+George Bull 77
+Anne Blue 99
+Janet Blue 67
+Ben Benjamin 78
+Ted White 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\(^[A-Za-z]\) \([A-Za-z]\) \(.*\)/\2, \1 \3/' a7e1f1[1@*[C[C[C[C[C[1P[1@*[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[C[C[1@*[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[C[1@1
+,John Adams 55
+,George Bull 77
+,Anne Blue 99
+,Janet Blue 67
+,Ben Benjamin 78
+,Ted White 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\(^[A-Za-z]*\)*\([A-Za-z]*\)/\2,\1/' a7e1f1[1P
+,John Adams 55
+,George Bull 77
+,Anne Blue 99
+,Janet Blue 67
+,Ben Benjamin 78
+,Ted White 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\([A-Za-z]*\)*\([A-Za-z]*\)/\2,\1/' a7e1f1[1@^[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@*[1P[1@.[1@*
+,John
+,George
+,Anne
+,Janet
+,Ben
+,Ted
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\(^[A-Za-z]*\)*\([A-Za-z]*\).*/\2,\1/' a7e1f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[A-Za-z]*\)*\([A-Za-z]*\)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksed -i 's/\([A-Za-z]*\)
+> *\([A-Za-z]*\)/\2,\1/' age.txt[C[C[7Psed -i 's/\([A-Za-z]*\)[C[C[C[C[C[C's/\(^[A-Za-z]*\)*\([A-Za-z]*\).*/\2,\1/' a7e1f1[C[C[C[C[C[C[C[C[C[C[C[3P[A-Za-z]*\)*\([A-Za-z]*\)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@^[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kbash: unexpected EOF while looking for matching `''
+bash: syntax error: unexpected end of file
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -i 's/\([A-Za-z]*\)'s/\(^[A-Za-z]*\)*\([A-Za-z]*\).*/\2,\1/' a7e1f1[C[1@ 
+Adams,John
+Bull,George
+Blue,Anne
+Blue,Janet
+Benjamin,Ben
+White,Ted
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\(^[A-Za-z]*\) *\([A-Za-z]*\).*/\2,\1/' a7e1f1[1@ 
+Adams,John
+Bull,George
+Blue,Anne
+Blue,Janet
+Benjamin,Ben
+White,Ted
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\([A-Za-z]*\) *\([A-Za-z]*\)/\2,\1/' age.txt
+sed: can't read age.txt: No such file or directory
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\([A-Za-z]*\) *\([A-Za-z]*\)/\2,\1/' age.txt[C[K[K[K[K[K[K[K[K a6e1[K[K[K7e1f1
+Adams,John 55
+Bull,George 77
+Blue,Anne 99
+Blue,Janet 67
+Benjamin,Ben 78
+White,Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed ''s'/'/'[C/'[C[C a7e1f1[C[1@[[1@A[1@-[1@Z[1@a[1@-[1@z[1@][C[1@\[1@([C[C[C[C[C[C[C[C[1@*[1@)[1@\[C[1P[1@\[C[1@ [1@*[1@\[1@([1@[[1@A[1@-[1@Z[1@a[1@-[1@z[1@][1P[1@\[1@)[1@][C[C[C[1P[C[1@/[C[1@/[1@2[1@,[C[1@/[1@1[C[1P[1@\[C[1P[1@\
+A,Johndams 55
+B,Georgeull 77
+B,Annelue 99
+B,Janetlue 67
+B,Benenjamin 78
+W,Tedhite 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\([A-Za-z]*\) *\([A-Za-z]\)/\2,\1/' a7e1f1[1@*
+Adams,John 55
+Bull,George 77
+Blue,Anne 99
+Blue,Janet 67
+Benjamin,Ben 78
+White,Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\([A-Za-z]*\) *\([A-Za-z]*\)/\2,\1/' a7e1f1[C[1@-[1@i[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ 
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -i 's/\([A-Za-z]*\) *\([A-Za-z]*\)/\2, \1/' a7e1f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C a7e1f1[Kc a7e1f1a a7e1f1t a7e1f1
+Adams, John 55
+Bull, George 77
+Blue, Anne 99
+Blue, Janet 67
+Benjamin, Ben 78
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/\([A-Za-z]*\) *\([A-Za-z]*\)/\2,\1/' age.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksort +1 a7-e1-f1>temp;mv temp a7-e1-f1[1Pf1[C[1Pe1f1[C[1P[1P
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sort[K[K[Ked 's///' a7e1f1[C[1@B[1@l[1@u[1@e[1@ [1@-[1@e[1@ [C[C[C[C[C[C[C[C[C[1P[1@ [C[1P[C[1@ [C[1@\[1P[1@/[1@ [1@/[1P[C[C[1P[1@^[1@$[1@*[1@*[1@*[1@*[1@&[1@*[1@*[1@*[1@*
+sed: -e expression #1, char 10: unknown option to `s'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e 's/Blue/ /^****&****$/' a7e1f1[1P[1P[1P
+sed: -e expression #1, char 10: unknown option to `s'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/Blue/ /^****&****$/' a7e1f1[C[C[C[C[C[C[C[1@,[1P
+sed: -e expression #1, char 10: unknown option to `s'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/Blue/,/^****&****$/' a7e1f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@-[1@e[1@ 
+sed: -e expression #1, char 10: unknown option to `s'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e 's/Blue/,/^****&****$/' a7e1f1[C[1P
+sed: -e expression #1, char 20: Invalid preceding regular expression
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e '/Blue/,/^****&****$/' a7e1f1[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@/
+sed: -e expression #1, char 22: Invalid preceding regular expression
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e '/Blue/, /^****&****$/ /' a7e1f1[1P
+sed: -e expression #1, char 22: Invalid preceding regular expression
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e '/Blue/, /^****&****$/ ' a7e1f1[C[1P
+sed: -e expression #1, char 21: Invalid preceding regular expression
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e '/Blue/, /^****&****$/' a7e1f1[1P[C
+sed: -e expression #1, char 20: Invalid preceding regular expression
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e '/Blue/,/^****&****$/' a7e1f1[C[C[C[C[C[C[1@p
+sed: -e expression #1, char 20: Invalid preceding regular expression
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e '/Blue/,/^****&****$/p' a7e1f1[C[C[C[C[1@s
+sed: -e expression #1, char 10: unknown option to `s'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e 's/Blue/,/^****&****$/p' a7e1f1[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksed '//B/l/u/e/[Cc\[C&^&*&*&*&*&[1P&[1P&[C**$/[K' a7e1f1
+^**&**$
+Benjamin, Ben 78
+Bull, George 77
+^**&**$
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed '/Blue/c\^**&**$' a7e1f1[1@\
+^**&**$
+Benjamin, Ben 78
+Bull, George 77
+^**&**$
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed '/Blue/c\^**\&**$' a7e1f1[1P[1@s
+sed: -e expression #1, char 16: unterminated `s' command
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/Blue/c\^**&**$' a7e1f1[1P[C[1P[C[C[C[C[C[C[C[C[1@/
+^**Blue**$, Anne 99
+Benjamin, Ben 78
+Bull, George 77
+^**Blue**$, Janet 67
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/Blue/^**&**$/' a7e1f1[1@.[1@*
+^**Blue, Anne 99**$
+Benjamin, Ben 78
+Bull, George 77
+^**Blue, Janet 67**$
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 's/Blue.*/^**&**$/' a7e1f1[1@-[1@m[1@ 
+sed: invalid option -- 'm'
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -m 's/Blue.*/^**&**$/' a7e1f1[1P[1@M
+sed: invalid option -- 'M'
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -M 's/Blue.*/^**&**$/' a7e1f1[1P[1@E
+^**Blue, Anne 99**$
+Benjamin, Ben 78
+Bull, George 77
+^**Blue, Janet 67**$
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -E 's/Blue.*/^**&**$/' a7e1f1[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[1P
+**Blue, Anne 99**
+Benjamin, Ben 78
+Bull, George 77
+**Blue, Janet 67**
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -E 's/Blue.*/**&**/' a7e1f1[2@^**&**$[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@c\^**&**$[C[C[C[C[C[C[C[C/Blue/c\^**\[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[9@-e '/Blue/,/^****&****$/p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C a7e1f1[Kc a7e1f1a a7e1f1t a7e1f1[C a7e1f1
+Blue, Anne 99
+Benjamin, Ben 78
+Bull, George 77
+Blue, Janet 67
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat  a7e1f1[20@sed -E 's/Blue.*/**&**/'[C[C[C[C[C[C[C[C[C[C[C[C[1@.[1@*[C[C[C[C
+**Blue, Anne 99**
+Benjamin, Ben 78
+Bull, George 77
+**Blue, Janet 67**
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e[KE ' [K/N[KBlue/ s[1@e[C[1P[1@r[C[C[C[C[C[C[C[C[C[C/^.*$//'*/'*/'*/'*/'[1P/'[1P/'&/'*/'*/'[C[C a7e1f1
+sed: -e expression #1, char 1: missing filename in r/R/w/W commands
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -er '/Blue/ s/^.*$/**&**/' a7e1f1[C[1P[1@R
+sed: -e expression #1, char 1: missing filename in r/R/w/W commands
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -eR '/Blue/ s/^.*$/**&**/' a7e1f1[1P[1@E
+sed: -e expression #1, char 1: unknown command: `E'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -eE '/Blue/ s/^.*$/**&**/' a7e1f1R[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CE[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+**Blue, Anne 99**
+Benjamin, Ben 78
+Bull, George 77
+**Blue, Janet 67**
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e '/Blue/ s/^.*$/**&**/' a7e1f1[C[1P[1P[1P
+**Blue, Anne 99**
+Benjamin, Ben 78
+Bull, George 77
+**Blue, Janet 67**
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed '/Blue/ s/^.*$/**&**/' a7e1f1[1@-[1@E[1@ [1P[C[1@ 
+**Blue, Anne 99**
+Benjamin, Ben 78
+Bull, George 77
+**Blue, Janet 67**
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -E '/Blue/ s/^.*$/**&**/' a7e1f1[C[1P[1P
+Blue, Anne 99
+Benjamin, Ben 78
+Bull, George 77
+Blue, Janet 67
+Adams, John 55
+White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -E '/Blue/ s/^$/**&**/' a7e1f1[C[1P[1@e[1@i
+sed: -e expression #1, char 1: expected \ after `a', `c' or `i'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -ei '/Blue/ s/^$/**&**/' a7e1f1[C[1P[C[1@ [1@-[1@i
+sed: -e expression #1, char 1: unknown command: `-'
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -e -i '/Blue/ s/^$/**&**/' a7e1f1[C[1P[1P[1P
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -i '/Blue/ s/^$/**&**/' a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1Pa7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1[1Pa7e1f1[1P a7e1f1[1P a7e1f1[1Pa7e1f1[1P a7e1f1[1P a7e1f1[1P a7e1f1c a7e1f1a a7e1f1t a7e1f1[C a7e1f1- a7e1f1n a7e1f1
+     1	Blue, Anne 99
+     2	Benjamin, Ben 78
+     3	Bull, George 77
+     4	Blue, Janet 67
+     5	Adams, John 55
+     6	White, Ted 32
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat sed1.sed[1Psed1.sed>sed1.sed[C[C[C[C[C[C[C[C
+1,2   ^Z
+[1]+  Stopped                 cat > sed1.sed
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit a7e2s[Kf1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>sed2.sed
+recv  v a7e2f1|sed              s| /$/ /^[[D      \ /^[[D^[[D             ^ \// /
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -f sed2.sed a7e2f1
+bin date 
+bin programs/cal 
+usr bin/date 
+usr report/file1 
+usr report/1etters/lett1
+spool mails
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -f sed2.sed a7e2f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksed -f sed2.sed a7e2f1[1@r[1@e[1@v[1@ [1@a[1@7[1@e[1@2[1@f[1@1[1@|[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K
+ etad nib
+ lac smargorp/nib
+ etad nib/rsu
+ 1elif troper/rsu
+1ttel srette1/troper/rsu
+sliam loops
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ rev a7e2f1| sed -f sed2.sed|rev
+bin date 
+bin/programs cal 
+usr/bin date 
+usr/report file1 
+usr/report/1etters lett1
+spool mails
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ rev a7e2f1| sed -f sed2.sed|rev[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Krev a7e2f1| sed -f sed2.sed|rev[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Psed -f sed2.sed a7e2f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>sed2.sed
+s/\// /
+s\ /$/* \//
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>sed2.sedrev a7e2f1| sed -f sed2.sed|rev
+/bin date 
+/bin/programs cal 
+/usr/bin date 
+/usr/report file1 
+/usr/report/1etters lett1
+/spool mails
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat a7e2f1
+bin/date 
+bin/programs/cal 
+usr/bin/date 
+usr/report/file1 
+usr/report/1etters/lett1
+spool/mails
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed [K 's'[K/[K[K[K[K[K[K[Kcat>sed[Kd22.[K[K_2.sed
+s/.*\/^[[D     ^[[D       ( \(* .*\ \/\).*\(  \/.*  \(.*\)$/\/\1  \1&\2/
+^[[A    ]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>sed2_2.sed[4P a7e2f1rev a7e2f1| sed -f sed2.sed|rev[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C_.sed|rev2.sed|rev[C[C[C[C[C[C[C[1Pv[1Pv[1Pv v[Ka7e2f1
+bin/date 
+/bin/bin/programs/cal cal 
+/usr/usr/bin/date date 
+/usr/usr/report/file1 file1 
+/usr/report/usr/report/1etters/lett1lett1
+spool/mails
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -f sed2_2.sed a7e2f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcat>sed2_2.sed
+s/\(.*\/\).*\/\(.*\)$/\/\1\2 2/
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>sed2_2.sedsed -f sed2_2.sed a7e2f1
+bin/date 
+/bin/cal 
+/usr/date 
+/usr/file1 
+/usr/report/lett1
+spool/mails
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit a7e6f1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed 2[K[K[K[K[Kcat>sed2.[K_3[K[K[K2[K3.sed
+s// \/\*      ]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit sed3.sed
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -f sed3.sed a7e6d[Kf1
+sed: file sed3.sed line 1: unterminated `s' command
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -f sed3.sed a7e6f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgedit sed3.sed
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit sed3.sedsed -f sed3.sed a7e6f1
+* This program reads two integer numbers from the keyboard and prints their product.
+Written by:
+Date:
+
+*/
+
+/* Statements */
+
+scanf ("%d", &number1);
+scanf ("%d", &number2);
+result = number1 * number2;
+printf ("%d", result);
+return 0;
+} /* main */
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -f sed3.sed a7e6f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgedit sed3.sed
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ gedit sed3.sedsed -f sed3.sed a7e6f1
+* This program reads two integer numbers from the keyboard and prints their product.
+Written by:
+Date:
+
+*/
+
+
+scanf ("%d", &number1);
+scanf ("%d", &number2);
+result = number1 * number2;
+printf ("%d", result);
+return 0;
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ sed -f sed3.sed a7e6f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pgedit sed3.sed
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+There are stopped jobs.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ r[Kexit
+exit
+
+Script done on 2022-02-12 03:01:15+05:30 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: poppins, sans-serif;
+  }
+  
+  body {
+    font-family: poppins, sans-serif,Arial, Helvetica;
+    margin: 0;
+    background-image: url('https://www.teahub.io/photos/full/282-2820540_background-image-for-html-page.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-image: url('https://us.123rf.com/450wm/peshkov/peshkov1809/peshkov180900020/peshkov180900020.jpg?ver=6');
+  }
+  
+  .header h1{
+    color: lightblue;
+    -webkit-text-stroke: 2px darkblue;
+  }
+  
+  .header h2 {
+    font-size: 36px;
+    color: lightblue;
+    -webkit-text-stroke: 2px darkblue;
+  }
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 5rem;    /* Footer height */
+  }
+  /* Footer */
+  .footer {
+    text-align: center;
+    z-index: 0;
+    color: black;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem; 
+  }
+  
+  /* Table */
+  #committee {
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto; /* center the table */
+  }
+  
+  #committee td,
+  #committee th {
+    border: 2px solid darkblue;
+    padding: 8px;
+  }
+  
+  #committee th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  /*Format*/
+  .button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: darkgreen;
+  }
+  ul {
+    padding: 20px;
+    width: 30%;
+  }
+
+  ul li {
+    background: #cce5fe;
+    color: darkblue;
+    margin: 5px;
+    font-size:xx-large;
+  }
+
+  fieldset {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  form {
+    width: 50%;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  input[type=text], input[type=email], input[type=tel], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  label {
+    font-size: 20px;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  input:invalid {
+    border-color: red;
+  }
+  input:valid {
+    border-color: green;
+  }

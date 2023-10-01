@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/icon" href="logo.png">
+    <title>gallery - MyCon</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>MyConference SSN</h1>
+        <h2>Internet Programming - Assignment 2 </h2>
+    </header>
+
+    <nav class="navbar">
+        <a class="left" href="conference.html"><img class="logo" src="logo.png"> </a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="committee.html">COMMITTEE</a>
+        <a href="dates.html">IMPORTANT DATES</a>
+        <a href="workshop.html">WORKSHOPS</a>
+        <a href="register.html">REGISTRATION</a>
+        <div class="dropdown">
+            <button class="dropbtn">CALL FOR PAPERS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="call.html">LIST OF TOPICS</a>
+                <a target="_blank" href="Conference.pdf">BIG DATA</a>
+            </div>
+        </div>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+    <section>
+        <h1>Gallery Page</h1>
+        <div class="gallery">
+            <a target="_blank"
+                href="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg">
+                <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/04/why-become-data-scientist.jpg"
+                    alt="Data Science" width="600" height="400">
+            </a>
+            <div class="desc">Data Science</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://miro.medium.com/max/1024/0*QxsWlMTDGmTebavF.jpg">
+                <img src="https://miro.medium.com/max/1024/0*QxsWlMTDGmTebavF.jpg" alt="Big Data" width="600"
+                    height="400">
+            </a>
+            <div class="desc">Big data</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank"
+                href="https://cdn.searchenginejournal.com/wp-content/uploads/2020/02/10-great-google-analytics-alternatives-5e4175671fa6a.png">
+                <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2020/02/10-great-google-analytics-alternatives-5e4175671fa6a.png"
+                    alt="Analytics" width="600" height="400">
+            </a>
+            <div class="desc">Analytics</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://www.fsm.ac.in/blog/wp-content/uploads/2022/08/ml-e1610553826718.jpg">
+                <img src="https://www.fsm.ac.in/blog/wp-content/uploads/2022/08/ml-e1610553826718.jpg" alt="ML"
+                    width="600" height="400">
+            </a>
+            <div class="desc">ML</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.eweek.com/wp-content/uploads/2022/05/enterprise-AI.jpg">
+                <img src="https://www.eweek.com/wp-content/uploads/2022/05/enterprise-AI.jpg" alt="AI" width="600"
+                    height="400">
+            </a>
+            <div class="desc">AI</div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2>Designed by Abhinav Ram</h2>
+    </footer>
+</body>
+
+</html>

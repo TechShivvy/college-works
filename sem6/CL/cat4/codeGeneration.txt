@@ -1,0 +1,17 @@
+mov 2, e
+mov 8, t0
+mov t0, r0
+mul 3, r0
+mov r0, t1
+mov t1, a
+mov a, r1
+add 2, r1
+mov r1, t2
+mov t2, r2
+add 7, r2
+mov r2, t3
+mov t3, b
+mov 0, t4
+mov t4, c
+mov b, t5
+mov t5, d

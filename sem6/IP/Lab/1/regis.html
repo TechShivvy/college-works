@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+		body {
+		  background-image: url('regis.webp');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		}
+		.navbar {
+		width: 100%;
+		background-color: #555;
+		overflow: auto;
+		}
+
+		.navbar a {
+		float: left;
+		padding: 12px;
+		color: white;
+		text-decoration: none;
+		font-size: 17px;
+		width: 12.964%; /* Four links of equal widths */
+		text-align: center;
+		}
+
+		.navbar a:hover {
+		background-color: #000;
+		}
+
+		.navbar a.active {
+		background-color: #007FFF;
+		}
+
+		@media screen and (max-width: 500px) {
+		.navbar a {
+			float: none;
+			display: block;
+			width: 100%;
+			text-align: left;
+		}
+	}
+    input[type=text] {
+    width: 30%;
+    background-color: #ffffff;
+    color: rgb(0, 4, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: text;
+  }
+  
+
+  .button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #45a049;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+		<a href="home.html">Home</a> 
+		<a href="committe.html">Committee</a> 
+		<a href="callForPapers.html">Call for papers</a> 
+		<a href="impDates.html">Important Dates</a>
+		<a href="workshop.html">Workshops</a> 
+		<a class="active" href="#">Registration</a> 
+		<a href="contacts.html">Contact</a> 
+	</div>
+    <br><br><br>
+    <h1>Registration:</h1><br><br><br>
+    <form action="/action_page.php">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="eg: You"><br>
+        <label for="id">Mail ID:</label><br>
+        <input type="text" id="id" name="id" placeholder="eg: you@example.com"><br>
+        <label for="con">Contact:</label><br>
+        <input type="text" id="con" name="con" placeholder="eg: 9876543210"><br><br>
+        <button style="font-size:25px" type="button" onclick="alert('Registered Successfully!')">Submit</button>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="color: black">
+		<center>Shivcharan | 205001100 | shivcharan2010538@ssn.edu.in</center> 
+	</footer>
+</body>
+</html>

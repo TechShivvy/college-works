@@ -1,0 +1,3 @@
+hello 
+this is a testing file for os assgn
+bye FROM HOMEEEE

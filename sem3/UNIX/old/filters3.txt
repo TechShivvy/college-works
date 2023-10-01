@@ -1,0 +1,456 @@
+Script started on 2021-10-14 18:48:12+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="203" LINES="48"]
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1[1PCh6S3F1>Ch6S3F1
+^^?  ALPHABETICAL FACTS. 
+THE FIRST THREE LETTERS ARE ABC. 
+THE MEDIAN LETTERS ARE MN. 
+THE LAST THREE LETTERS ARE XYZ. 
+THE FIRST WORD IN MY DICTIONARY IS AAL. 
+THE LAST WORD IN MY DICTIONARY IS ZYTHUM. 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG. 
+THE LAST LETTER MAY BE PRONOUNCED ZEE OR ZED.
+3  
+THE FIRST GREEK LETTER IS ALPHA. 
+THE LAST GREEK LETTER IS OMEGA.^Z
+[1]+  Stopped                 cat > Ch6S3F1
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>Ch6S3F1
+ALPHABETICAL FACTS. 
+THE FIRST THREE LETTERS ARE ABC. 
+THE MEDIAN LETTERS ARE MN. 
+THE LAST THREE LETTERS ARE XYZ. 
+THE FIRST WORD IN MY DICTIONARY IS AAL. 
+THE LAST WORD IN MY DICTIONARY IS ZYTHUM. 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG. 
+THE LAST LETTER MAY BE PRONOUNCED ZEE OR ZED.
+THE FIRST GREEK LETTER IS ALPHA. 
+THE LAST GREEK LETTER IS OMEGA.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat>Ch6S3F1[C[1PCh6S3F1 Ch6S3F1
+ALPHABETICAL FACTS. 
+THE FIRST THREE LETTERS ARE ABC. 
+THE MEDIAN LETTERS ARE MN. 
+THE LAST THREE LETTERS ARE XYZ. 
+THE FIRST WORD IN MY DICTIONARY IS AAL. 
+THE LAST WORD IN MY DICTIONARY IS ZYTHUM. 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG. 
+THE LAST LETTER MAY BE PRONOUNCED ZEE OR ZED.
+THE FIRST GREEK LETTER IS ALPHA. 
+THE LAST GREEK LETTER IS OMEGA.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ^C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ^C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ tr[K[Kman tr
+[?1049h[22;0;0t[?1h=TR(1)                                                                                       User Commands                                                                                       TR(1)[m
+[m
+[1mNAME[0m[m
+       tr - translate or delete characters[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       Translate, squeeze, and/or delete characters from standard input, writing to standard output.[m
+[m
+       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+              use the complement of SET1[m
+[m
+       [1m-d[0m, [1m--delete[0m[m
+              delete characters in SET1, do not translate[m
+[m
+       [1m-s[0m, [1m--squeeze-repeats[0m[m
+              replace each sequence of a repeated character that is listed in the last specified SET, with a single occurrence of that character[m
+[m
+       [1m-t[0m, [1m--truncate-set1[0m[m
+              first truncate SET1 to length of SET2[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       SETs are specified as strings of characters.  Most represent themselves.  Interpreted sequences are:[m
+[m
+       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[m
+       \\     backslash[m
+[m
+       \a     audible BEL[m
+[m
+       \b     backspace[m
+[m
+       \f     form feed[m
+[m
+       \n     new line[m
+[m
+       \r     return[m
+[m
+       \t     horizontal tab[m
+[m
+       \v     vertical tab[m
+[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       CHAR1-CHAR2[m
+[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters from CHAR1 to CHAR2 in ascending order[m
+[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*][m
+[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in SET2, copies of CHAR until length of SET1[m
+[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*REPEAT][m
+[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alnum:][m
+[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters and digits[m
+[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alpha:][m
+[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters[m
+[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:blank:][m
+[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal whitespace[m
+[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:cntrl:][m
+[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all control characters[m
+[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:digit:][m
+[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all digits[m
+[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:graph:][m
+[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, not including space[m
+[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:lower:][m
+[7m Manual page tr(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all lower case letters[m
+[7m Manual page tr(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:print:][m
+[7m Manual page tr(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, including space[m
+[7m Manual page tr(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:punct:][m
+[7m Manual page tr(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all punctuation characters[m
+[7m Manual page tr(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:space:][m
+[7m Manual page tr(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal or vertical whitespace[m
+[7m Manual page tr(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:upper:][m
+[7m Manual page tr(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all upper case letters[m
+[7m Manual page tr(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:xdigit:][m
+[7m Manual page tr(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all hexadecimal digits[m
+[7m Manual page tr(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [=CHAR=][m
+[7m Manual page tr(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters which are equivalent to CHAR[m
+[7m Manual page tr(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Translation  occurs if [1m-d[0m is not given and both SET1 and SET2 appear.  [1m-t[0m may be used only when translating.  SET2 is extended to length of SET1 by repeating its last character as necessary.[m
+[7m Manual page tr(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Excess characters of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to expand in ascending order; used in SET2 while translating, they may only be used in  pairs  to  specify[m
+[7m Manual page tr(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       case conversion.  [1m-s[0m uses the last specified SET, and occurs after translation or deletion.[m
+[7m Manual page tr(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page tr(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by Jim Meyering.[m
+[7m Manual page tr(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING[0m [1mBUGS[0m[m
+[7m Manual page tr(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>[m
+[7m Manual page tr(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report tr translation bugs to <https://translationproject.org/team/>[m
+[7m Manual page tr(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page tr(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright © 2018 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.[m
+[7m Manual page tr(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[7m Manual page tr(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page tr(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation at: <https://www.gnu.org/software/coreutils/tr>[m
+[7m Manual page tr(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) tr invocation'[m
+[7m Manual page tr(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 8.30                                                                          September 2019                                                                                      TR(1)[m
+[7m Manual page tr(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1 | tr "a-Z[Kz'[K","A-Zz[K" "B[KF-B"
+tr: range-endpoints of 'F-B' are in reverse collating sequence order
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1 | tr "a-z","A-Z" "F-B"[1P"Z"
+ZZZZZZZZZZZZ ZZZZZ. 
+ZZZ ZZZZZ ZZZZZ ZZZZZZZ ZZZ ZZZ. 
+ZZZ ZZZZZZ ZZZZZZZ ZZZ ZZ. 
+ZZZ ZZZZ ZZZZZ ZZZZZZZ ZZZ ZZZ. 
+ZZZ ZZZZZ ZZZZ ZZ ZZ ZZZZZZZZZZ ZZ ZZZ. 
+ZZZ ZZZZ ZZZZ ZZ ZZ ZZZZZZZZZZ ZZ ZZZZZZ. 
+ZZZ ZZZZZ ZZZZZ ZZZ ZZZZZZ ZZZZ ZZZ ZZZZ ZZZ. 
+ZZZ ZZZZ ZZZZZZ ZZZ ZZ ZZZZZZZZZZ ZZZ ZZ ZZZ.
+ZZZ ZZZZZ ZZZZZ ZZZZZZ ZZ ZZZZZ. 
+ZZZ ZZZZ ZZZZZ ZZZZZZ ZZ ZZZZZ.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ tr[K[Kman tr
+[?1049h[22;0;0t[?1h=TR(1)                                                                                       User Commands                                                                                       TR(1)[m
+[m
+[1mNAME[0m[m
+       tr - translate or delete characters[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       Translate, squeeze, and/or delete characters from standard input, writing to standard output.[m
+[m
+       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+              use the complement of SET1[m
+[m
+       [1m-d[0m, [1m--delete[0m[m
+              delete characters in SET1, do not translate[m
+[m
+       [1m-s[0m, [1m--squeeze-repeats[0m[m
+              replace each sequence of a repeated character that is listed in the last specified SET, with a single occurrence of that character[m
+[m
+       [1m-t[0m, [1m--truncate-set1[0m[m
+              first truncate SET1 to length of SET2[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       SETs are specified as strings of characters.  Most represent themselves.  Interpreted sequences are:[m
+[m
+       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[m
+       \\     backslash[m
+[m
+       \a     audible BEL[m
+[m
+       \b     backspace[m
+[m
+       \f     form feed[m
+[m
+       \n     new line[m
+[m
+       \r     return[m
+[m
+       \t     horizontal tab[m
+[m
+       \v     vertical tab[m
+[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       CHAR1-CHAR2[m
+[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters from CHAR1 to CHAR2 in ascending order[m
+[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*][m
+[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in SET2, copies of CHAR until length of SET1[m
+[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*REPEAT][m
+[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alnum:][m
+[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters and digits[m
+[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alpha:][m
+[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters[m
+[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:blank:][m
+[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal whitespace[m
+[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:cntrl:][m
+[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all control characters[m
+[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:digit:][m
+[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all digits[m
+[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:graph:][m
+[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, not including space[m
+[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:lower:][m
+[7m Manual page tr(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all lower case letters[m
+[7m Manual page tr(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:print:][m
+[7m Manual page tr(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, including space[m
+[7m Manual page tr(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:punct:][m
+[7m Manual page tr(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all punctuation characters[m
+[7m Manual page tr(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:space:][m
+[7m Manual page tr(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal or vertical whitespace[m
+[7m Manual page tr(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \f     form feed[m
+[48;1H[K[7m Manual page tr(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \b     backspace[m
+[48;1H[K[7m Manual page tr(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \a     audible BEL[m
+[48;1H[K[7m Manual page tr(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \\     backslash[m
+[48;1H[K[7m Manual page tr(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[48;1H[K[7m Manual page tr(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       SETs are specified as strings of characters.  Most represent themselves.  Interpreted sequences are:[m
+[48;1H[K[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              output version information and exit[m
+[48;1H[K[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--version[0m[m
+[48;1H[K[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m--help[0m display this help and exit[m
+[48;1H[K[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              first truncate SET1 to length of SET2[m
+[48;1H[K[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-t[0m, [1m--truncate-set1[0m[m
+[48;1H[K[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              replace each sequence of a repeated character that is listed in the last specified SET, with a single occurrence of that character[m
+[48;1H[K[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-s[0m, [1m--squeeze-repeats[0m[m
+[48;1H[K[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              delete characters in SET1, do not translate[m
+[48;1H[K[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-d[0m, [1m--delete[0m[m
+[48;1H[K[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              use the complement of SET1[m
+[48;1H[K[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-c[0m, [1m-C[0m, [1m--complement[0m[m
+[48;1H[K[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Translate, squeeze, and/or delete characters from standard input, writing to standard output.[m
+[48;1H[K[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[48;1H[K[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtr[0m [[4mOPTION[24m]... [4mSET1[24m [[4mSET2[24m][m
+[48;1H[K[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[48;1H[K[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tr - translate or delete characters[m
+[48;1H[K[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[48;1H[K[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[48;1H[K[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMTR(1)                                                                                       User Commands                                                                                       TR(1)[m
+[48;1H[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page tr(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       CHAR1-CHAR2[m
+[7m Manual page tr(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters from CHAR1 to CHAR2 in ascending order[m
+[7m Manual page tr(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*][m
+[7m Manual page tr(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              in SET2, copies of CHAR until length of SET1[m
+[7m Manual page tr(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [CHAR*REPEAT][m
+[7m Manual page tr(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[7m Manual page tr(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alnum:][m
+[7m Manual page tr(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters and digits[m
+[7m Manual page tr(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:alpha:][m
+[7m Manual page tr(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all letters[m
+[7m Manual page tr(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:blank:][m
+[7m Manual page tr(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal whitespace[m
+[7m Manual page tr(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:cntrl:][m
+[7m Manual page tr(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all control characters[m
+[7m Manual page tr(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:digit:][m
+[7m Manual page tr(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all digits[m
+[7m Manual page tr(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:graph:][m
+[7m Manual page tr(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, not including space[m
+[7m Manual page tr(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:lower:][m
+[7m Manual page tr(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all lower case letters[m
+[7m Manual page tr(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:print:][m
+[7m Manual page tr(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all printable characters, including space[m
+[7m Manual page tr(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:punct:][m
+[7m Manual page tr(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all punctuation characters[m
+[7m Manual page tr(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:space:][m
+[7m Manual page tr(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all horizontal or vertical whitespace[m
+[7m Manual page tr(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:upper:][m
+[7m Manual page tr(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all upper case letters[m
+[7m Manual page tr(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [:xdigit:][m
+[7m Manual page tr(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all hexadecimal digits[m
+[7m Manual page tr(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [=CHAR=][m
+[7m Manual page tr(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              all characters which are equivalent to CHAR[m
+[7m Manual page tr(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Translation  occurs if [1m-d[0m is not given and both SET1 and SET2 appear.  [1m-t[0m may be used only when translating.  SET2 is extended to length of SET1 by repeating its last character as necessary.[m
+[7m Manual page tr(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Excess characters of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to expand in ascending order; used in SET2 while translating, they may only be used in  pairs  to  specify[m
+[7m Manual page tr(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       case conversion.  [1m-s[0m uses the last specified SET, and occurs after translation or deletion.[m
+[7m Manual page tr(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page tr(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by Jim Meyering.[m
+[7m Manual page tr(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING[0m [1mBUGS[0m[m
+[7m Manual page tr(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>[m
+[7m Manual page tr(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report tr translation bugs to <https://translationproject.org/team/>[m
+[7m Manual page tr(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page tr(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright © 2018 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.[m
+[7m Manual page tr(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[7m Manual page tr(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page tr(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation at: <https://www.gnu.org/software/coreutils/tr>[m
+[7m Manual page tr(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) tr invocation'[m
+[7m Manual page tr(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page tr(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 8.30                                                                          September 2019                                                                                      TR(1)[m
+[7m Manual page tr(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page tr(1) line 70/116 (END) (press h for help or q to quit)[27m[K[K[HM[m
+[HM              all control characters[m
+[HM       [:cntrl:][m
+[HM[m
+[HM              all horizontal whitespace[m
+[HM       [:blank:][m
+[HM[m
+[HM              all letters[m
+[HM       [:alpha:][m
+[HM[m
+[HM              all letters and digits[m
+[HM       [:alnum:][m
+[HM[m
+[HM              REPEAT copies of CHAR, REPEAT octal if starting with 0[m
+[HM       [CHAR*REPEAT][m
+[HM[m
+[HM              in SET2, copies of CHAR until length of SET1[m
+[HM       [CHAR*][m
+[HM[m
+[HM              all characters from CHAR1 to CHAR2 in ascending order[m
+[HM       CHAR1-CHAR2[m
+[HM[m
+[HM       \v     vertical tab[m
+[HM[m
+[HM       \t     horizontal tab[m
+[HM[m
+[HM       \r     return[m
+[HM[m
+[HM       \n     new line[m
+[HM[m
+[HM       \f     form feed[m
+[HM[m
+[HM       \b     backspace[m
+[HM[m
+[HM       \a     audible BEL[m
+[HM[m
+[HM       \\     backslash[m
+[HM[m
+[HM       \NNN   character with octal value NNN (1 to 3 octal digits)[m
+[HM[m
+[HM       SETs are specified as strings of characters.  Most represent themselves.  Interpreted sequences are:[m
+[HM[m
+[HM              output version information and exit[m
+[HM       [1m--version[0m[m
+[HM[m
+[HM       [1m--help[0m display this help and exit[m
+[HM[m
+[48;1H[K[7m Manual page tr(1) line 23/116 50% (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ man trcat Ch6S3F1 | tr "a-z","A-Z" "F-Z"[1P[1P[1P[1P[1P[1P[C[1P[1@[[C[C[C[C[1P "F-Z"] "F-Z"[C[C[1PF-Z"' F-Z"[1@'[C[C[C[C[C[C[1P F-Z"[1P[C[C[C[C[C[C[C[C[C[C[K[K[K[K'[A[KF-ZA-E]'
+FQUMFGJYNHFQ KFHYX. 
+YMJ KNWXY YMWJJ QJYYJWX FWJ FGH. 
+YMJ RJINFS QJYYJWX FWJ RS. 
+YMJ QFXY YMWJJ QJYYJWX FWJ CDE. 
+YMJ KNWXY BTWI NS RD INHYNTSFWD NX FFQ. 
+YMJ QFXY BTWI NS RD INHYNTSFWD NX EDYMZR. 
+YMJ VZNHP GWTBS KTC OZRUJI TAJW YMJ QFED ITL. 
+YMJ QFXY QJYYJW RFD GJ UWTSTZSHJI EJJ TW EJI.
+YMJ KNWXY LWJJP QJYYJW NX FQUMF. 
+YMJ QFXY LWJJP QJYYJW NX TRJLF.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1 | tr [A-Z] '[F-ZA-E]'>Ch6S3F1Encr
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1Encr
+FQUMFGJYNHFQ KFHYX. 
+YMJ KNWXY YMWJJ QJYYJWX FWJ FGH. 
+YMJ RJINFS QJYYJWX FWJ RS. 
+YMJ QFXY YMWJJ QJYYJWX FWJ CDE. 
+YMJ KNWXY BTWI NS RD INHYNTSFWD NX FFQ. 
+YMJ QFXY BTWI NS RD INHYNTSFWD NX EDYMZR. 
+YMJ VZNHP GWTBS KTC OZRUJI TAJW YMJ QFED ITL. 
+YMJ QFXY QJYYJW RFD GJ UWTSTZSHJI EJJ TW EJI.
+YMJ KNWXY LWJJP QJYYJW NX FQUMF. 
+YMJ QFXY LWJJP QJYYJW NX TRJLF.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ^C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1Encr | tr [A-Z] '[F-ZA-E]'>Ch6S3F1Encr[C[1@E[1@n[1@c[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P-ZA-E]'>Ch6S3F1EncrA-ZA-E]'>Ch6S3F1Encr[C[C[1P-E]'>Ch6S3F1Encr[1PE]'>Ch6S3F1Encr[1P]'>Ch6S3F1Encr[1P[1P[1P[1@F[1@-[1@Z[1@A[1@-[1@E[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ cat Ch6S3F1Encr | tr [F-ZA-E] '[A-Z]'>Ch6S3F1[K | tr [A-Z] '[F-ZA-E]'>Ch6S3F1Encr[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cman tr[Kcat Ch6S3F1 | tr "a-z","A-Z" "F-Z"B"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cman tr[Kcat Ch6S3F1>Ch6S3F1 Ch6S3F1
+ALPHABETICAL FACTS. 
+THE FIRST THREE LETTERS ARE ABC. 
+THE MEDIAN LETTERS ARE MN. 
+THE LAST THREE LETTERS ARE XYZ. 
+THE FIRST WORD IN MY DICTIONARY IS AAL. 
+THE LAST WORD IN MY DICTIONARY IS ZYTHUM. 
+THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG. 
+THE LAST LETTER MAY BE PRONOUNCED ZEE OR ZED.
+THE FIRST GREEK LETTER IS ALPHA. 
+THE LAST GREEK LETTER IS OMEGA.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ ^C
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ [K]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+There are stopped jobs.
+]0;cse1100@brokolee: ~[01;32mcse1100@brokolee[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-10-14 19:12:51+05:30 [COMMAND_EXIT_CODE="1"]

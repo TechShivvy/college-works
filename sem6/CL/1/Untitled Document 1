@@ -1,0 +1,23 @@
+// if(argc < 2){
+    //     printf("Give program name and file name as arguments!\n");
+    //     exit(EXIT_FAILURE);
+    // }
+    // int fd = open(argv[1], O_CREAT);
+    // if(fd == -1){
+    //     perror("file");
+    //     exit(EXIT_FAILURE);
+    // }
+    // char prog[500];
+    // int count = read(fd, (char*) prog, 50/=0); 
+    // printf("The program is :\n%s\n\n", prog);
+    // parse_program(prog);
+    
+    
+    /*sdf jsb je
+	ewg
+	weg
+	rg
+	
+	rhqerherh ethth ethe  th 
+	
+/*[();,{}.\[\]]               { printf(" %-30s - Special character\n",yytext);}*/

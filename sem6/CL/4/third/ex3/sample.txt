@@ -1,0 +1,10 @@
+import numpy as np
+x=sum(y+z)+sum(c)
+print("hello")
+
+if x:
+	print()
+	if y:
+		print()
+	print()
+

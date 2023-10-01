@@ -1,0 +1,276 @@
+Script started on Mon Nov  1 09:55:19 2021
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ script -a sed.txt[C[C[C[C[C[C[C[C[C[C[C[Ct[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat>a6-e1-f1[1P-e1-f17-e1-f1
+John Adams 55
+George Bull 77
+Anne Blue 99
+Janet Blue 67
+Ben Benjamin 78
+Ted White 32
+^Dbash-3.2$ sed 's/,/ /[1P/[1P/ /[C, /' a7-e1-f1
+John, Adams 55
+George, Bull 77
+Anne, Blue 99
+Janet, Blue 67
+Ben, Benjamin 78
+Ted, White 32
+bash-3.2$ sed 's/ /, /' a7-e1-f1>temp;mv temp a6-f1[K[Ke1[K[K[K[K[Ka7-e1f[K-f1
+bash-3.2$ sed 's/ /, /' a7-e1-f1>temp;mv temp a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[10Pcat>a7-e1-f1[C[C[C[C[C[C[C[C[C[Cscript -a sed.txt[C[C[C[C[C[C[C[C[C[C[5Pcat>a7-e1-f1[C[C[C[C[C[C[C[C[C[Csed 's/ /, /' a7-e1-f1[C[C[C[C[C[C[C[C[C[C[10Pcat>a7-e1-f1[1Pa7-e1-f1 a7-e1-f1
+John, Adams 55
+George, Bull 77
+Anne, Blue 99
+Janet, Blue 67
+Ben, Benjamin 78
+Ted, White 32
+bash-3.2$ sort +1 a7-e1-f1
+John, Adams 55
+Ben, Benjamin 78
+Janet, Blue 67
+Anne, Blue 99
+George, Bull 77
+Ted, White 32
+bash-3.2$ sort +1 a7-e1-f1>ten[Kmp[Kp;mv temp a7-e1-f1
+bash-3.2$ sort +1 a7-e1-f1>temp;mv temp a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C
+John, Adams 55
+Ben, Benjamin 78
+Janet, Blue 67
+Anne, Blue 99
+George, Bull 77
+Ted, White 32
+bash-3.2$ John Adams 55
+bash: John: command not found
+bash-3.2$ George Bull 77
+bash: George: command not found
+bash-3.2$ Anne Blue 99
+bash: Anne: command not found
+bash-3.2$ Janet Blue 67
+bash: Janet: command not found
+bash-3.2$ Ben Benjamin 78
+bash: Ben: command not found
+bash-3.2$ Ted White 32John Adams 55
+bash: Ted: command not found
+bash-3.2$ George Bull 77
+bash: George: command not found
+bash-3.2$ Anne Blue 99
+bash: Anne: command not found
+bash-3.2$ Janet Blue 67
+bash: Janet: command not found
+bash-3.2$ Ben Benjamin 78
+bash: Ben: command not found
+bash-3.2$ Ted White 32[K[K[K[K[K[K[K[K[K[K[K[KBen Benjamin 78[C[C[C[C[C[C[C[C[C[C[2PJanet Blue 67[C[C[C[C[C[C[C[C[C[C[1PAnne Blue 99[C[C[C[C[C[C[C[C[C[CGeorge Bull 77[C[C[C[C[C[C[C[C[C[CTed White 32John Adams 55[C[C[C[C[C[C[C[C[C[C[10PBen Benjamin 78[C[C[C[C[C[C[C[C[C[C[2PJanet Blue 67[C[C[C[C[C[C[C[C[C[C[1PAnne Blue 99[C[C[C[C[C[C[C[C[C[CGeorge Bull 77[C[C[C[C[C[C[C[C[C[C[1PJohn Adams 55[C[C[C[C[C[C[C[C[C[C[1Pcat a7-e1-f1[C[C[C[C[C[C[C[C[C[C[26@sort +1 a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[K>temp;mv temp a7-e1-f1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[4@sort +1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[10Pcat>a7-e1-f1[C[C[C[C[C[C[C[C[C[Cscript -a sed.txt[C[C[C[C[C[C[C[C[C[C[C[Ct[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[C[C[22Pctipt -a sed.txt[C[C[C[C[C[C[C[C[C[C[Cort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csed 's/ /, /' a7-e1-f1>temp;mv temp a7-e1-f1[C[C[C[C[C[C[C[C[C[Ccat>a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csed 's/ /, /' a7-e1-f1>temp;mv temp a7-e1-f1[C[C[C[C[C[C[C[C[C[Ccat>a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csed 's/ /, /' a7-e1-f1[C[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>a7-e1-f1[K a7-e1-f1[C[C[C[C[C[C[C[C[C[C[37@sed -f script.sed  a7-f1-e1>temp;mv temp[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[13Pcat>script.sed[C[C[C[C[C[C[C[C[C[Csed -f script.sed  a7-f1-e1
+*****John, Adams 55*****
+*****Ben, Benjamin 78*****
+*****Janet, Blue 67*****
+*****Anne, Blue 99*****
+*****George, Bull 77*****
+*****Ted, White 32*****
+bash-3.2$ sed -f script.sed  a7-f1-e1[C[C[C[C[C[C[C[C[C[C[12PBen Benjamin 78[C[C[C[C[C[C[C[C[C[C[2PJanet Blue 67[C[C[C[C[C[C[C[C[C[C[1PAnne Blue 99[C[C[C[C[C[C[C[C[C[CGeorge Bull 77[C[C[C[C[C[C[C[C[C[CTed White 32John Adams 55[C[C[C[C[C[C[C[C[C[C[10PBen Benjamin 78[C[C[C[C[C[C[C[C[C[C[2PJanet Blue 67[C[C[C[C[C[C[C[C[C[C[1PAnne Blue 99[C[C[C[C[C[C[C[C[C[CGeorge Bull 77[C[C[C[C[C[C[C[C[C[C[1PJohn Adams 55[C[C[C[C[C[C[C[C[C[C[1Pcat a7-e1-f1[C[C[C[C[C[C[C[C[C[C[26@sort +1 a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[4Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[10Pcat>a7-e1-f1[C[C[C[C[C[C[C[C[C[Cscript -a sed.txt[C[C[C[C[C[C[C[C[C[C[C[Ct[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csed 's/ /, /' a7-e1-f1>temp;mv temp a7-e1-f1[C[C[C[C[C[C[C[C[C[Ccat>a7-e1-f1[K[C[C[C[C[C[C[C[C[C[Csed 's/ /, /' a7-e1-f1[C[C[C[C[C[C[C[C[C[C[10Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort +1 a7-e1-f1>temp; mv temp a7-f1-e1[C[C[C[C[C[C[C[C[C[Ccat a7-e1-f1[K[C[C[C[C[C[C[C[C[C[C[32@sed 's/ /, /' a7-e1-f1>temp;mv temp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat>a7-e1-f1[K a7-e1-f1[C[C[C[C[C[C[C[C[C[C[37@sed -f script.sed  a7-f1-e1>temp;mv temp[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[13Pcat>script.sed[1Pscript.sed script.sed
+s/^/*****/
+s/$/*****/
+bash-3.2$ cat -n a7-e1-f1
+     1	John, Adams 55
+     2	Ben, Benjamin 78
+     3	Janet, Blue 67
+     4	Anne, Blue 99
+     5	George, Bull 77
+     6	Ted, White 32
+bash-3.2$ cat -n a7-e1-f1[1Pscript.sed[C[C[C[C[C[C[C[C[C[Csed -f script.sed  a7-f1-e1[C[C[C[C[C[C[C[1@g[1@r[1@e[1@p[1@ [1@"[1@B[1@l[1@u[1@e[1@"[1@ [1@a[1@6[1@-[1@e[1@1[1@-[1@f[1@1[1@|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P7-f1-e1[1P-f1-e1[1Pf1-e1[1P1-e1[1P-e1[1Pe1[1P1[K
+bash-3.2$ grep "Blue" a6-e1-f1|sed -f script.sed  [C[C[C[C[C[C[C[C[C[C[25Pcat -n a7-e1-f1[1Pscript.sed[C[C[C[C[C[C[C[C[C[Csed -f script.sed  a7-f1-e1[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1Pa7-f1-e1[1P[1P[1@"[1@B[1@l[1@u[1@e[1@"
+sed: 1: "Blue": invalid command code B
+bash-3.2$ sed "Blue"  a7-f1-e1[1@-[1@3[1@ [1P[1P[1@e[1@ 
+sed: 1: "Blue
+": invalid command code B
+bash-3.2$ sed -e "Blue"  a7-f1-e1[1@/[1@p
+sed: 1: "Blue/p
+": invalid command code B
+bash-3.2$ sed -e "Blue/p"  a7-f1-e1[C[1P
+sed: 1: "Blue/
+": invalid command code B
+bash-3.2$ sed -e "Blue/"  a7-f1-e1[C[1P[C[1P[1@'[1P[1@'[C[C[C[C[1@/[C[C[C[C[C[1@/
+sed: 1: "/Blue/
+": command expected
+bash-3.2$ sed -e '/Blue/'  a7-f1-e1[1P[1P
+sed: 1: "Blue
+": invalid command code B
+bash-3.2$ sed -e 'Blue'  a7-f1-e1[C[C[1P[1P[1P[1P[1P[1P[C[1Pa7-f1-e1[1P[1@n[C[C a7-f1-e1[1@-[1@e[C[C a7-f1-e1[1@'[1@3[C[C a7-f1-e1[1@p[1@'
+Janet, Blue 67
+bash-3.2$ sed -n -e '3 p'  a7-f1-e1[1@2
+bash-3.2$ sed -n -e '23 p'  a7-f1-e1[1@,
+Ben, Benjamin 78
+Janet, Blue 67
+bash-3.2$ sed -n -e '2,3 p'  a7-f1-e1[1P[1@6[C[C[1P[1@1
+Ted, White 32
+bash-3.2$ sed -n -e '6,1 p'  a7-f1-e1[1P[C[C[1P[1P[1@6[1@1[1@,
+John, Adams 55
+Ben, Benjamin 78
+Janet, Blue 67
+Anne, Blue 99
+George, Bull 77
+Ted, White 32
+bash-3.2$ sed -n -e '1,6 p'  a7-f1-e1[1P[1P[1P[1@2[1@,[1@4
+Ben, Benjamin 78
+Janet, Blue 67
+Anne, Blue 99
+bash-3.2$ sed -n -e '2,4 p'  a7-f1-e1[1P[1P[1@1[1@,[1P[1@$
+John, Adams 55
+Ben, Benjamin 78
+Janet, Blue 67
+Anne, Blue 99
+George, Bull 77
+Ted, White 32
+bash-3.2$ sed -n -e '1,$ p'  a7-f1-e1[1P[1P[1P[1@$[C[1@ 
+Ted, White 32
+bash-3.2$ sed -n -e '$  p'  a7-f1-e1[1@|[1P[1@1[1@&
+sed: 1: "1&$  p
+": invalid command code &
+bash-3.2$ sed -n -e '1&$  p'  a7-f1-e1[1P[1P[1P[C[1P[1P[1P[1P[C[1Pa7-f1-e1[1Pa7-f1-e1[1P7-f1-e1[1P-f1-e1[1Pf1-e1[1P1-e1[1P-e1[1Pe1[1P1[K[K[K[K[K[K[K[K[K[K[K[Kcat>a6[K7-e4-f1
+bin/date 
+bin/programs/cal 
+usr/bin/date 
+usr/report/file1 
+usr/report/1etters/lett1
+spool/mails
+^Dbash-3.2$ cat script [K2,[K.sed[1Pcript2.sed[1Pcript2.sed>cript2.sedscript2.sed
+s/^///^[[D^[[D         /
+sed 's/\(.*\)-/\1 /'^[[D                        ^[[A    ^Dbash-3.2$ cat>script2.sed
+s/  s/^///    \//
+s/\(./\) /\1 /' 
+^Dbash-3.2$ cat>script2.sed[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksed script2.sed a7-f[Ke4-f1
+sed: 1: "script2.sed": unterminated substitute pattern
+bash-3.2$ sed script2.sed a7-e4-f1[C[C[1@-[1@f[1@ 
+sed: 2: script2.sed: RE error: parentheses not balanced
+bash-3.2$ sed -f script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>script2.sed
+s/^/\//
+^[[A    ^Dbash-3.2$ cat>script2.sed[C[C[C[C[C[C[C[C[C[Csed -f script2.sed a7-e4-f1
+/bin/date 
+/bin/programs/cal 
+/usr/bin/date 
+/usr/report/file1 
+/usr/report/1etters/lett1
+/spool/mails
+bash-3.2$ sed -f script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[12Pcat>script2.sed
+s/^/\//
+^Dbash-3.2$ cat>script2.sed[C[C[C[C[C[C[C[C[C[Csed -f script2.sed a7-e4-f1[1@r
+sed: r: No such file or directory
+bash-3.2$ sed -fr script2.sed a7-e4-f1[1P
+sed: 1: "script2.sed": unterminated substitute pattern
+bash-3.2$ sed -r script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+sed: r: No such file or directory
+bash-3.2$ sed -fr script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pcat>script2.sed
+s/ { ([^\/  /]*)$/- \/\1/
+^[[A^[[A        ^Dbash-3.2$ cat>script2.sed[C[C[C[C[C[C[C[C[C[Csed -fr script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pcat>script2.sed[C[C[C[C[C[C[C[C[C[Csed -f script2.sed a7-e4-f1
+sed: 1: script2.sed: \1 not defined in the RE
+bash-3.2$ sed -f script2.sed a7-e4-f1[C[1@r
+sed: r: No such file or directory
+bash-3.2$ sed -fr script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C|rev
+sed: 1: script2.sed: \1 not defined in the RE
+bash-3.2$ sed -f script2.sed a7-e4-f1|rev[1@r[1@e[1@v[1@ [1@a[1@6[C[1P[1@7[1@-[1@e[1@4[1@-[1@f[1@1[1@|[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P7-e4-f1|rev[1P-e4-f1|rev[1Pe4-f1|rev[1P4-f1|rev[1P-f1|rev[1Pf1|rev[1P1|rev[1P|rev[1P|rev
+sed: 1: script2.sed: \1 not defined in the RE
+bash-3.2$ rev a7-e4-f1|sed -f script2.sed|rev[1Pcript2.sed|rev[1Pript2.sed|rev[1Pipt2.sed|rev[1Ppt2.sed|rev[1Pt2.sed|rev[1P2.sed|rev[1P.sed|rev[1Psed|rev[1Ped|rev[1Pd|rev[1Pd|rev[1Pd|rev[1Pd|rev[1P|rev'|revs|rev/|rev\|rev/|rev/|rev |rev/|rev'|rev
+bin date 
+bin/programs cal 
+usr/bin date 
+usr/report file1 
+usr/report/1etters lett1
+spool mails
+bash-3.2$ rev a7-e4-f1|sed 's/\// /'|rev[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[C[4Psed -f script2.sed a7-e4-f1|rev[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pr script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat>script2.sed
+s/^/\//
+^Dbash-3.2$ cat>script2.sed[C[C[C[C[C[C[C[C[C[C[Krev a7-e4-f1|sed -f script2.sed|rev
+bin/date /
+bin/programs/cal /
+usr/bin/date /
+usr/report/file1 /
+usr/report/1etters/lett1/
+spool/mails/
+bash-3.2$ rev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[C[20Pcat>script2.sed
+s/$/\//^D^[[3~^[[3~          
+^Dbash-3.2$ cat>script2.sed[C[C[C[C[C[C[C[C[C[Crev a7-e4-f1|sed -f script2.sed|rev
+/bin/date 
+/bin/programs/cal 
+/usr/bin/date 
+/usr/report/file1 
+/usr/report/1etters/lett1
+/spool/mails
+bash-3.2$ rev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[C[20Pcat>script2.sed
+s/$/\//
+s/\// /
+^Dbash-3.2$ cat>script2.sed[C[C[C[C[C[C[C[C[C[Crev a7-e4-f1|sed -f script2.sed|rev
+/bin date 
+/bin/programs cal 
+/usr/bin date 
+/usr/report file1 
+/usr/report/1etters lett1
+/spool mails
+bash-3.2$ cat.[K>a6rev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[Ccat>a6[K[K7-e6-f1[C[C[C[C[C[C[C[C[C[Crev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[C[20Pcat>script2.sed[C[C[C[C[C[C[C[C[C[Crev a7-e4-f1|sed -f script2.sed|rev>a7-e4-f2
+bash-3.2$ rev a7-e4-f1|sed -f script2.sed|rev>a7-e4-f2[K[C[C[C[C[C[C[C[C[C[C[20Pcat>script2.sed[C[C[C[C[C[C[C[C[C[Crev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[C[20Pcat>script2.sed[C[C[C[C[C[C[C[C[C[Crev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[C[20Pcat>script2.sed[C[C[C[C[C[C[C[C[C[C[Krev a7-e4-f1|sed -f script2.sed|rev[C[C[C[C[C[C[C[C[C[C[4Psed -f script2.sed a7-e4-f1|rev[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pr script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat>script2.sed[C[C[C[C[C[C[C[C[C[Csed -fr script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pcat>script2.sed[C[C[C[C[C[C[C[C[C[Csed -f script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[12Pcat>script2.sed[C[C[C[C[C[C[C[C[C[Csed -f script2.sed a7-e4-f1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcat>script2.sed[3Pa7-e4-f1[C[C[C[C[C[C[C[C[C[Csed -n -e '1&$  p'  a7-f1-e1[C[C[C[C[C[C[C[C[C[C[16Pcat>a7-e4-f1[1Pa7-e4-f1 a7-e4-f1[C[C[C[C[C[C[C[C[K2
+/bin date 
+/bin/programs cal 
+/usr/bin date 
+/usr/report file1 
+/usr/report/1etters lett1
+/spool mails
+bash-3.2$ cat a7-e4-f2[C[C[C[C[C[C[C[C[C[Crev a7-e4-f1|sed -f script2.sed|rev>a7-e4-f2[C[C[C[C[C[C[C[C[C[Ccat a7-e4-f2[K[C[C[C[C[C[C[C[C[C[C[Kcat a7-e4-f2[C[1P-f26-f2[C[C[C[K1[1Pa7-e6-f1>a7-e6-f1[C[C[C
+/* This program reads two integer numbers from the keyboard and prints their product.
+Written by:
+Date:
+
+*/
+
+/* Statements */
+
+scanf ("%d", &number1); scanf ("%d", &number2); result = number1 * number2; printf ("%d", result); return 0;
+} /* main */
+
+^[[A^D^[[A    
+^Dbash-3.2$ cat>a7-e6-f1
+/* This program reads                       /* This program reads two integer numbers from the keyboard and prints their product.
+Written by:
+Date:
+
+*/
+
+/* Statements */
+
+scanf ("%d", &number1);
+sacnf ("%d", % &number2);
+^[[A    ^Dbash-3.2$ cat>a7-e6-f1
+^[[A    /* This program reads two integer numbers from the keyboard and prints their product.
+Written by:
+Date:
+
+*/
+
+/* Statements */
+
+scanf ("%d", &number1);
+scanf ("%d", &number2);
+result = number * ny umber; 2^[[D              1 * number2;
+printf ("%d", resukt  lt);
+return  0;     0;
+) /*main^[[D^[[D^[[D^[[D                     main */
+^Dbash-3.2$ sed '/\/*/d' a6[K7-f2[K1-[K[K[Ke6-f1
+bash-3.2$ sed '/\/*/d' a7-e6-f1[C[C[C[C[C[C[C[C[C[C[9Pcat>a7-e6-f1[1Pa7-e6-f1 a7-e6-f1
+/* This program reads two integer numbers from the keyboard and prints their product.
+Written by:
+Date:
+
+*/
+
+/* Statements */
+
+scanf ("%d", &number1);
+scanf ("%d", &number2);
+result = number1 * number2;
+printf ("%d", result);
+return 0;
+) /* main */
+bash-3.2$ cat a7-e6-f1[C[C[C[C[C[C[C[C[C[C[9@sed '/\/*/d'[C[C[C[C[C[C[C[C[C[1P
+sed: 1: "//*/d": invalid command code *
+bash-3.2$ sed '//*/d' a7-e6-f1[C[C[C[C[C[C[C[C[C[C[8Pcat[C[C[C[C[C[C[C[C[C[9@sed '/\/*/d'[C[C[C[C[C[C[C[C[C
+bash-3.2$ exit
+exit
+
+Script done on Mon Nov  1 11:33:26 2021

@@ -1,0 +1,9 @@
+Inventory Report
+Part No.	Price	Quantity on Hand	Reorder point	Minimum Order	Order Amount
+
+123		1		23		20		20		0
+234		2		34		50		25		41
+3456		34		56		50		10		0
+4567		45		7		10		5		8
+5678		6		75		75		25		0
+END OF REPORT

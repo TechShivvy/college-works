@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee</title>
+    <style>
+		body {
+		  background-image: url('comm.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		}
+		.navbar {
+		width: 100%;
+		background-color: #555;
+		overflow: auto;
+		}
+
+		.navbar a {
+		float: left;
+		padding: 12px;
+		color: white;
+		text-decoration: none;
+		font-size: 17px;
+		width: 12.964%; /* Four links of equal widths */
+		text-align: center;
+		}
+
+		.navbar a:hover {
+		background-color: #000;
+		}
+
+		.navbar a.active {
+		background-color: #007FFF;
+		}
+
+		@media screen and (max-width: 500px) {
+		.navbar a {
+			float: none;
+			display: block;
+			width: 100%;
+			text-align: left;
+		}
+	}
+    #committee {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  #committee td, #committee th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #committee th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+	</style>
+</head>
+<body>
+    <div class="navbar">
+		<a href="home.html">Home</a> 
+		<a class="active" href="#">Committee</a> 
+		<a href="callForPapers.html">Call for papers</a> 
+		<a href="impDates.html">Important Dates</a>
+		<a href="workshop.html">Workshops</a> 
+		<a href="regis.html">Registration</a> 
+		<a href="contacts.html">Contact</a> 
+    </div>
+    <br><br><br><br>
+    <center><h1 style="font-size: 50px; font-family: 'Courier New', Courier, monospace;">About commmitee members</h1></center>   
+	<!-- <hr> -->
+    <br><br><br><br><br><br><br>
+    <center>
+        <table id = "committee" border="1">
+            <tr><th>Member</th><th>Role</th></tr>
+            <tr><td>Padma Bushan Dr. Shiv Nadar</td><td>Chief Patron</td></tr>
+            <tr><td>Dr. Kala Vijayakumar</td><td>Patron</td></tr>
+            <tr><td>Dr. V. E. Annamalai</td><td>General Chair</td></tr>
+        </table>
+    </center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="color: black">
+		<center>Shivcharan | 205001100 | shivcharan2010538@ssn.edu.in</center> 
+	</footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<body>
+<img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+Hello
+</p>
+  <script>
+	function bigImg(x) {
+		x.style.height = "64px";
+		x.style.width = "64px";
+	}
+	function normalImg(x) {
+		x.style.height = "32px";
+		x.style.width = "32px";
+	}
+	function mouseDown() {
+		document.getElementById("myP").style.color = "red";
+	}
+	function mouseUp() {
+		document.getElementById("myP").style.color = "green";
+	}
+</script>
+</body>
+</html>

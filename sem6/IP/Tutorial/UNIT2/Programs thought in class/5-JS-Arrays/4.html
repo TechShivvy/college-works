@@ -1,0 +1,17 @@
+<html>
+<body>
+  <h2>Arrays vs Objects</h2>
+  <h3>Arrays are a special type of objects. The typeof operator in
+JavaScript returns "object" for arrays.</h3>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <script>
+    
+    var person = ["John", "David", 46];
+    document.getElementById("demo").innerHTML = person[0];
+    
+    var person1 = {firstName:"Hefzia", lastName:"Sam", age:46};
+    document.getElementById("demo1").innerHTML = person1["firstName"];
+  </script>
+</body>
+</html>

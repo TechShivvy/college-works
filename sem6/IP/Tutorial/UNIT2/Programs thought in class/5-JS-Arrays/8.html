@@ -1,0 +1,40 @@
+<html>
+<body>
+  <h2>Arrays - Adding elements</h2>
+  <button onclick="myFunction()">Fruits</button>
+  <button onclick="myFunction1()">Cars</button>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  
+  <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits;
+    
+    function myFunction() {
+      fruits.push("Lemon");
+      document.getElementById("demo").innerHTML = fruits;
+    }
+  
+    //without using push()
+    var cars = ["Saab", "Volvo", "BMW"];
+    document.getElementById("demo1").innerHTML = cars;
+    
+    function myFunction1() {
+      cars[cars.length] = "Benz";
+      document.getElementById("demo1").innerHTML = cars;
+    }
+    
+    //adding elements using index operator
+    var names = ["Beulah", "Hefzia", "Allen"];
+    names[6]="Alben";
+    nLen = names.length;
+    text = "";
+    
+    for (i = 0; i < nLen; i++) {
+      text += names[i] + "<br>";
+    }
+    document.getElementById("demo2").innerHTML = text;
+  </script>
+</body>
+</html>

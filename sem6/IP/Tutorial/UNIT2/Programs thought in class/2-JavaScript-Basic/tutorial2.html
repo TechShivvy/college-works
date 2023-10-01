@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        document.writeln("<table border=1 ><tr><td>Name</td><td>Marks</td><td>Grade</td></tr>")
+        for (let i = 0; i < 5; i++) {
+            let name = window.prompt("Enter name");
+            let marks = window.prompt("Enter Mark");
+            let grade
+            if (marks > 90) grade = 'A'
+            if (marks > 80 && marks <= 90) grade = 'B'
+            if (marks > 70 && marks <= 80) grade = 'C'
+            if (marks > 60 && marks <= 70) grade = 'D'
+            if (marks > 50 && marks <= 60) grade = 'E'
+            if (marks < 50) grade = 'F'
+            let txt = "<tr><td>" + name + "</td><td>" + marks + "</td><td>" + grade + "</td></tr>"
+            document.writeln(txt)
+            console.log(txt)
+        }
+        document.writeln("</table>")
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+</html>

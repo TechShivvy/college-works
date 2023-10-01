@@ -1,0 +1,20 @@
+<html>
+<body>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <script>
+	  function myFunction() {
+		  var str = "Give 100%!"; 
+		  var patt1 = /\d/g;
+		  var result = str.match(patt1);
+		  document.getElementById("demo").innerHTML = result;
+		  
+      var str = "Is this all there is?";
+		  var patt1 = /\s/g;
+		  var result = str.match(patt1);
+		  document.getElementById("demo1").innerHTML = result;
+    }
+  </script>
+</body>
+</html>

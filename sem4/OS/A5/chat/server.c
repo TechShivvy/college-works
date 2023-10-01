@@ -1,0 +1,112 @@
+//Server.c
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/msg.h>
+#include <stdio.h>
+#include<unistd.h>
+#include<time.h>
+#include<sys/shm.h>
+#include<sys/wait.h>
+
+
+struct mesgq{
+	long type;
+	char text[200];
+} mq;
+int blue () {
+  printf("\033[0;34m");
+  return 1;
+}
+int green (){
+  printf("\033[0;32m");
+  return 1;
+}
+int reset () {
+  printf("\033[0m");
+  return 1;
+}
+void main(){
+	int len,msqid1,msqid2,msqid3,msqid4,msqid5;
+	key_t key1 = 1000;
+	key_t key2 = 1001;
+	key_t key3 = 1002;
+	int shmid=shmget((key_t)12345,1024,IPC_CREAT|0666);
+	int shmid2=shmget((key_t)1234,1024,IPC_CREAT|0666);
+	char *server = (char*) shmat(shmid,NULL,0);
+	char *client = (char*) shmat(shmid2,NULL,0);
+	
+	if((msqid1 = msgget(key1, 0644|IPC_CREAT)) == -1){
+		perror("msgget error client 1");
+		exit(1);
+	}
+	/*if((msqid2 = msgget(key2, 0644|IPC_CREAT)) == -1){
+		perror("msgget error client 2");
+		exit(1);
+	}
+	if((msqid3 = msgget(key3, 0644|IPC_CREAT)) == -1){
+		perror("msgget error client 3");
+		exit(1);
+	}*/
+	int pid=fork();
+
+	if(pid>0) //parent
+	{
+		//char *server = (char*) shmat(shmid,NULL,0)
+		printf("Server ready :\n");
+		printf("Enter your name: ");	//2nd v
+		scanf("%s",server);
+		//wait(NULL);
+		//getc(stdin);
+		printf("Press any key!\n");
+		wait(NULL);	
+		//detach from shared memory
+		//shmdt(server);	
+	}
+	else
+	{
+
+		getc(stdin);
+				
+		//sleep(3);
+		//attachment to shared memory
+		//char *server = (char*) shmat(shmid,NULL,0);
+	
+	//printf("Server ready :\n");
+	//printf("Enter your name: ");	//2nd v
+	//scanf("%s",server);		//2nd v
+	//sleep(3);
+	//fgets(server,sizeof(server),stdin);
+	//len = strlen(server);
+	//if (server[len-1] == '\n')
+	//	server[len-1] = '\0';
+	printf("Enter text, ^D to quit:\n\n");
+	mq.type = 1;
+	while(green()&&printf("You: ")&&reset()&&fgets(mq.text,sizeof(mq.text),stdin) != NULL){
+		len = strlen(mq.text);
+		if (mq.text[len-1] == '\n')
+		mq.text[len-1] = '\0';
+		msgsnd(msqid1, &mq, len+1, 0);
+		/*msgsnd(msqid2, &mq, len+1, 0);
+		msgsnd(msqid3, &mq, len+1, 0);*/
+		if(msgrcv(msqid1, &mq, sizeof(mq.text), 1, 0)){
+			blue();
+			printf("%s: ",client);		//2nd v
+			//printf("Client 1: ");	//1st version
+			reset();
+			printf("%s\n\n", mq.text);}
+		/*if(msgrcv(msqid2, &mq, sizeof(mq.text), 1, 0));
+			printf("From Client 2: \"%s\"\n", mq.text);
+		if(msgrcv(msqid3, &mq, sizeof(mq.text), 1, 0));
+			printf("From Client 3: \"%s\"\n", mq.text);*/
+	}
+	}
+	msgctl(msqid1, IPC_RMID, NULL);
+	msgctl(msqid2, IPC_RMID, NULL);
+	msgctl(msqid3, IPC_RMID, NULL);
+	shmdt(server);
+	shmctl(shmid,IPC_RMID,NULL);
+	shmdt(client);
+	shmctl(shmid2,IPC_RMID,NULL);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+
+    <style>
+        tr:nth-child(3){
+            background-color: lightblue;
+        }
+        tr:hover
+        {
+            background-color: bisque;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Assignment1 - Table,Inline and Embedded CSS</h1>
+
+    <table border="1" style="border-collapse: collapse;">
+        <caption>A more complex sample table</caption>
+
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="4">Insects</th>
+        </tr>
+        <tr>
+            <th>Colours</th>
+            <th>Indigenous region</th>
+            <th>Harmful</th>
+            <th>Lifetime</th>
+        </tr>
+        <tr>
+            <td><img src="images/butterfly.jpeg" alt="" width="400px" style="margin-bottom: 0;"></td>
+            <td>blue</td>
+            <td>Africa/Asia</td>
+            <td>No</td>
+            <td>12 months</td>
+        </tr>
+        <tr>
+            <td rowspan="2"><img src="images/ladybug.jpeg" alt="" width="400px"></td>
+            <td>red</td>
+            <td>Asia</td>
+            <td rowspan="2">Yes</td>
+            <td>2 years</td>
+        </tr>
+        <tr>
+            <td>red</td>
+            <td>Europe</td>
+            <td>1.5 years</td>
+        </tr>
+    </table>
+</body>
+</html>

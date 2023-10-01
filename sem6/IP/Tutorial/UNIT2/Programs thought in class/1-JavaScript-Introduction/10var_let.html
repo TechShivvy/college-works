@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p id="a"></p>
+<p id="b"></p>
+<p id="c"></p>
+<p id="d"></p>
+
+<script>
+let a = "Hello"; // block scope
+document.getElementById("a").innerHTML = a;
+var b = 'Sam'; // global scope
+document.getElementById("b").innerHTML = b;
+//let a = 'hello'; // SyntaxError: Identifier 'a' has already been declared
+//document.getElementById("c").innerHTML = a;
+var b = 'hello'; // No problem, 'Sam' is replaced.
+document.getElementById("d").innerHTML = b;
+</script>
+</body>
+</html>
