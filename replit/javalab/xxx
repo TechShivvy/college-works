@@ -1,0 +1,50 @@
+SSN College of Engineering
+Department of Computer Science and Engineering
+UCS1313 – Object Oriented Programming Using Java Lab
+II Year CSE  - B Section ( III Semester)
+Academic Year 2021-22
+Batch: 2020- 2024
+Faculty Incharge : S.Rajalakshmi 
+
+Exercise - 8 – Collection Framework
+Objective:
+1. To perform operations on ArrayList and LinkedList in Java
+Sample Learning Outcome:
+1. Usage of ArrayList and LinkedList in Java
+2. Perform operations using Collection Framework
+3. Perform merge, union, intersection and comparison on ArrayLists
+Best Practices:
+1. Class Diagram usage
+2. Naming convention – for file names, variables
+3. Comment usage at proper places
+4. Prompt messages during reading input and displaying output
+5. Incremental program development
+6. Modularity
+7. All possible test cases in output 
+1.	Write a program to perform string operations using ArrayList. Write functions for the following 
+a.	 Append - add at end 
+b.	 Insert – add at particular index 
+c.	Find the index of a particular element (Search)
+d.	Display the list
+e.	List all string starts with given letter
+f.	List of all string contains the Substring
+g.	Sort the elements in ArrayList
+h.	Remove a particular element
+i.	Replace one string with another string in ArrayList
+j.	Remove duplicate elements
+2.	Write a program to get two integer arraylist. Perform the following operations
+a.	Merge the two lists
+b.	Find Union of two lists
+c.	Find Intersection of two lists
+d.	Compare two lists
+3.	Using Collection framework, create a doubly linked list of integers and perform the following operations. 
+a.	 Insert element on both sides
+b.	Delete element on both sides
+c.	Insert an element at a particular position
+d.	Delete a particular element
+e.	Search for a particular element
+f.	Display list in forward order and backward order
+g.	Sort the elements in LinkedList
+h.	Replace one element in the list with another list
+i.	Remove duplicate elements
+
