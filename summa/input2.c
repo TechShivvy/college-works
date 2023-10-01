@@ -3,7 +3,7 @@
 
  void print_word()
  {
-    char ch;
+    char ch;;
     char str[15];
     int i = 0,flag=0;
 
