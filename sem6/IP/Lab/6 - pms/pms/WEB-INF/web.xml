@@ -1,0 +1,46 @@
+<web-app>
+<servlet>
+   <servlet-name>abc</servlet-name>
+   <servlet-class>ViewServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>abc</servlet-name>
+   <url-pattern>/view</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>jkl</servlet-name>
+   <servlet-class>InsertServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>jkl</servlet-name>
+   <url-pattern>/insert</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>efg</servlet-name>
+   <servlet-class>DeleteServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>efg</servlet-name>
+   <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>hij</servlet-name>
+   <servlet-class>SearchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>hij</servlet-name>
+   <url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>xyz</servlet-name>
+   <servlet-class>UpdateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>xyz</servlet-name>
+   <url-pattern>/update</url-pattern>
+</servlet-mapping>
+</web-app>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Autocomplete</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div style="text-align: center;padding-top: 2rem;">
+        <h2 style="text-align: center;">Countries List</h2>
+        <form style="width:50%; margin-left:auto; margin-right: auto;" autocomplete="off" action="#">
+            <div class="autocomplete" style="width:300px;">
+                <input id="myInput" type="text" name="myCountry" placeholder="Country">
+                <div style="text-align: left;" id="autocomplete-list" class="autocomplete-items"></div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

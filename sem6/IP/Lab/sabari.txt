@@ -1,0 +1,15 @@
+ SHOW DATABASES;
+
+use mysql;
+
+create table PATIENT(
+name varchar(20),
+age int,
+id varchar(10),
+gender varchar(1),
+address varchar(30),
+marstat varchar(20),
+dov date
+);
+
+insert into PATIENT Values('Shivi',21,'X123','M','SSN, Kalavakkam','Married','2023-09-02');

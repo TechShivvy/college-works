@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="styles" rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/icon" href="logo.png">
+    <title>Register</title>
+</head>
+<body>
+    <center><h2>Registration Form</h2></center>
+	<!-- onsubmit="return validateForm()" -->
+	<form id="registration-form" onsubmit="return validateForm()">
+		<fieldset>
+			<legend class="required">Salutations</legend>
+			<label><input type="radio" name="salutations" value="Mr." required>Mr.</label>
+			<label><input type="radio" name="salutations" value="Miss" required>Miss</label>
+			<label><input type="radio" name="salutations" value="Mrs." required>Mrs.</label>
+			<label><input type="radio" name="salutations" value="Dr." required>Dr.</label>
+			<span class="hint">(Please select one)</span>
+		</fieldset>
+
+		<label class="required" for="participant-name">Participant Name:</label>
+		<input type="text" id="participant-name" name="participantName" placeholder="Enter your name" required>
+		<span class="hint">(Initial, 1-2 words allowed)</span>
+		<span class="error" id="name-error"></span>
+
+		<label class="required" for="username">Username:</label>
+		<input type="text" id="username" name="username" list="username-list" autocomplete="on" placeholder="Enter your username" required>
+		<datalist id="username-list">
+			<option value="johnDoe">
+			<option value="JaneDoe">
+			<option value="johndoe">
+			<option value="DOEJANE">
+		</datalist>
+		<span class="hint">(Only alphabets)</span>
+		<span class="error" id="username-error"></span>
+
+		<label class="required" for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+		<span class="hint">(At least one uppercase letter,one lowercase letter, one special character, one number and minimum 8 character length mandatory)</span>
+        <span class="error" id="password-error"></span>
+
+
+        <label class="required" for="email">Email:</label>
+	<input type="email" id="email" name="email" placeholder="Enter your email" required>
+	<span class="hint">(xxxx@some.com, xxx.yyy@some.org, xxx@some1.some2.net)</span>
+	<span class="error" id="email-error"></span>
+
+	<label class="required" for="dob">Date of Birth:</label>
+	<input type="date" id="dob" name="dob" min="1900-01-01" max="2005-01-01" required>
+	<span class="hint">(Minimum age: 18, Maximum age: 35)</span>
+	<span class="error" id="dob-error"></span>
+
+    <fieldset>
+        <legend>Photo</legend>
+        <!-- /<label for="photo">Photo:</label> -->
+        <input type="file" id="photo" name="photo" accept="image/*">
+        <span class="hint">(Only image files)</span>
+    </fieldset>
+    
+	<fieldset>
+		<legend class="required">Languages known</legend>
+		<label><input type="checkbox" name="languagesKnown" value="English">English</label>
+		<label><input type="checkbox" name="languagesKnown" value="Tamil" >Tamil</label>
+		<label><input type="checkbox" name="languagesKnown" value="French" >French</label>
+		<label><input type="checkbox" name="languagesKnown" value="Others" onclick="showOtherLanguage()">Others</label>
+		<input type="text" id="other-language" name="otherLanguage" placeholder="Enter other language" style="display: none;">
+		<span class="hint">(At least 2 should be selected)</span>
+		<span class="error" id="languagesKnown-error"></span>
+	</fieldset>
+
+	<label for="additional-expertise">Additional Expertise:</label>
+	<textarea id="additional-expertise" name="additionalExpertise" placeholder="Enter your additional expertise"></textarea>
+
+	<div class="button-container">
+        <button type="submit" id="register-button">Register</button>
+        <button type="reset" id="clear-button" onclick="clearForm()">Clear</button>
+		<!-- <input type="submit" value="register">
+		<input type="submit" vlaue="clear"> -->
+    </div>
+</form> 
+    <footer class="footer">
+        <h2>Designed by Shivcharan T</h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

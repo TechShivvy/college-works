@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="login.css">
+<title>Login Screen</title>
+</head>
+<body>
+	<div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>LOGIN</h3>
+            <p>Please enter your credentials to login.</p>
+          </div>
+        </div>
+        <form id="login-form" method="post" action="login">
+          <input type="text" id="username" name="username" placeholder="username"/>
+          <input type="password" id="password" name="password" placeholder="password"/>
+          <button type="submit">Login</button>
+        </form>
+		<div id="error-message" class="error-message" style="text-align: center;color: red;padding: 10px;margin: 10px;font-weight: bold;"></div>
+      </div>
+    </div>
+    <script>
+      window.onload=function(){
+		if (window.location.search.includes("error")) {
+			// Get the error message from the URL query string
+			const params = new URLSearchParams(window.location.search);
+			const errorMessage = params.get("error");
+			// window.onload = function(){ 
+            //     alert("Login failed. Please check your credentials and try again.");
+			// }
+			document.getElementById("error-message").innerHTML=errorMessage+"!";
+			document.getElementById("username").focus(); 	
+		}
+    else if (window.location.search.includes("invalidate")) {
+			
+			const params = new URLSearchParams(window.location.search);
+      alert(params.get("invalidate"));
+		}}
+	</script>
+</body>
+</html>

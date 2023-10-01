@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <display-name>MyApp</display-name>
+  
+  <servlet>
+    <servlet-name>Servlet</servlet-name>
+    <servlet-class>Servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Servlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+
+</web-app>

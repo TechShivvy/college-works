@@ -1,0 +1,80 @@
+body{
+    color: rgb(6, 29, 240); 
+    background-image:url('https://www.teahub.io/photos/full/282-2820540_background-image-for-html-page.jpg');
+}
+
+a:link {
+    color: rgb(25, 0, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(200, 0, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(0, 18, 38);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(19, 96, 27);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  input[type=text] {
+    width: 30%;
+    background-color: #ffffff;
+    color: rgb(0, 4, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: text;
+  }
+  
+
+  .button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  #committee {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  #committee td, #committee th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #committee th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  ul {
+    background: #3399ff;
+    padding: 20px;
+    width: 30%;
+  }
+  
+  ul li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+  }
