@@ -1,2 +1,2 @@
-g++ 5.cpp -lGL -lglut -lGLU
+g++ 5b.cpp -lGL -lglut -lGLU
 ./a.out
