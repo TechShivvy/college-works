@@ -1,2 +1,2 @@
-g++ -g gpt.cpp -lGL -lglut -lGLU -lSOIL
+g++ -g 10.cpp -lGL -lglut -lGLU -lSOIL
 ./a.out

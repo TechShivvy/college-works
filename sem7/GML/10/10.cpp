@@ -17,40 +17,6 @@ float angleY = 0.0f;
 float texCoordX = 0.0f;
 float texCoordY = 0.0f;
 
-void init2()
-{
-    glEnable(GL_DEPTH_TEST); // Enable depth testing for 3D
-    glEnable(GL_LIGHTING);   // Enable lighting
-    glEnable(GL_LIGHT0);     // Use light source 0
-
-    GLfloat light_position[] = {1.0f, 1.0f, 1.0f, 0.0f}; // Light position
-    GLfloat light_diffuse[] = {1.0f, 1.0f, 1.0f, 1.0f};  // Light color
-    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
-
-    glEnable(GL_TEXTURE_2D); // Enable texture mapping
-
-    // Load and bind texture
-    GLuint textureID;
-    glGenTextures(1, &textureID);
-    glBindTexture(GL_TEXTURE_2D, textureID);
-
-    // Load texture image using SOIL (replace "texture.jpg" with your actual image file)
-    int width, height;
-    unsigned char *image = SOIL_load_image("./texture2.jpg", &width, &height, 0, SOIL_LOAD_RGB);
-
-    // Set texture parameters
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-    // Generate the texture
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
-    SOIL_free_image_data(image);
-
-    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-    glShadeModel(GL_FLAT); // Set shading model to flat
-}
-
 void init()
 {
     glClearColor(0.0, 0.0, 0.0, 1.0);
@@ -92,102 +58,17 @@ void init()
     glMatrixMode(GL_MODELVIEW);
 }
 
-
-
-// void drawCube()
-// {
-//     glutSolidCube(1.0); // Draw a solid cube
-// }
-
-// void drawSphere()
-// {
-//     glutSolidSphere(0.5, 20, 20); // Draw a solid sphere
-// }
-
-// void drawCylinder()
-// {
-//     GLUquadricObj *cylinder = gluNewQuadric();
-//     gluQuadricDrawStyle(cylinder, GLU_FILL);
-//     gluCylinder(cylinder, 0.5, 0.5, 1.0, 20, 20); // Draw a cylinder
-//     gluDeleteQuadric(cylinder);
-// }
-
-// void drawTorus()
-// {
-//     glutSolidTorus(0.3, 0.7, 20, 20); // Draw a solid torus
-// }
-
-void drawCube()
+void drawTeapot()
 {
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, textureID); // Bind the texture
 
-    glBegin(GL_QUADS);
+    glutSolidTeapot(1.0); // Draw a teapot
 
-    // Front face
-    glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(-0.5, -0.5, 0.5);
-    glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(0.5, -0.5, 0.5);
-    glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(0.5, 0.5, 0.5);
-    glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-0.5, 0.5, 0.5);
-
-    // Back face
-    glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(-0.5, -0.5, -0.5);
-    glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(0.5, -0.5, -0.5);
-    glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(0.5, 0.5, -0.5);
-    glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-0.5, 0.5, -0.5);
-
-    // Right face
-    glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(0.5, -0.5, 0.5);
-    glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(0.5, -0.5, -0.5);
-    glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(0.5, 0.5, -0.5);
-    glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(0.5, 0.5, 0.5);
-
-    // Left face
-    glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(-0.5, -0.5, -0.5);
-    glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(-0.5, -0.5, 0.5);
-    glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(-0.5, 0.5, 0.5);
-    glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-0.5, 0.5, -0.5);
-
-    // Top face
-    glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(-0.5, 0.5, 0.5);
-    glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(0.5, 0.5, 0.5);
-    glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(0.5, 0.5, -0.5);
-    glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-0.5, 0.5, -0.5);
-
-    // Bottom face
-    glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(-0.5, -0.5, -0.5);
-    glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(0.5, -0.5, -0.5);
-    glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(0.5, -0.5, 0.5);
-    glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-0.5, -0.5, 0.5);
-
-    glEnd();
     glDisable(GL_TEXTURE_2D);
 }
 
+// glusolid
 
 void drawSphere()
 {
@@ -200,6 +81,39 @@ void drawSphere()
     gluSphere(sphere, 0.5, 20, 20);
 
     gluDeleteQuadric(sphere);
+    glDisable(GL_TEXTURE_2D);
+}
+
+void drawConeInit()
+{
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textureID); // Bind the texture
+
+    GLUquadricObj *cone = gluNewQuadric();
+    gluQuadricTexture(cone, GL_TRUE);
+
+    gluCylinder(cone, 0.0, 0.5, 1.0, 20, 20); // Draw a cone
+
+    gluDeleteQuadric(cone);
+    glDisable(GL_TEXTURE_2D);
+}
+
+void drawCone()
+{
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, textureID); // Bind the texture
+
+    GLUquadricObj *cone = gluNewQuadric();
+    gluQuadricTexture(cone, GL_TRUE);
+
+    gluCylinder(cone, 0.0, 0.5, 1.0, 20, 20); // Draw the cone
+
+    glPushMatrix();
+    glTranslatef(0.0, 0.0, 1.0); // Move to the base of the cone
+    gluDisk(cone, 0.0, 0.5, 20, 20); // Draw the base circle
+    glPopMatrix();
+
+    gluDeleteQuadric(cone);
     glDisable(GL_TEXTURE_2D);
 }
 
@@ -249,14 +163,15 @@ void display()
     glMaterialfv(GL_FRONT, GL_DIFFUSE, material_diffuse);
 
     // Draw 3D objects
-    drawCube(); // Draw a cube
-    glTranslatef(2.0f, 0.0f, 0.0f);
+    drawTeapot(); // Draw a teapot
+    glTranslatef(2.0f, 2.0f, 0.0f);
     drawSphere(); // Draw a sphere
-    glTranslatef(-4.0f, -2.0f, 0.0f);
-    drawCylinder(); // Draw a cylinder
+    glTranslatef(-4.0f, -4.0f, 0.0f);
+    drawCone(); // Draw a cylinder
     glTranslatef(4.0f, -2.0f, 0.0f);
     drawTorus(); // Draw a torus
 
+glTranslatef(0.0f, 0.0f, -5.0f);
     glutSwapBuffers();
 }
 
