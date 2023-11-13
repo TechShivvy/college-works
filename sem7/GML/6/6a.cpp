@@ -1,211 +1,264 @@
-#include <stdio.h>
 #include <GL/glut.h>
-#include <math.h>
-#include <string.h>
-#define pi 3.142857
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <cstring>
+#include <stdio.h>
+#define pi M_PI
 
-void mm(double m[3][3], double v[3])
+using namespace std;
+void myInit()
 {
-    for (int i = 0; i < 3; ++i)
-    {
-        double temp = 0;
-        for (int k = 0; k < 3; ++k)
-            temp += m[i][k] * v[k];
-        v[i] = temp;
-    }
-}
-int X = 100, Y = -50;
-void draw_pixel(int x, int y)
-{
-    glBegin(GL_POINTS);
-    glVertex2i(x, y);
-    glEnd();
-}
-void output(int x, int y, const char *str)
-{
-
-    glRasterPos2f(x, y);
-    int len, i;
-    len = (int)strlen(str);
-    for (i = 0; i < len; i++)
-    {
-        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, str[i]);
-    }
-}
-
-void obj(int a, int b, int c, int d, int w, int x, int y, int z)
-{
-    glBegin(GL_QUADS);
-    glVertex2d(a, b);
-    glVertex2d(c, d);
-    glVertex2d(w, x);
-    glVertex2d(y, z);
-
-    glEnd();
-}
-void myInit(void)
-{
-    glClearColor(0.0, 0.0, 0.0, 1.0);
-    glColor3f(0.0, 1.0, 0.0);
-    glPointSize(1.0);
+    glClearColor(0.5, 1.0, 1.0, 0.0);
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glPointSize(1);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluOrtho2D(-780, 780, -420, 420);
+    gluOrtho2D(-320.0, 320.0, -240.0, 240.0);
 }
-
-void translation(double x1[], double x2[], double x3[], double x4[])
+vector<vector<float>> translation()
 {
-    // TRANSLATION
-
-    double T[3][3] = {{1, 0, 150}, {0, 1, 150}, {0, 0, 1}};
-    mm(T, x1);
-    mm(T, x2);
-    mm(T, x3);
-    mm(T, x4);
-
-    obj(x1[0], x1[1], x2[0], x2[1], x3[0], x3[1], x4[0], x4[1]);
-    output(260, 360, "translatedA:");
+    float tx, ty;
+    cout << "Enter tx, ty: ";
+    cin >> tx >> ty;
+    vector<vector<float>> translate(3, vector<float>(3, 0.0));
+    (translate)[0][0] = 1;
+    (translate)[0][2] = tx;
+    (translate)[1][1] = 1;
+    (translate)[1][2] = ty;
+    (translate)[2][2] = 1;
+    return translate;
 }
-
-void rotation(double x1[], double x2[], double x3[], double x4[])
+vector<vector<float>> rotate()
 {
-    // ROTATION
-    double R[3][3] = {{cos(pi / 4), -sin(pi / 4), 0}, {sin(pi / 4), cos(pi / 4), 0}, {0, 0, 1}};
-
-    mm(R, x1);
-    mm(R, x2);
-    mm(R, x3);
-    mm(R, x4);
-    printf("%lf%lf%lf%lf%lf%lf%lf%lf", x1[0], x1[1], x2[0], x2[1], x3[0], x3[1], x4[0], x4[1]);
-    obj(x1[0], x1[1], x4[0], x4[1], x3[0], x3[1], x2[0], x2[1]);
-    output(10, 300, "rotatedA:");
-    printf("%lf", cos(pi / 4));
+    float deg;
+    cout << "Enter deg: ";
+    cin >> deg;
+    vector<vector<float>> rotate(3, vector<float>(3, 0.0));
+    deg *= M_PI / 180;
+    cout << deg << " : deg" << endl;
+    rotate[0][0] = cos(deg);
+    rotate[0][1] = -sin(deg);
+    rotate[1][0] = sin(deg);
+    rotate[1][1] = cos(deg);
+    rotate[2][2] = 1;
+    // rotate[0][2] = tx*(1-cos(deg))+ty*sin(deg);
+    // rotate[1][2] = ty*(1-cos(deg))-tx*sin(deg);
+    return rotate;
 }
-
-void scaling(double x1[], double x2[], double x3[], double x4[])
+vector<vector<float>> scale()
 {
-    // SCALING
-
-    glColor3f(1.0, 0.0, 1.0);
-    double S[3][3] = {{2, 0, 0}, {0, 2, 0}, {0, 0, 1}};
-    mm(S, x1);
-    mm(S, x2);
-    mm(S, x3);
-    mm(S, x4);
-    obj(x1[0], x1[1], x2[0], x2[1], x3[0], x3[1], x4[0], x4[1]);
-    output(-200, -90, "scaledA:");
+    float sx, sy;
+    cout << "Enter sx, sy: ";
+    cin >> sx >> sy;
+    vector<vector<float>> scale(3, vector<float>(3, 0.0));
+    scale[0][0] = sx;
+    scale[1][1] = sy;
+    scale[2][2] = 1;
+    // scale[0][2] = tx * (1 - sx);
+    // scale[1][2] = ty * (1 - sy);
+    return scale;
 }
-
-void reflection(double x1[], double x2[], double x3[], double x4[])
+vector<vector<float>> reflect()
 {
-    // REFLECTION
-    x1[2] = x2[2] = x3[2] = x4[2] = 1;
-
-    double RY[3][3] = {{-1, 0, 0}, {0, 1, 0}, {0, 0, 1}};
-    mm(RY, x1);
-    mm(RY, x2);
-    mm(RY, x3);
-    mm(RY, x4);
-    obj(x1[0], x1[1], x2[0], x2[1], x3[0], x3[1], x4[0], x4[1]);
-    output(-200, 210, "reflectedYA:");
+    float axis;
+    cout << "Enter option 1.x-axis 2.y-axis 3.origin 4.x=y (1/2/3/4): ";
+    cin >> axis;
+    vector<vector<float>> reflect(3, vector<float>(3, 0.0));
+    reflect[0][0] = 1;
+    reflect[1][1] = 1;
+    reflect[2][2] = 1;
+    if (axis == 1)
+        reflect[1][1] = -1;
+    else if (axis == 2)
+        reflect[0][0] = -1;
+    else if (axis == 3)
+    {
+        reflect[0][0] = -1;
+        reflect[1][1] = -1;
+    }
+    else if (axis == 4)
+    {
+        reflect[0][1] = 1;
+        reflect[0][0] = 0;
+        reflect[1][0] = 1;
+        reflect[1][1] = 0;
+    }
+    return reflect;
 }
-
-void shearing(double x1[], double x2[], double x3[], double x4[])
+vector<vector<float>> shear()
 {
-    // SHEARING
-
-    double SX[3][3] = {{1, 2, 0}, {0, 1, 0}, {0, 0, 1}};
-    mm(SX, x1);
-    mm(SX, x2);
-    mm(SX, x3);
-    mm(SX, x4);
-    printf("%lf%lf%lf%lf%lf%lf%lf%lf", x1[0], x1[1], x2[0], x2[1], x3[0], x3[1], x4[0], x4[1]);
-
-    obj(x1[0], x1[1], x2[0], x2[1], x3[0], x3[1], x4[0], x4[1]);
-    output(500, 210, "ShearedXA:");
+    float op;
+    cout << "Enter option 1.x-shear 2.y-shear (1/2): ";
+    cin >> op;
+    float sh, ref;
+    if (op == 1)
+        cout << "Enter shx, yref: ";
+    else if (op == 2)
+        cout << "Enter shy, xref: ";
+    cin >> sh >> ref;
+    vector<vector<float>> shear(3, vector<float>(3, 0.0));
+    shear[0][0] = 1;
+    shear[1][1] = 1;
+    shear[2][2] = 1;
+    if (op == 1)
+    {
+        shear[0][1] = sh;
+        shear[0][2] = -sh * ref;
+    }
+    else if (op == 2)
+    {
+        shear[1][0] = sh;
+        shear[1][2] = -sh * ref;
+    }
+    return shear;
 }
-
-void display(void)
+vector<vector<float>> matrixMul(vector<vector<float>> t1,
+                                vector<vector<float>> t2, vector<vector<float>> res, int n)
 {
-    double x1[3];
-    double x2[3];
-    double x3[3];
-    double x4[3];
-    x1[2] = x2[2] = x3[2] = x4[2] = 1;
-    x1[0] = 100;
-    x1[1] = 100;
-    x2[0] = 200;
-    x2[1] = 100;
-    x3[0] = 200;
-    x3[1] = 200;
-    x4[0] = 100;
-    x4[1] = 200;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            res[i][j] = 0;
+            for (int k = 0; k < 3; k++)
+            {
+                res[i][j] += t1[i][k] * t2[k][j];
+            }
+        }
+    }
+    return res;
+}
+void matrixDisp(vector<vector<float>> m)
+{
+    cout << endl;
+    for (auto arrp : m)
+    {
+        for (auto p : arrp)
+        {
+            cout << p << " ";
+        }
+        cout << endl;
+    }
+}
+void display()
+{
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(1.0, 1.0, 1.0);
-    glBegin(GL_LINES);
-    glVertex2d(0, 420);
-    glVertex2d(0, -420);
-    glEnd();
-    glBegin(GL_LINES);
-    glVertex2d(780, 0);
-    glVertex2d(-780, 0);
-    glEnd();
-
-    glColor3f(0.0, 1.0, 0.0);
-    obj(x1[0], x1[1], x2[0], x2[1], x3[0], x3[1], x4[0], x4[1]);
-    output(110, 210, "originalA:");
-    int firstOp, secondOp;
-    printf("Enter first operation (1-5) for transl, rot, scale, refl, shearing respectively:");
-    scanf("%d", &firstOp);
-    printf("Enter second operation (1-5) for transl, rot, scale, refl, shearing respectively:");
-    scanf("%d", &secondOp);
-
-    switch (firstOp)
+    int op1, op2;
+    cout << "Enter any 2 tranformations:- \n1.translation \n2.rotation\n3.scaling \n4.reflection \n5.shearing(1 / 2 / 3 / 4 / 5) \ninc order(op1, op2) : ";
+    cin >> op1 >> op2;
+    vector<vector<float>> t1, t2;
+    if (op1 == 1)
     {
-    case 1:
-        translation(x1, x2, x3, x4);
-        break;
-    case 2:
-        rotation(x1, x2, x3, x4);
-        break;
-    case 3:
-        scaling(x1, x2, x3, x4);
-        break;
-    case 4:
-        reflection(x1, x2, x3, x4);
-        break;
-    default:
-        shearing(x1, x2, x3, x4);
+        t1 = translation();
     }
-
-    switch (secondOp)
+    else if (op1 == 2)
     {
-    case 1:
-        translation(x1, x2, x3, x4);
-        break;
-    case 2:
-        rotation(x1, x2, x3, x4);
-        break;
-    case 3:
-        scaling(x1, x2, x3, x4);
-        break;
-    case 4:
-        reflection(x1, x2, x3, x4);
-        break;
-    default:
-        shearing(x1, x2, x3, x4);
+        t1 = rotate();
     }
-
+    else if (op1 == 3)
+    {
+        t1 = scale();
+    }
+    else if (op1 == 4)
+    {
+        t1 = reflect();
+    }
+    else if (op1 == 5)
+    {
+        t1 = shear();
+    }
+    // for op2
+    if (op2 == 1)
+    {
+        t2 = translation();
+    }
+    else if (op2 == 2)
+    {
+        t2 = rotate();
+    }
+    else if (op2 == 3)
+    {
+        t2 = scale();
+    }
+    else if (op2 == 4)
+    {
+        t2 = reflect();
+    }
+    else if (op2 == 5)
+    {
+        t2 = shear();
+    }
+    for (auto a : t1)
+    {
+        for (auto x : a)
+        {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
+    for (auto a : t2)
+    {
+        for (auto x : a)
+        {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
+    int n;
+    cout << "Enter no. of points for polygon: ";
+    cin >> n;
+    // points matrix
+    vector<vector<float>> points(3, vector<float>(n));
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Enter x, y coords: ";
+        cin >> points[0][i] >> points[1][i];
+        points[2][i] = 1;
+    }
+    // order for now is op1 then op2
+    // result matrix
+    vector<vector<float>> res(3, vector<float>(n));
+    // t2 x t1
+    res = matrixMul(t2, t1, res, 3);
+    matrixDisp(res);
+    // t21 x points
+    res = matrixMul(res, points, res, n);
+    matrixDisp(res);
+    // axis
+    glBegin(GL_LINES);
+    glVertex2d(-320, 0);
+    glVertex2d(320, 0);
+    glVertex2d(0, -240);
+    glVertex2d(0, 240);
+    glEnd();
+    // original shape
+    glBegin(GL_LINE_LOOP);
+    for (int i = 0; i < n; i++)
+    {
+        glVertex2f(points[0][i], points[1][i]);
+    }
+    glEnd();
+    // result shape plot
+    glRasterPos2i(res[0][n / 2], res[1][n / 2] - 15);
+    glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, int('S'));
+    glBegin(GL_LINE_LOOP);
+    glColor3f(1.0f, 0.0f, 0.0f);
+    for (int i = 0; i < n; i++)
+    {
+        glVertex2f(res[0][i], res[1][i]);
+    }
+    glEnd();
     glFlush();
 }
 int main(int argc, char **argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(1366, 768);
-    glutInitWindowPosition(0, 0);
-    glutCreateWindow("Transformations");
-    myInit();
+    glutInitWindowSize(640, 480);
+    glutCreateWindow("ex6");
     glutDisplayFunc(display);
+    myInit();
     glutMainLoop();
+    return 0;
 }
