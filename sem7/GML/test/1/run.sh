@@ -1,2 +1,2 @@
-g++ main.cpp -lGL -lglut -lGLU
+g++ b.cpp -lGL -lglut -lGLU
 ./a.out

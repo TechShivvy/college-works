@@ -109,7 +109,7 @@ void drawCone()
     gluCylinder(cone, 0.0, 0.5, 1.0, 20, 20); // Draw the cone
 
     glPushMatrix();
-    glTranslatef(0.0, 0.0, 1.0); // Move to the base of the cone
+    glTranslatef(0.0, 0.0, 1.0);     // Move to the base of the cone
     gluDisk(cone, 0.0, 0.5, 20, 20); // Draw the base circle
     glPopMatrix();
 
@@ -165,13 +165,15 @@ void display()
     // Draw 3D objects
     drawTeapot(); // Draw a teapot
     glTranslatef(2.0f, 2.0f, 0.0f);
+    glScalef(2.0f, 2.0f, 2.0f);  // Scale
     drawSphere(); // Draw a sphere
+    glScalef(0.5f, 0.5f, 0.5f);  // Scale
     glTranslatef(-4.0f, -4.0f, 0.0f);
     drawCone(); // Draw a cylinder
     glTranslatef(4.0f, -2.0f, 0.0f);
     drawTorus(); // Draw a torus
 
-glTranslatef(0.0f, 0.0f, -5.0f);
+    glTranslatef(0.0f, 0.0f, -5.0f);
     glutSwapBuffers();
 }
 

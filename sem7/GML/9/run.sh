@@ -1,2 +1,2 @@
-g++ 9.cpp -lGL -lglut -lGLU
+g++ rex.cpp -lGL -lglut -lGLU
 ./a.out
