@@ -86,7 +86,6 @@ void drawFig(GLenum mode, vvd P)
     for (int i = 0; i < P[0].size(); i++)
         glVertex2d(P[0][i], P[1][i]);
     glEnd();
-    ;
 }
 void myInit()
 {
@@ -100,10 +99,8 @@ void myInit()
 void update(int value)
 {
     angle += 2.0f; // Update the angle for rotation
-    if (angle > 360.0f)
-    {
-        angle -= 360.0f;
-    }
+    // if (angle > 360.0f)
+    //     angle -= 360.0f;
 
     glutPostRedisplay();          // Request a redraw to update the display
     glutTimerFunc(10, update, 0); // Call the update function again after 16 milliseconds
@@ -111,6 +108,7 @@ void update(int value)
 void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(1, 1, 1);
     drawAxes();
     glColor3f(1, 0, 0);
     drawFig(GL_TRIANGLES, rotate(points, angle));
