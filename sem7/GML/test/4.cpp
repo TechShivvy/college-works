@@ -44,7 +44,7 @@ void drawAxis()
     glFlush();
 }
 
-// pattern: 4 plus xy,1plus yx
+// pattern: 4 plus xyyx,1 plus yx
 void drawInEachOctet(GLint x, GLint y)
 {
     drawPixel(c.x + x, c.y + y);

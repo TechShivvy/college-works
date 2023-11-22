@@ -28,7 +28,6 @@ void drawAxes()
     glVertex2i(-2000, 0);
     glVertex2i(2000, 0);
     glEnd();
-    ;
 }
 
 vvd multiply(vvd a, vvd b)
