@@ -51,8 +51,8 @@ void myInit()
 
 void DDA()
 {
-    cout << "P1: " << p1.x << " " << p1.y << endl;
-    cout << "P2: " << p2.x << " " << p2.y << endl;
+    // cout << "P1: " << p1.x << " " << p1.y << endl;
+    // cout << "P2: " << p2.x << " " << p2.y << endl;
     GLfloat dx = p2.x - p1.x,
             dy = p2.y - p1.y;
 

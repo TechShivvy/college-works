@@ -65,17 +65,18 @@ void drawCircle()
     drawInEachOctet(xk, yk);
     while (xk <= yk)
     {
-        if (pk < 0)
-        {
-            xk++;
-            pk += 2 * xk + 1;
-        }
-        else
-        {
-            xk++;
-            yk--;
-            pk += 2 * xk + 1 - 2 * yk;
-        }
+        // if (pk < 0)
+        // {
+        //     xk++;
+        //     pk += 2 * xk + 1;
+        // }
+        // else
+        // {
+        //     xk++;
+        //     yk--;
+        //     pk += 2 * xk + 1 - 2 * yk;
+        // }
+        pk += 2 * (++xk) + 1 - ((pk >= 0) ? 2 * (--yk) : 0);
         drawInEachOctet(xk, yk);
     }
 }
