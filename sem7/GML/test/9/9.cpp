@@ -1,116 +1,147 @@
-#include <iostream>
-#include <stdio.h>
-#include <cmath>
-#include <cstring>
 #include <GL/glut.h>
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cmath>
 
 using namespace std;
 
-const float SCREEN_HEIGHT = 1000;
-const float SCREEN_WIDTH = 1000;
+GLboolean ortho = true; // try toggling
 
-GLfloat x_rotate = 0;
-GLfloat y_rotate = 0;
+// Rotation angles
+float rotateX = 0.0f;
+float rotateY = 0.0f;
+// Camera position
+float cameraX = 0.0f;
+float cameraY = 0.0f;
+float cameraZ = 15.0f;
 
-bool isOrthoProjection = true;
-
-void myInit(void)
-{
-    glClearColor(0.0, 0.0, 0.0, 1.0);
-    glColor3f(0.0, 0.0, 1.0);
-    glPointSize(1.0);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    gluOrtho2D(-SCREEN_WIDTH / 2, SCREEN_WIDTH / 2, -SCREEN_HEIGHT / 2, SCREEN_HEIGHT / 2);
-}
+GLfloat SCREEN_WIDTH = 1000, SCREEN_HEIGHT = 1000;
 
 void drawAxes()
 {
-    glColor3d(1, 0, 0);
     glBegin(GL_LINES);
-    glVertex2f(-2, 0);
-    glVertex2f(2, 0);
-    glVertex2f(0, -2);
-    glVertex2f(0, 2);
+
+    glColor3f(1, 0, 0);
+    glVertex3d(-1000, 0, 0);
+    glVertex3d(1000, 0, 0);
+
+    glColor3f(0, 1, 0);
+    glVertex3d(0, -1000, 0);
+    glVertex3d(0, 1000, 0);
+
+    glColor3f(0, 0, 1);
+    glVertex3d(0, 0, -1000);
+    glVertex3d(0, 0, 1000);
+
     glEnd();
-    glFlush();
 }
 
-void keyboardKeys(unsigned char key, int x, int y)
+void setProjection()
 {
-    key = tolower(key);
+    ortho = !ortho;
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    (!ortho) ? gluPerspective(45.0f, 1.0f, 0.1f, 100.0f) : glOrtho(-25, 25, -25, 25, 0.1, 100);
+    glMatrixMode(GL_MODELVIEW);
+}
+
+void myKeyboard(unsigned char key, int x, int y)
+{
     switch (key)
     {
-    case 'w':
-    {
-        // glLoadIdentity(); // Reset transformations
-        x_rotate += 5;
-        break;
-    }
-    case 's':
-    {
-        x_rotate -= 5;
-        break;
-    }
-    case 'd':
-    {
-        y_rotate += 5;
-        break;
-    }
-    case 'a':
-    {
-        y_rotate -= 5;
-        break;
-    }
-    case 27:
-        exit(0);
     case 32:
-    {
-        isOrthoProjection = !isOrthoProjection;
-        x_rotate = 0;
-        y_rotate = 0;
+        setProjection();
+        rotateX = 0;
+        rotateY = 0;
+        cameraZ = 15;
+        glutSetWindowTitle(!ortho?"Perspective":"Orthogonal");
         break;
+    case 'w':
+        rotateX += 5.0f; // Rotate object in X dirn
+        break;
+    case 'a':
+        rotateY += 5.0f; // Rotate object in Y dirn
+        break;
+    case 's':
+        rotateX -= 5.0f; // Rotate object in X dirn
+        break;
+    case 'd':
+        rotateY -= 5.0f; // Rotate object in Y dirn
+        break;
+    case 'f':
+        cameraZ -= 5.0f; // Move camera forward
+        break;
+    case 'b':
+        cameraZ += 5.0f; // Move camera backward
+        break;
+    case 27: // ESC key to exit
+        exit(0);
     }
-    }
-
     glutPostRedisplay();
 }
 
-void display()
+void myReshape(int width, int height)
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    if (height == 0)
+        height = 1;
 
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    float ratio = width * 1.0 / height;
 
-    glLineWidth(3);
+    glViewport(0, 0, width, height);
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    (!ortho) ? gluPerspective(45.0f, ratio, 0.1f, 100.0f) : glOrtho(-0.1 * width / 5, 0.1 * width / 5, -0.1 * height / 5, 0.1 * height / 5, 0.1, 100.0);
+
     glMatrixMode(GL_MODELVIEW);
-
-    drawAxes();
-    glPushMatrix();
-    glColor4f(0, 0, 1, 0.3); // Draw the object
-
-    glOrtho(-2, 2, -2, 2, -2, 2);
-
-    gluLookAt(0, 0, 250, 0, 0, 0, 0, 1, 0); // Camera, Center & Up Vector
-    // glRotatef(x_rotate, 1, 0, 0);         // Keyboard based rotations
-    // glRotatef(y_rotate, 0, 1, 0);
-
-    glutWireTeapot(0.5);
-    glPopMatrix();
-    glFlush();
 }
 
-int main(int argc, char **argv)
+void myInit()
+{
+    glClearColor(0, 0, 0, 0);
+    glClearDepth(1.0f);
+
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_LEQUAL);
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+
+    (!ortho) ? gluPerspective(45.0f, 1.0f, 0.1f, 100.0f) : glOrtho(-25, 25, -25, 25, 0.1, 100);
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    gluLookAt(15, 15, 15, 0, 0, 0, 0, 1, 0);
+}
+
+void myDisplay()
+{
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glLoadIdentity();
+    gluLookAt(cameraX, cameraY, cameraZ, 0, 0, 0, 0, 1, 0);
+    glRotatef(rotateX, 1.0f, 0.0f, 0.0f); // Roate along X
+    glRotatef(rotateY, 0.0f, 1.0f, 0.0f); // Rotate along Y
+    drawAxes();
+
+    glutWireTeapot(7);
+    glutSwapBuffers();
+}
+
+int main(int argc, char *argv[])
 {
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(SCREEN_WIDTH, SCREEN_HEIGHT);
-    glutCreateWindow("3D Projections");
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+    glutInitWindowSize(1000, 1000);
 
-    glutDisplayFunc(display);
-    glutKeyboardFunc(keyboardKeys);
+    glutCreateWindow("3d basics");
+    glutDisplayFunc(myDisplay);
+    glutReshapeFunc(myReshape);
+    glutKeyboardFunc(myKeyboard);
 
+    myInit();
     glutMainLoop();
-    return 0;
+    return 1;
 }

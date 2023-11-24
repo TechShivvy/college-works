@@ -1,2 +1,2 @@
-g++ 5.cpp -lGL -lglut -lGLU
+g++ drawEle.cpp -lGL -lglut -lGLU
 ./a.out
