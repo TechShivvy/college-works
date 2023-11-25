@@ -63,6 +63,7 @@ void myInit()
 void drawTeapot()
 {
     glPushMatrix();
+    glColor3f(1, 1, 0);
     glTranslatef(X, Y, 0);
     glRotatef(angle, 0, 1, 0);
     glutWireTeapot(2);
@@ -75,6 +76,7 @@ void drawDisc()
     GLUquadricObj *disc = gluNewQuadric();
 
     glPushMatrix();
+    glColor3f(1, 0, 1);
     glRotatef(90, 1, 0, 0);
     glTranslatef(3, 0, 0);
     gluDisk(disc, 0.0, 2, 20, 20); // Draw the base circle
