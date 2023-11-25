@@ -39,6 +39,7 @@ void myReshape(int width, int height)
     gluPerspective(45.0f, ratio, 0.1f, 100.0f);
 
     glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
 }
 
 void myInit()

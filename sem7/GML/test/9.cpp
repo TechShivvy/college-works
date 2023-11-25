@@ -96,6 +96,7 @@ void myReshape(int width, int height)
     (!ortho) ? gluPerspective(45.0f, ratio, 0.1f, 100.0f) : glOrtho(-0.1 * width / 5, 0.1 * width / 5, -0.1 * height / 5, 0.1 * height / 5, 0.1, 100.0);
 
     glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
 }
 
 void myInit()
