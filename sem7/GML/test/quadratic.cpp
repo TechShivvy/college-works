@@ -1,5 +1,4 @@
 #include <GL/glut.h>
-#include <SOIL/SOIL.h>
 
 const int windowWidth = 800;
 const int windowHeight = 600;
