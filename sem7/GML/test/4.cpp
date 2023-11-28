@@ -3,6 +3,8 @@
 #include <cmath>
 #include <iostream>
 
+#define RANDOM static_cast<double>(rand()) / static_cast<double>(RAND_MAX)
+
 using namespace std;
 
 const int SCREEN_WIDTH = 1000, SCREEN_HEIGHT = 1000;
@@ -44,7 +46,7 @@ void drawAxis()
     glFlush();
 }
 
-// pattern: 4 plus xyyx,1 plus yx
+// pattern: 4 plus xyyx,1 plus yxxy
 void drawInEachOctet(GLint x, GLint y)
 {
     drawPixel(c.x + x, c.y + y);
