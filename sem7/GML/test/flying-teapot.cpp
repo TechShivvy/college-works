@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
     glutCreateWindow("Flying Teapot");
     glutDisplayFunc(myDisplay);
     // glutReshapeFunc(myReshape);
-    glutTimerFunc(25, update, 0);
+    // glutTimerFunc(25, update, 0);
 
     myInit();
     glutMainLoop();
