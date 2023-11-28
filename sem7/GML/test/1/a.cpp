@@ -6,6 +6,16 @@ using namespace std;
 
 const int SCREEN_WIDTH = 1000, SCREEN_HEIGHT = 1000;
 
+void drawText(string text, double x, double y)
+{
+    glRasterPos2d(x, y);
+
+    for (char &c : text)
+    {
+        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+    }
+}
+
 void myInit()
 {
     glClearColor(0, 0, 0, 0);
@@ -57,6 +67,7 @@ void myDisplay()
     glColor3f(0, 0.5, 0);
     drawShape(GL_POLYGON, {-100, -100, 0, -50, 100, -100, 50, -150, -50, -150});
 
+    drawText("Hello, OpenGL!", 0, 0);
     glFlush();
 }
 

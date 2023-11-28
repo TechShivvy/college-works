@@ -45,6 +45,17 @@ vf colors = {
     1, 0, 1  // Left face (magenta)
 };
 
+void drawText(string text, double x, double y)
+{
+    glRasterPos2d(x, y);
+
+    for (char &c : text)
+    {
+        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
+    }
+}
+
+
 void displayMat(vvf res)
 {
     for (int i = 0; i < res.size(); i++)
@@ -236,6 +247,8 @@ void myDisplay()
     // drawFig(GL_CUBE,translate(vertices, 8, 0, 0));
     drawFig(GL_CUBE, rotate(translate(vertices, 8, 0, 0), X, angle));
     glPopMatrix();
+
+    drawText("OpenGL 3D Basics",-9,8);
     // drawFig(GL_CUBE, rotate(rotate(vertices, Z, angle), X, angle));
     // drawFig(GL_CUBE, scale(vertices, 2, 1, 1));
     // drawFig(GL_CUBE, shear(vertices, 0, 0, 2, 2, 0, 0));
