@@ -56,7 +56,7 @@ void myKeyboard(unsigned char key, int x, int y)
         rotateX = 0;
         rotateY = 0;
         cameraZ = 15;
-        glutSetWindowTitle(!ortho?"Perspective":"Orthogonal");
+        glutSetWindowTitle(!ortho ? "Perspective" : "Orthogonal");
         break;
     case 'w':
         rotateX += 5.0f; // Rotate object in X dirn
@@ -96,7 +96,6 @@ void myReshape(int width, int height)
     (!ortho) ? gluPerspective(45.0f, ratio, 0.1f, 100.0f) : glOrtho(-0.1 * width / 5, 0.1 * width / 5, -0.1 * height / 5, 0.1 * height / 5, 0.1, 100.0);
 
     glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
 }
 
 void myInit()
@@ -122,12 +121,17 @@ void myDisplay()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
+    
     gluLookAt(cameraX, cameraY, cameraZ, 0, 0, 0, 0, 1, 0);
     glRotatef(rotateX, 1.0f, 0.0f, 0.0f); // Roate along X
     glRotatef(rotateY, 0.0f, 1.0f, 0.0f); // Rotate along Y
-    drawAxes();
 
+    drawAxes();
+    
+    glPushMatrix();
     glutWireTeapot(7);
+    glPopMatrix();
+
     glutSwapBuffers();
 }
 

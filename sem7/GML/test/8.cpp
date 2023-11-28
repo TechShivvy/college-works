@@ -140,7 +140,7 @@ void drawFig(GLenum mode, vvf vertices)
 {
     if (mode == GL_CUBE)
     {
-        // glRotatef(angle, 0, 1, 1);
+        // glRotatef(angle, 1, 0, 0);
         // only edges
         for (int i = 0; i < indices.size(); i++)
         {
@@ -202,7 +202,6 @@ void myReshape(int width, int height)
     (!ortho) ? gluPerspective(45.0f, ratio, 0.1f, 100.0f) : glOrtho(-0.1 * width / 5, 0.1 * width / 5, -0.1 * height / 5, 0.1 * height / 5, 0.1, 100.0);
 
     glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
 }
 
 void myInit()
@@ -233,7 +232,10 @@ void myDisplay()
     inbuiltCube();
     userDefinedCube1();
 
+    glPushMatrix();
+    // drawFig(GL_CUBE,translate(vertices, 8, 0, 0));
     drawFig(GL_CUBE, rotate(translate(vertices, 8, 0, 0), X, angle));
+    glPopMatrix();
     // drawFig(GL_CUBE, rotate(rotate(vertices, Z, angle), X, angle));
     // drawFig(GL_CUBE, scale(vertices, 2, 1, 1));
     // drawFig(GL_CUBE, shear(vertices, 0, 0, 2, 2, 0, 0));
@@ -258,7 +260,7 @@ int main(int argc, char *argv[])
 
     glutCreateWindow("3d basics");
     glutDisplayFunc(myDisplay);
-    // glutReshapeFunc(myReshape);
+    glutReshapeFunc(myReshape);
     glutTimerFunc(25, update, 0);
 
     myInit();
