@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">keyboard</string>
+    <string-array name="countries">
+        <item>IND</item>
+        <item>AUS</item>
+        <item>NZ</item>
+    </string-array>
+</resources>
